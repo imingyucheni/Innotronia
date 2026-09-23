@@ -1,5 +1,5 @@
 /* =========================================================
-   Innotronia — interactions
+   Atronia Innovations — interactions
    ========================================================= */
 (() => {
   "use strict";
@@ -42,7 +42,7 @@
   if (urlLang === "zh" || urlLang === "en") { try { localStorage.setItem("inno-lang", urlLang); } catch (e) { /* ignore */ } }
   const META = {
     en: { title: document.title, desc: document.querySelector('meta[name="description"]').content },
-    zh: { title: "Innotronia — 电商代运营与物流服务", desc: "Innotronia 拥有 10 年以上电商运营经验，提供 Amazon、Walmart、Wayfair、Temu、SHEIN、TikTok Shop 渠道接管与全托管运营、新渠道开拓、创意设计（主图、A+、视频），以及美国尾程派送与国际包裹物流服务。" }
+    zh: { title: "Atronia Innovations — 电商代运营与物流服务", desc: "Atronia Innovations 拥有 10 年以上电商运营经验，提供 Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok Shop 渠道接管与全托管运营、新渠道开拓、创意设计（主图、A+、视频），以及美国尾程派送与国际包裹物流服务。" }
   };
   const t = (key) => (lang === "zh" && window.I18N.zh[key]) || EN[key] || key;
 
@@ -549,8 +549,8 @@
 
   // Confirmation email FormSubmit sends to the person who submitted the form.
   const AUTO_REPLY = {
-    en: "Thank you for contacting Innotronia! We've received your inquiry and our team will get back to you within one business day.\n\nThis is an automatic confirmation — no need to reply.\n\n— The Innotronia Team\nhttps://innotronia.com",
-    zh: "感谢您联系 Innotronia！我们已收到您的咨询，团队会在一个工作日内与您联系。\n\n这是一封自动确认邮件，无需回复。\n\n— Innotronia 团队\nhttps://innotronia.com"
+    en: "Thank you for contacting Atronia Innovations! We've received your inquiry and our team will get back to you within one business day.\n\nThis is an automatic confirmation — no need to reply.\n\n— The Atronia Innovations Team\nhttps://innotronia.com",
+    zh: "感谢您联系 Atronia Innovations！我们已收到您的咨询，团队会在一个工作日内与您联系。\n\n这是一封自动确认邮件，无需回复。\n\n— Atronia Innovations 团队\nhttps://innotronia.com"
   };
 
   async function send(form, payload, btn) {
@@ -580,7 +580,7 @@
   const fieldVal = (form, name) => (($(`[name="${name}"]`, form) || {}).value || "").trim() || "—";
 
   /* ---------- lead analysis ----------
-     Each inquiry is scored and summarised (in Chinese, for the Innotronia team) before it is sent,
+     Each inquiry is scored and summarised (in Chinese, for the Atronia Innovations team) before it is sent,
      so the email opens with: priority, one-line summary, estimated value, missing info, next step. */
   const has = (v) => v && v !== "—";
   const TIER_NEXT = {

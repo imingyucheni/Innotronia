@@ -1,4 +1,4 @@
-/* Innotronia — translations.
+/* Atronia Innovations — translations.
    English is the source text in index.html. Only Chinese overrides live here.
    Add a key with data-i18n="key" (text) or data-i18n-html="key" (allows <em>, <br>, <strong>). */
 
@@ -135,11 +135,11 @@ window.I18N = {
     "f.creative": "+ 创意设计（图片、A+ 与视频）",
     "f.goal": "您的主要目标",
 
-    "footer.legal": "Amazon、Walmart、Wayfair、Temu、SHEIN、TikTok、UniUni、GOFO、SwiftX、USPS、FedEx、UPS、ePost 及 DHL 均为其各自所有者的商标。Innotronia 为独立服务商，与上述平台无隶属或背书关系。",
+    "footer.legal": "Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok、UniUni、GOFO、SwiftX、USPS、FedEx、UPS、ePost 及 DHL 均为其各自所有者的商标。Atronia Innovations 为独立服务商，与上述平台无隶属或背书关系。",
 
     "hero.eyebrow": "电商代运营 · 物流合作伙伴",
     "hero.title": "<span class=\"nw\">店铺交给我们运营，</span><br/><span class=\"nw\">包裹交给我们<em>派送。</em></span>",
-    "hero.lead": "Innotronia 为品牌提供从 A 到 Z 的平台全托管运营、新渠道开拓，以及美国尾程与国际包裹物流服务，让您专注于打造好产品。",
+    "hero.lead": "Atronia Innovations 为品牌提供从 A 到 Z 的平台全托管运营、新渠道开拓，以及美国尾程与国际包裹物流服务，让您专注于打造好产品。",
     "hero.cta1": "查看合作方案",
     "hero.cta2": "获取运费报价",
     "hero.s0": "年行业经验",
@@ -247,14 +247,14 @@ window.I18N = {
     "log.ctaText": "只需约 60 秒 —— 3 个简单问题。",
     "log.cta": "开始运费问卷",
 
-    "why.eyebrow": "为什么选择 Innotronia",
+    "why.eyebrow": "为什么选择 Atronia Innovations",
     "why.title": "运营为本，<em>长期</em>合作。",
     "why.i1.t": "销售与物流一站整合",
     "why.i1.d": "运营团队与物流伙伴每天直接沟通 —— 减少交接，问题解决更快。",
     "why.i2.t": "清晰可预期的价格",
     "why.i2.d": "固定月费或纯业绩提成，没有隐藏费用。",
     "why.i3.t": "深耕各大主流平台",
-    "why.i3.d": "Amazon、Walmart、Wayfair、Temu、Shein、TikTok Shop 等 —— 每个平台都有专属运营打法。",
+    "why.i3.d": "Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok Shop 等 —— 每个平台都有专属运营打法。",
     "why.i4.t": "中英双语团队",
     "why.i4.d": "我们以中英文无缝沟通，连接品牌、工厂与美国电商平台。",
 

@@ -1,6 +1,6 @@
-# Innotronia Website
+# Atronia Innovations Website
 
-Static, bilingual (EN / 中文) marketing site for Innotronia: e-commerce agency services and logistics (US last-mile and international parcels).
+Static, bilingual (EN / 中文) marketing site for Atronia Innovations: e-commerce agency services and logistics (US last-mile and international parcels).
 
 No build step. Open `index.html` or deploy the folder to any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages).
 

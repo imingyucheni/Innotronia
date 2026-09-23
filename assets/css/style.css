@@ -207,7 +207,7 @@ html[lang="zh"] .hero__title { font-family: var(--sans); font-weight: 700; lette
 .platforms { position: relative; z-index: 1; padding: 20px 0 clamp(70px, 8vw, 100px); }
 .platforms__label { text-align: center; margin: 0 0 28px; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
 html[lang="zh"] .platforms__label { letter-spacing: .12em; }
-.logo-wall { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; }
+.logo-wall { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 @media (max-width: 1100px) { .logo-wall { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 600px) { .logo-wall { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
 .plogo {
@@ -225,6 +225,7 @@ html[lang="zh"] .platforms__label { letter-spacing: .12em; }
 .plogo__word--amazon { font-size: 28px; color: #131921; letter-spacing: -.05em; }
 .plogo__word--wayfair { font-size: 25px; color: #7b189f; font-weight: 700; }
 .plogo__word--shein { font-size: 28px; color: #111; letter-spacing: .08em; font-weight: 800; }
+.plogo__word--overstock { font-size: 25px; color: #c8102e; letter-spacing: -.03em; }
 .plogo__word--tiktok { font-size: 21px; color: #111; letter-spacing: -.02em; }
 .plogo__word--tiktok small { font-weight: 600; color: #fe2c55; font-size: .85em; }
 .plogo__tiktok svg { width: 26px; height: 26px; overflow: visible; }
@@ -234,7 +235,7 @@ html[lang="zh"] .platforms__label { letter-spacing: .12em; }
 .plogo--more strong { font-size: 14px; font-weight: 600; }
 .plogo--more small { font-size: 12px; color: var(--accent); }
 .plogo__plus { width: 34px; height: 34px; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--grad); color: #fff; font-size: 20px; font-weight: 500; }
-@media (max-width: 600px) { .plogo--more { grid-column: 1 / -1; justify-content: center; } }
+
 @media (max-width: 600px) { .plogo { height: 84px; } .plogo__word--amazon, .plogo__word--shein { font-size: 24px; } .plogo__walmart { width: 110px; } }
 
 /* ---------- client brands marquee ---------- */
