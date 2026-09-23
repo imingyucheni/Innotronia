@@ -579,12 +579,101 @@
 
   const fieldVal = (form, name) => (($(`[name="${name}"]`, form) || {}).value || "").trim() || "—";
 
+  /* ---------- lead analysis ----------
+     Each inquiry is scored and summarised (in Chinese, for the Innotronia team) before it is sent,
+     so the email opens with: priority, one-line summary, estimated value, missing info, next step. */
+  const has = (v) => v && v !== "—";
+  const TIER_NEXT = {
+    A: "高意向：建议 24 小时内电话 / 微信联系，并准备报价方案",
+    B: "中等意向：建议 1 个工作日内邮件回复，同时补问缺少的信息",
+    C: "信息较少：先邮件回复了解具体需求，再给报价"
+  };
+  const tierOf = (score, a, b) => (score >= a ? "A" : score >= b ? "B" : "C");
+  const TIER_LABEL = { A: "A · 高意向", B: "B · 中等意向", C: "C · 待了解" };
+  const replyLang = (l) => (l === "zh" ? "客户使用中文页面，建议用中文回复" : "客户使用英文页面，建议用英文回复");
+  const contactPoints = (d, reasons, missing) => {
+    let n = 0;
+    if (has(d.company)) { n++; reasons.push("留了公司名"); } else missing.push("公司 / 品牌名");
+    if (has(d.phone)) { n++; reasons.push("留了电话 / 微信"); } else missing.push("电话 / 微信");
+    if (has(d.message) && d.message.length >= 20) { n++; reasons.push("附有详细留言"); }
+    return n;
+  };
+  const report = (tier, score, reasons, summary, value, missing, nextStep, l) => ({
+    "① 线索等级": `${TIER_LABEL[tier]}（${score} 分）${reasons.length ? " — " + reasons.join("、") : ""}`,
+    "② 一句话摘要": summary,
+    "③ 预估价值": value,
+    "④ 缺少信息": missing.length ? missing.join("、") : "无，信息完整",
+    "⑤ 建议下一步": `${nextStep}。${replyLang(l)}`,
+    "⬇ 以下为客户原始填写内容": "—"
+  });
+
+  const TAKEOVER_FEE = { "1–10": [999, 999], "11–20": [1498, 1498], "21–30": [1997, 1997], "31–50": [2496, 2995] };
+  const PLAN_ZH = { "Channel Takeover": "渠道接管", "Channel Expansion": "新渠道开拓", "Enterprise (50+ SKUs)": "企业定制（50+ SKU）", "Not sure yet": "未确定方案" };
+  const GOAL_ZH = { "Profit-first": "重利润", "Balanced": "利润销量平衡", "Volume-first": "重销量" };
+  const range$ = ([lo, hi]) => (lo === hi ? money(lo) : `${money(lo)}–${money(hi)}`);
+
+  function analyzeEcom(d) {
+    let score = 0; const reasons = [], missing = [];
+    if (d.plan !== "Not sure yet") { score += 2; reasons.push(`已选方案「${PLAN_ZH[d.plan]}」`); } else missing.push("意向方案");
+    if (d.skus === "50+") { score += 3; reasons.push("SKU 50+（大客户）"); }
+    else if (d.skus === "31–50") { score += 2; reasons.push("SKU 31–50"); }
+    else if (has(d.skus)) score += 1; else missing.push("SKU 数量");
+    if (d.platforms.length >= 3) { score += 2; reasons.push(`${d.platforms.length} 个平台`); }
+    else if (d.platforms.length) score += 1; else missing.push("运营平台");
+    if (d.creative) { score += 1; reasons.push("需要创意设计"); }
+    if (has(d.goal)) score += 1; else missing.push("经营目标");
+    score += contactPoints(d, reasons, missing);
+    const tier = tierOf(score, 7, 4);
+
+    const summary = ["电商咨询", PLAN_ZH[d.plan], d.platforms.length ? d.platforms.join("、") : "", has(d.skus) ? `${d.skus} 个 SKU` : "",
+      d.creative ? "含创意设计" : "", has(d.goal) ? `目标：${GOAL_ZH[d.goal]}` : ""].filter(Boolean).join("｜");
+
+    let value;
+    const addon = d.creative ? 699 : 0;
+    if (d.skus === "50+" || d.plan === "Enterprise (50+ SKUs)") value = "定制报价（50+ SKU），需沟通具体渠道与产品数量";
+    else if (d.plan === "Channel Expansion") value = "按新渠道净营业额 5% 收费；需了解客户目前 / 预期月销售额";
+    else if (TAKEOVER_FEE[d.skus]) {
+      const fee = TAKEOVER_FEE[d.skus].map((x) => x + addon);
+      value = `${d.plan === "Channel Takeover" ? "" : "若选渠道接管："}约 ${range$(fee)}/月${d.creative ? "（含创意设计 $699）" : ""} + $199 开户费 + 1% 广告营业额；首期 3 个月合同约 ${range$(fee.map((x) => 199 + 3 * x))}`;
+    } else value = "暂无法估算（缺少 SKU 数量）";
+
+    return report(tier, score, reasons, summary, value, missing, TIER_NEXT[tier], lang);
+  }
+
+  const DAILY = ["< 50", "50–200", "200–500", "500–1,000", "1,000+"];
+  const MONTHLY = ["< 1,000", "1,000–5,000", "5,000–20,000", "20,000–50,000", "50,000+"];
+  const DAILY_AS_MONTH = ["约 1,500 件以下 / 月", "约 1,500–6,000 件 / 月", "约 6,000–15,000 件 / 月", "约 15,000–30,000 件 / 月", "约 30,000 件以上 / 月"];
+  const SERVICE_ZH = { "US Last-Mile Delivery": "美国尾程派送", "International Parcel": "国际包裹" };
+  const SIZE_ZH = { Small: "小件", Medium: "中件", Large: "大件" };
+
+  function analyzeShipping(d) {
+    let score = 0; const reasons = [], missing = [];
+    const daily = d.period === "Daily";
+    const i = (daily ? DAILY : MONTHLY).indexOf(d.volume);
+    score += daily ? i + 1 : i;
+    if (i >= 3) reasons.push("大货量");
+    if (d.size === "Large") { score += 1; reasons.push("大件（单票价值高）"); }
+    score += contactPoints(d, reasons, missing);
+    if (!has(d.message)) missing.push("目的地 / 产品类型 / 现用物流商（留言为空）");
+    const tier = tierOf(score, 6, 3);
+    const vol = `${d.volume} 件 / ${daily ? "天" : "月"}${daily ? `（${DAILY_AS_MONTH[i]}）` : ""}`;
+    const summary = `运费报价｜${SERVICE_ZH[d.service]}｜${SIZE_ZH[d.size]}｜${vol}`;
+    const value = `月发货量${daily ? DAILY_AS_MONTH[i] : ` ${d.volume} 件 / 月`}；按${SIZE_ZH[d.size]}${SERVICE_ZH[d.service]}报价`;
+    const next = `${TIER_NEXT[tier]}（准备${SIZE_ZH[d.size]}${SERVICE_ZH[d.service]}报价）`;
+    return report(tier, score, reasons, summary, value, missing, next, lang);
+  }
+
   survey.addEventListener("submit", (e) => {
     e.preventDefault();
     if (q !== qs.length - 1) return next();
     if (!validContact(survey)) return showError(survey, t("f.required"));
+    const lead = analyzeShipping({
+      service: val("service"), size: val("size"), volume: val("volume"), period: val("period"),
+      company: fieldVal(survey, "company"), phone: fieldVal(survey, "phone"), message: fieldVal(survey, "message")
+    });
     send(survey, {
-      _subject: `Shipping quote request — ${val("service")} · ${fieldVal(survey, "company") !== "—" ? fieldVal(survey, "company") : fieldVal(survey, "name")}`,
+      _subject: `[${lead["① 线索等级"][0]}] 运费报价 — ${SERVICE_ZH[val("service")]} · ${fieldVal(survey, "company") !== "—" ? fieldVal(survey, "company") : fieldVal(survey, "name")}`,
+      ...lead,
       "Inquiry type": "Shipping quote",
       "Service": val("service"),
       "Parcel size": val("size"),
@@ -603,15 +692,24 @@
     e.preventDefault();
     if (!validContact(ecomForm)) return showError(ecomForm, t("f.required"));
     const plan = ($('input[name="plan"]:checked', ecomForm) || {}).value || "Not sure yet";
-    const platforms = $$('input[name="platforms"]:checked', ecomForm).map((c) => c.value).join(", ") || "—";
+    const platformList = $$('input[name="platforms"]:checked', ecomForm).map((c) => c.value);
+    const platforms = platformList.join(", ") || "—";
+    const creative = $('input[name="creative"]', ecomForm).checked;
+    const goal = (($('input[name="goal"]:checked', ecomForm) || {}).value) || "—";
+    const skus = (($('input[name="skus"]:checked', ecomForm) || {}).value) || "—";
+    const lead = analyzeEcom({
+      plan, platforms: platformList, creative, goal, skus,
+      company: fieldVal(ecomForm, "company"), phone: fieldVal(ecomForm, "phone"), message: fieldVal(ecomForm, "message")
+    });
     send(ecomForm, {
-      _subject: `E-commerce consultation — ${plan} · ${fieldVal(ecomForm, "company") !== "—" ? fieldVal(ecomForm, "company") : fieldVal(ecomForm, "name")}`,
+      _subject: `[${lead["① 线索等级"][0]}] 电商咨询 — ${PLAN_ZH[plan]} · ${fieldVal(ecomForm, "company") !== "—" ? fieldVal(ecomForm, "company") : fieldVal(ecomForm, "name")}`,
+      ...lead,
       "Inquiry type": "E-commerce consultation",
       "Plan": plan,
-      "Creative Studio add-on": $('input[name="creative"]', ecomForm).checked ? "Yes (+$699/mo)" : "No",
-      "Main goal": (($('input[name="goal"]:checked', ecomForm) || {}).value) || "—",
+      "Creative Studio add-on": creative ? "Yes (+$699/mo)" : "No",
+      "Main goal": goal,
       "Platforms": platforms,
-      "SKUs": (($('input[name="skus"]:checked', ecomForm) || {}).value) || "—",
+      "SKUs": skus,
       "Name": fieldVal(ecomForm, "name"),
       "Company / Brand": fieldVal(ecomForm, "company"),
       "email": fieldVal(ecomForm, "email"),
