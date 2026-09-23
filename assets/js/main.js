@@ -23,6 +23,7 @@
     "calc.customPrice": "Custom",
     "calc.note": "Starter covers up to 10 SKUs. Each additional 10 SKUs adds $499/mo.",
     "calc.extra": "{n} SKUs: $999 base + {k} × $499 add-on.",
+    "calc.withCreative": "incl. Creative Studio",
     "survey.pick": "Please choose an option to continue.",
     "f.required": "Please enter your name and a valid email address.",
     "err.send": "Sorry, something went wrong. Please try again or email us directly at",
@@ -48,6 +49,7 @@
     });
     $$(".lang-toggle [data-lang]").forEach((s) => s.classList.toggle("is-on", s.dataset.lang === lang));
     renderStep(currentStep, false);
+    renderStrategy(stMode, false);
     updateCalc();
     renderVolumes();
     renderSummary();
@@ -181,7 +183,7 @@
       sh: ll(31.2, 121.5), sz: ll(22.5, 114), ldn: ll(51.5, -0.1), tor: ll(43.7, -79.4), syd: ll(-33.9, 151.2), mex: ll(19.4, -99.1)
     };
     const routes = [["sz", "la"], ["sh", "la"], ["la", "nyc"], ["la", "chi"], ["dal", "mia"], ["chi", "nyc"], ["la", "dal"], ["nyc", "ldn"], ["la", "syd"], ["nyc", "tor"], ["dal", "mex"], ["sh", "ldn"]]
-      .map(([a, b], i) => ({ a: hubs[a], b: hubs[b], off: i * 0.37 }));
+      .map(([a, b], i) => ({ a: hubs[a], b: hubs[b], off: i * 0.37, rgb: ["139,108,255", "255,61,139", "255,162,74", "46,230,214"][i % 4] }));
 
     const slerp = (a, b, t) => {
       const d = Math.acos(Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2])));
@@ -215,16 +217,16 @@
 
         // atmosphere
         const g = ctx.createRadialGradient(W / 2, H / 2, R * 0.85, W / 2, H / 2, R * 1.25);
-        g.addColorStop(0, "rgba(212,179,122,0.10)"); g.addColorStop(1, "rgba(212,179,122,0)");
+        g.addColorStop(0, "rgba(139,108,255,0.18)"); g.addColorStop(1, "rgba(255,61,139,0)");
         ctx.fillStyle = g; ctx.beginPath(); ctx.arc(W / 2, H / 2, R * 1.25, 0, Math.PI * 2); ctx.fill();
-        ctx.strokeStyle = "rgba(212,179,122,0.18)"; ctx.lineWidth = 1;
+        ctx.strokeStyle = "rgba(180,160,255,0.22)"; ctx.lineWidth = 1;
         ctx.beginPath(); ctx.arc(W / 2, H / 2, R, 0, Math.PI * 2); ctx.stroke();
 
         // dots
         for (const p of pts) {
           const [x, y, z] = project(p);
           if (z < -0.05) continue;
-          ctx.fillStyle = `rgba(236,232,223,${0.08 + z * 0.5})`;
+          ctx.fillStyle = `rgba(214,206,255,${0.08 + z * 0.55})`;
           ctx.fillRect(x, y, 1.3 + z * 0.6, 1.3 + z * 0.6);
         }
 
@@ -239,13 +241,13 @@
             started ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
             started = true;
           }
-          ctx.strokeStyle = "rgba(212,179,122,0.28)"; ctx.lineWidth = 1; ctx.stroke();
+          ctx.strokeStyle = `rgba(${r.rgb},0.45)`; ctx.lineWidth = 1.2; ctx.stroke();
 
           const tt = (time + r.off) % 1;
           const [px, py, pz] = project(slerp(r.a, r.b, tt));
           if (pz > 0) {
             const pg = ctx.createRadialGradient(px, py, 0, px, py, 8);
-            pg.addColorStop(0, "rgba(240,220,176,0.95)"); pg.addColorStop(1, "rgba(240,220,176,0)");
+            pg.addColorStop(0, `rgba(${r.rgb},1)`); pg.addColorStop(1, `rgba(${r.rgb},0)`);
             ctx.fillStyle = pg; ctx.beginPath(); ctx.arc(px, py, 8, 0, Math.PI * 2); ctx.fill();
           }
         }
@@ -253,9 +255,9 @@
         for (const h of Object.values(hubs)) {
           const [x, y, z] = project(h);
           if (z < 0) continue;
-          ctx.fillStyle = `rgba(240,220,176,${0.5 + z * 0.5})`;
+          ctx.fillStyle = `rgba(255,255,255,${0.5 + z * 0.5})`;
           ctx.beginPath(); ctx.arc(x, y, 2.4, 0, Math.PI * 2); ctx.fill();
-          ctx.strokeStyle = `rgba(212,179,122,${0.35 * z})`;
+          ctx.strokeStyle = `rgba(255,61,139,${0.45 * z})`;
           ctx.beginPath(); ctx.arc(x, y, 6 + ((now * 0.01) % 8), 0, Math.PI * 2); ctx.stroke();
         }
       }
@@ -292,8 +294,47 @@
     if (e.isIntersecting && autoOn) autoTimer = setInterval(() => renderStep((currentStep + 1) % stepBtns.length), 4500);
   }, { threshold: 0.4 }).observe($(".process__body"));
 
+  /* ---------- strategy selector ---------- */
+  // Meter levels (0–100) for: ad investment, price positioning, promotion intensity, inventory depth.
+  const STRATEGY = {
+    profit:   { levels: [35, 85, 25, 55], grad: "linear-gradient(90deg,#2ee6d6,#4f8bff)", shadow: "rgba(46,230,214,.5)", glow: "rgba(46,230,214,.18)" },
+    balanced: { levels: [60, 65, 55, 70], grad: "linear-gradient(90deg,#8b6cff,#ff3d8b)", shadow: "rgba(139,108,255,.55)", glow: "rgba(139,108,255,.22)" },
+    volume:   { levels: [90, 40, 85, 90], grad: "linear-gradient(90deg,#ff3d8b,#ffa24a)", shadow: "rgba(255,61,139,.55)", glow: "rgba(255,61,139,.2)" }
+  };
+  const stBtns = $$(".st__btn"), stPanel = $(".st__panel"), stSection = $(".strategy");
+  let stMode = "balanced";
+  function renderStrategy(mode, animate = true) {
+    stMode = mode;
+    const cfg = STRATEGY[mode], copy = window.STRATEGY_COPY[lang][mode];
+    stBtns.forEach((b) => { const on = b.dataset.mode === mode; b.classList.toggle("is-active", on); b.setAttribute("aria-selected", String(on)); });
+    stSection.style.setProperty("--st-glow", cfg.glow);
+    stPanel.style.setProperty("--st-grad", cfg.grad);
+    stPanel.style.setProperty("--st-shadow", cfg.shadow);
+    const write = () => {
+      $("#stTitle").textContent = copy.title;
+      $("#stDesc").textContent = copy.desc;
+      $("#stKpi").textContent = copy.kpi;
+      $("#stBest").textContent = copy.best;
+      stPanel.classList.remove("is-swapping");
+    };
+    $$(".meter", stPanel).forEach((m, i) => {
+      $(".meter__track span", m).style.width = (stSeen ? cfg.levels[i] : 0) + "%";
+      $(".meter__v", m).textContent = copy.levels[i];
+    });
+    if (animate) { stPanel.classList.add("is-swapping"); setTimeout(write, 200); } else write();
+  }
+  stBtns.forEach((b) => b.addEventListener("click", () => renderStrategy(b.dataset.mode)));
+  // fill the meters the first time the panel scrolls into view
+  let stSeen = false;
+  const stObs = new IntersectionObserver(([e]) => {
+    if (!e.isIntersecting) return;
+    stSeen = true; renderStrategy(stMode, false); stObs.disconnect();
+  }, { threshold: 0.35 });
+  stObs.observe(stPanel);
+
   /* ---------- pricing calculators ---------- */
-  const skuRange = $("#skuRange"), revRange = $("#revRange");
+  const skuRange = $("#skuRange"), revRange = $("#revRange"), creativeToggle = $("#creativeToggle");
+  const CREATIVE_FEE = 699;
   const setFill = (input) => {
     const p = ((input.value - input.min) / (input.max - input.min)) * 100;
     input.style.setProperty("--p", p + "%");
@@ -312,13 +353,14 @@
       return;
     }
     const extraBlocks = Math.max(0, Math.ceil((n - 10) / 10));
-    const monthly = 999 + extraBlocks * 499;
+    const monthly = 999 + extraBlocks * 499 + (creativeToggle.checked ? CREATIVE_FEE : 0);
     currency.style.visibility = ""; per.style.visibility = "";
     $("#skuOut").textContent = n;
     $("#calcMonthly").textContent = monthly.toLocaleString("en-US");
     $("#calcTerm").textContent = money(199 + monthly * 3);
     note.classList.remove("is-custom");
-    note.textContent = extraBlocks ? t("calc.extra").replace("{n}", n).replace("{k}", extraBlocks) : t("calc.note");
+    note.textContent = (extraBlocks ? t("calc.extra").replace("{n}", n).replace("{k}", extraBlocks) : t("calc.note"))
+      + (creativeToggle.checked ? ` (${t("calc.withCreative")} +$699)` : "");
   }
   function updateRev() {
     setFill(revRange);
@@ -327,6 +369,7 @@
     $("#revFee").textContent = money(v * 0.05);
   }
   skuRange.addEventListener("input", updateCalc);
+  creativeToggle.addEventListener("change", updateCalc);
   revRange.addEventListener("input", updateRev);
   updateRev();
 
@@ -357,6 +400,8 @@
       const map = { takeover: "Channel Takeover", expansion: "Channel Expansion", enterprise: "Enterprise (50+ SKUs)" };
       const r = $(`#ecomForm input[name="plan"][value="${map[a.dataset.plan]}"]`);
       if (r) r.checked = true;
+      const wantsCreative = a.dataset.creative === "1" || (a.dataset.plan === "takeover" && creativeToggle.checked);
+      if (wantsCreative) $('#ecomForm input[name="creative"]').checked = true;
     }
   }));
 
@@ -505,6 +550,8 @@
       _subject: `E-commerce consultation — ${plan} · ${fieldVal(ecomForm, "company") !== "—" ? fieldVal(ecomForm, "company") : fieldVal(ecomForm, "name")}`,
       "Inquiry type": "E-commerce consultation",
       "Plan": plan,
+      "Creative Studio add-on": $('input[name="creative"]', ecomForm).checked ? "Yes (+$699/mo)" : "No",
+      "Main goal": (($('input[name="goal"]:checked', ecomForm) || {}).value) || "—",
       "Platforms": platforms,
       "SKUs": (($('input[name="skus"]:checked', ecomForm) || {}).value) || "—",
       "Name": fieldVal(ecomForm, "name"),

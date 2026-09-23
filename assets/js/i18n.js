@@ -4,12 +4,135 @@
 
 window.I18N = {
   zh: {
+    "nav.services": "服务内容",
+    "nav.why": "我们的优势",
     "nav.ecom": "电商服务",
     "nav.pricing": "方案价格",
     "nav.logistics": "物流服务",
     "nav.brands": "合作品牌",
     "nav.faq": "常见问题",
     "nav.cta": "联系我们",
+
+    "platforms.label": "深耕全球主流电商平台",
+
+    "pillars.p3.t": "创意设计工作室",
+    "pillars.p3.d": "主图、A+ 页面、品牌旗舰店设计与 AI 生成产品视频 —— 由负责广告投放的同一团队打造，以转化为导向。",
+    "cr.tag1": "主图",
+    "cr.tag2": "品牌旗舰店",
+    "cr.tag3": "视频",
+
+    "svc.eyebrow": "服务详情",
+    "svc.title": "店铺所需的一切，<em>全部搞定。</em>",
+    "svc.lead": "接管渠道后，以下工作由我们的团队日常负责 —— 确保每个环节都不遗漏。",
+    "svc.1.t": "店铺与账号健康",
+    "svc.1.a": "账号健康与平台政策监控",
+    "svc.1.b": "类目审核与合规资质文件",
+    "svc.1.c": "品牌备案与知识产权 / 防跟卖保护",
+    "svc.2.t": "选品与市场调研",
+    "svc.2.a": "选品与市场机会评估",
+    "svc.2.b": "竞品与定价分析",
+    "svc.2.c": "关键词与搜索需求调研",
+    "svc.3.t": "Listing 与 SEO",
+    "svc.3.a": "标题、五点、描述与后台关键词",
+    "svc.3.b": "变体与产品目录结构",
+    "svc.3.c": "持续转化率优化",
+    "svc.4.t": "广告与促销",
+    "svc.4.a": "站内广告、Walmart Connect 与 TikTok 广告",
+    "svc.4.b": "秒杀、优惠券及达人 / 联盟推广",
+    "svc.4.c": "竞价、预算与 ACoS / TACoS 控制",
+    "svc.5.t": "供应链与库存",
+    "svc.5.a": "FBA / WFS / 海外仓与物流对接",
+    "svc.5.b": "发货计划与补货预测",
+    "svc.5.c": "长期库存与仓储费控制",
+    "svc.6.t": "客服与评价管理",
+    "svc.6.a": "买家消息、退货与退款",
+    "svc.6.b": "A-to-z 索赔、Case 与差评处理",
+    "svc.6.c": "合规的评价与评分计划",
+    "svc.7.t": "报告与数据分析",
+    "svc.7.a": "每周业绩更新",
+    "svc.7.b": "月度业务复盘与下月计划",
+    "svc.7.c": "按 SKU 查看销售、广告与利润",
+    "svc.8.t": "创意设计工作室",
+    "svc.8.a": "主图、副图与信息图",
+    "svc.8.b": "A+ 页面、品牌故事与品牌旗舰店",
+    "svc.8.c": "AI 生成与剪辑的产品视频",
+    "svc.addon": "增值服务 · +$699/月",
+
+    "st.eyebrow": "您的目标，您的策略",
+    "st.title": "按<em>您的</em>思路运营店铺。",
+    "st.lead": "每个品牌的优先级都不同。告诉我们您最看重什么，我们会围绕它调整定价、广告、促销与库存。",
+    "st.profit": "重利润",
+    "st.balanced": "利润销量平衡",
+    "st.volume": "重销量",
+    "st.kpiLabel": "核心指标",
+    "st.bestLabel": "适合",
+    "st.m1": "广告投入",
+    "st.m2": "价格定位",
+    "st.m3": "促销力度",
+    "st.m4": "库存深度",
+
+    "calc.creative": "创意设计增值服务",
+    "calc.creativeSub": "图片、A+ 与视频 · +$699/月",
+    "calc.withCreative": "含创意设计",
+
+    "cr.kicker": "渠道接管增值服务",
+    "cr.title": "创意设计<em>工作室</em>",
+    "cr.desc": "以转化为导向的图片与视频，由负责您 Listing 和广告的团队制作 —— 每一张素材都围绕真正能卖货的点来设计。",
+    "cr.fine": "在每月运营费用基础上增加。",
+    "cr.cta": "添加创意设计服务",
+    "cr.1.t": "主图",
+    "cr.1.d": "符合平台规范的白底主图",
+    "cr.2.t": "副图与信息图",
+    "cr.2.d": "卖点、尺寸、对比及场景图",
+    "cr.3.t": "A+ / 高级 A+",
+    "cr.3.d": "品牌增强内容与对比图表",
+    "cr.4.t": "品牌旗舰店与品牌故事",
+    "cr.4.d": "店铺页面设计与品牌视觉统一",
+    "cr.5.t": "产品视频",
+    "cr.5.d": "基于您现有素材，AI 生成与剪辑",
+    "cr.6.t": "广告与社媒素材",
+    "cr.6.d": "品牌广告、TikTok 及促销视觉",
+    "cr.note": "不包含实地拍摄服务 —— 我们使用 AI，基于您提供的产品图片与素材生成并剪辑视频。",
+    "terms.t4": "创意设计增值服务 / 月",
+
+    "why.xl.k": "经验",
+    "why.xl.t": "多年一线运营经验 —— 帮您避开代价高昂的坑。",
+    "why.xl.d": "我们在多个平台、多个类目真正运营过店铺，清楚品牌最容易在哪里亏钱，并从第一天起就设好防线。",
+    "why.pit": "我们帮您避开的坑",
+    "why.p1": "账号封禁与违规",
+    "why.p2": "跟卖与知识产权投诉",
+    "why.p3": "合规与认证缺失",
+    "why.p4": "广告费浪费",
+    "why.p5": "断货与长期库存费",
+    "why.p6": "价格战与利润流失",
+    "why.b1.k": "按您的思路",
+    "why.b1.t": "围绕您的目标制定策略",
+    "why.b1.d": "重利润、重销量或两者平衡 —— 按您的优先级运营，而不是套用统一模板。",
+    "why.b2.k": "一站整合",
+    "why.b2.t": "销售与物流，同一团队",
+    "why.b2.d": "运营团队与物流伙伴是同一家 —— 减少交接，问题解决更快。",
+    "why.b3.k": "公开透明",
+    "why.b3.t": "账号与数据始终属于您",
+    "why.b3.d": "每周更新、每月复盘，随时拥有店铺的完整权限。",
+    "why.b4.k": "自有设计团队",
+    "why.b4.t": "懂运营的视觉设计",
+    "why.b4.d": "图片、A+ 与视频结合广告及转化数据来设计。",
+    "why.b5.k": "先诊断",
+    "why.b5.t": "从全面的账号诊断开始",
+    "why.b5.d": "先全面审查 Listing、广告、库存与账号健康，给出清晰的行动计划，再开始调整。",
+    "why.b6.k": "中文 / EN",
+    "why.b6.t": "中英双语团队，响应迅速",
+    "why.b6.d": "我们以中英文无缝沟通，跨时区连接品牌、工厂与美国电商平台。",
+
+    "faq.q7": "创意设计增值服务包含哪些内容？",
+    "faq.a7": "在运营月费基础上每月 +$699，我们为您制作主图、副图与信息图、A+ / 高级 A+ 页面、品牌旗舰店与品牌视觉、广告素材以及产品视频。",
+    "faq.q8": "你们提供产品拍摄吗？",
+    "faq.a8": "我们不提供实地拍摄服务，而是基于您提供的产品图片与素材，使用 AI 工具生成并剪辑视频和场景图。",
+
+    "f.creative": "+ 创意设计（图片、A+ 与视频）",
+    "f.goal": "您的主要目标",
+
+    "footer.legal": "Amazon、Walmart、Wayfair、Temu、SHEIN 及 TikTok 均为其各自所有者的商标。Innotronia 为独立服务商，与上述平台无隶属或背书关系。",
 
     "hero.eyebrow": "电商代运营 · 物流合作伙伴",
     "hero.title": "<span class=\"nw\">店铺交给我们运营，</span><br/><span class=\"nw\">包裹交给我们<em>派送。</em></span>",
@@ -21,7 +144,7 @@ window.I18N = {
     "hero.s3": "物流服务网络",
     "hero.s4": "合作品牌",
 
-    "brands.label": "合作品牌",
+    "brands.label": "我们合作过的品牌",
 
     "pillars.eyebrow": "我们的业务",
     "pillars.title": "从上架到签收，<em>一站式</em>全程合作伙伴。",
@@ -36,7 +159,7 @@ window.I18N = {
     "ecom.eyebrow": "电商代运营",
     "ecom.title": "您的店铺，<em>专业</em>运营。",
     "ecom.lead": "我们可以接管您正在运营的渠道并全程负责，也可以为您开拓全新的销售渠道。没有看到您的平台？欢迎咨询。",
-    "ecom.more": "+ 其他平台",
+    "ecom.more": "其他平台",
     "ecom.moreHint": "欢迎咨询",
     "ecom.az.title": "渠道接管，<em>A 到 Z。</em>",
     "ecom.az.lead": "接管现有渠道后，运营的每一个环节都由我们负责。点击各阶段查看服务内容。",
@@ -221,4 +344,54 @@ window.AZ_STEPS = {
     ["售后客服", "及时处理买家消息、退货退款、平台 Case，并监控账号健康，保护店铺评分。"],
     ["补货管理", "预测动销并制定补货计划，避免断货，同时不让资金压在多余库存上。"]
   ]
+};
+
+/* Strategy selector copy (rendered by main.js). `levels` are the labels shown beside each meter. */
+window.STRATEGY_COPY = {
+  en: {
+    profit: {
+      title: "Profit-first",
+      desc: "Protect margin on every order. We focus ad spend on proven, high-converting keywords, hold premium pricing, keep promotions selective and run lean inventory to minimize storage fees.",
+      kpi: "Net margin · TACoS · contribution profit per unit",
+      best: "Established products, tight margins, or cash-flow–conscious brands",
+      levels: ["Efficient", "Premium", "Selective", "Lean"]
+    },
+    balanced: {
+      title: "Balanced growth",
+      desc: "Grow sales steadily while keeping profitability healthy. We scale ads where they pay back, price competitively, and use promotions at the moments that matter most.",
+      kpi: "Revenue growth · blended ACoS · overall profit",
+      best: "Most brands looking for sustainable, compounding growth",
+      levels: ["Moderate", "Competitive", "Strategic", "Steady"]
+    },
+    volume: {
+      title: "Volume-first",
+      desc: "Win rank and market share fast. We invest aggressively in ads, price to capture demand, run frequent deals and hold deeper stock so you never lose momentum to a stock-out.",
+      kpi: "Units sold · BSR / category rank · market share",
+      best: "New launches, category land-grabs, or clearing inventory",
+      levels: ["Aggressive", "Value", "High", "Deep"]
+    }
+  },
+  zh: {
+    profit: {
+      title: "重利润",
+      desc: "守住每一单的利润。广告预算集中在已验证的高转化关键词，维持较高定价，促销有选择地做，库存精简以减少仓储费用。",
+      kpi: "净利润率 · TACoS · 单件贡献利润",
+      best: "成熟产品、利润空间较小，或重视现金流的品牌",
+      levels: ["高效", "偏高", "精选", "精简"]
+    },
+    balanced: {
+      title: "利润销量平衡",
+      desc: "在保持健康利润的同时稳定增长销量。广告在能回本的地方加码，价格保持竞争力，在关键节点做促销。",
+      kpi: "营收增长 · 综合 ACoS · 整体利润",
+      best: "大多数追求可持续、复利式增长的品牌",
+      levels: ["适中", "有竞争力", "策略性", "稳定"]
+    },
+    volume: {
+      title: "重销量",
+      desc: "快速抢占排名与市场份额。广告积极投入，定价以抢占需求为主，频繁参加活动，并备足库存，避免因断货失去势头。",
+      kpi: "销量 · BSR / 类目排名 · 市场份额",
+      best: "新品上市、抢占类目，或清理库存",
+      levels: ["积极", "高性价比", "高", "充足"]
+    }
+  }
 };

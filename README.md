@@ -26,7 +26,9 @@ To change the recipient, edit `CONTACT_EMAIL` at the top of `assets/js/main.js`.
 
 - **English text:** edit `index.html` directly.
 - **Chinese text:** edit the matching key in `assets/js/i18n.js` (each element's key is in its `data-i18n` attribute).
-- **Pricing logic:** `updateCalc()` in `assets/js/main.js` ($999 base for ≤10 SKUs, +$499 per extra 10 SKUs, custom above 50, $199 setup).
+- **Pricing logic:** `updateCalc()` in `assets/js/main.js` ($999 base for ≤10 SKUs, +$499 per extra 10 SKUs, custom above 50, $199 setup, optional Creative Studio add-on `CREATIVE_FEE` = $699/mo).
+- **Strategy selector (profit / balanced / volume):** meter levels in `STRATEGY` (`main.js`), text in `STRATEGY_COPY` (`i18n.js`).
+- **Platform logos:** inline SVG in the `#platforms` section of `index.html`. Amazon, Walmart and TikTok marks come from Simple Icons; Wayfair, Temu and SHEIN are simplified lockups in brand colours. Swap in official files from each platform's brand/partner kit if you have them.
 - **Shipping volume ranges:** `VOLUMES` in `assets/js/main.js`.
 
 ## Local preview
