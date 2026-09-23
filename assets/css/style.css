@@ -136,7 +136,10 @@ html[lang="zh"] .h3 { font-family: var(--sans); font-weight: 700; }
 .nav.is-scrolled { background: rgba(6, 6, 12, .72); backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%); border-bottom-color: var(--line); }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 24px; }
 .logo { display: inline-flex; align-items: center; gap: 12px; }
-.logo__mark { width: 30px; height: 30px; }
+.logo__img { display: block; height: 52px; width: auto; }
+@media (max-width: 600px) { .nav .logo__img { height: 44px; } }
+.footer .logo__img { height: 52px; }
+.page-nav .logo__img, .nf .logo__img { height: 40px; }
 .logo__text { font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: .01em; }
 .nav__links { display: flex; gap: 34px; font-size: 14px; }
 .nav__links a { color: var(--muted); position: relative; transition: color .3s; }

@@ -28,7 +28,8 @@
   <meta name="twitter:description" content="Channel takeover, new-channel expansion, creative studio, US last-mile & international shipping." />
   <meta name="twitter:image" content="https://innotronia.com/assets/img/og-image.png" />
 
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
   <script type="application/ld+json">
@@ -37,8 +38,9 @@
     "@type": "ProfessionalService",
     "@id": "https://innotronia.com/#organization",
     "name": "Innotronia",
+    "alternateName": "Atronia Innovations",
     "url": "https://innotronia.com/",
-    "logo": "https://innotronia.com/assets/img/apple-touch-icon.png",
+    "logo": "https://innotronia.com/assets/img/logo.png",
     "image": "https://innotronia.com/assets/img/og-image.png",
     "description": "Full-service e-commerce agency and logistics partner with 10+ years of marketplace operating experience.",
     "areaServed": ["US", "Worldwide"],
@@ -67,6 +69,7 @@
 
   <!-- Reusable SVG symbols -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b6cff"/><stop offset=".55" stop-color="#ff3d8b"/><stop offset="1" stop-color="#ffa24a"/></linearGradient></defs>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-truck" viewBox="0 0 48 48"><path d="M4 30V14h24v16M28 20h9l7 7v3h-16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="13" cy="33" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="36" cy="33" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
     <symbol id="i-globe" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 24h36M24 6c6 5 8 11 8 18s-2 13-8 18c-6-5-8-11-8-18s2-13 8-18z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
@@ -77,10 +80,7 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#top" class="logo" aria-label="Innotronia home">
-        <span class="logo__mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b6cff"/><stop offset=".55" stop-color="#ff3d8b"/><stop offset="1" stop-color="#ffa24a"/></linearGradient></defs><path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 Z" fill="none" stroke="url(#lg)" stroke-width="1.8"/><path d="M16 8 V24 M10 12 L16 8 L22 12" fill="none" stroke="url(#lg)" stroke-width="1.8"/></svg>
-        </span>
-        <span class="logo__text">Innotronia</span>
+        <img class="logo__img" src="assets/img/logo-light.png" alt="Atronia Innovations" width="109" height="44" />
       </a>
 
       <nav class="nav__links" aria-label="Primary">
@@ -851,8 +851,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#top" class="logo">
-          <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 Z" fill="none" stroke="url(#lg)" stroke-width="1.8"/><path d="M16 8 V24 M10 12 L16 8 L22 12" fill="none" stroke="url(#lg)" stroke-width="1.8"/></svg></span>
-          <span class="logo__text">Innotronia</span>
+          <img class="logo__img" src="assets/img/logo-light.png" alt="Atronia Innovations" width="109" height="44" />
         </a>
         <p class="muted" data-i18n="footer.tag">E-commerce operations &amp; logistics for ambitious brands.</p>
       </div>
