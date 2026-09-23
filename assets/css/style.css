@@ -253,8 +253,10 @@ html[lang="zh"] .platforms__label { letter-spacing: .12em; }
 .clogo--celavi img { height: 52px; }
 .clogo--delxo img { height: 32px; }
 .clogo--acko img { height: 50px; }
+.clogo--halulu img { height: 74px; }
+.clogo--lexvss img { height: 82px; }
 .clogo--text { font-family: var(--serif); font-size: 30px; font-weight: 400; color: #1a1a24; letter-spacing: .01em; }
-@media (max-width: 600px) { .clogo { width: 160px; height: 84px; padding: 12px 16px; } .clogo--rom img { height: 62px; } .clogo--text { font-size: 24px; } }
+@media (max-width: 600px) { .clogo { width: 160px; height: 84px; padding: 12px 16px; } .clogo--rom img, .clogo--halulu img, .clogo--lexvss img { height: 62px; } .clogo--text { font-size: 24px; } }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* ---------- pillars ---------- */
