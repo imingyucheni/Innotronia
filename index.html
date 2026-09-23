@@ -6,13 +6,59 @@
   <title>Innotronia — E-commerce Growth &amp; Logistics</title>
   <meta name="description" content="Innotronia is a full-service e-commerce agency and logistics partner. We run your Amazon, Walmart, Wayfair, Temu, Shein and TikTok Shop channels end-to-end, open new sales channels, create listing images, A+ content and video, and ship with US last-mile and international parcel services." />
   <meta name="theme-color" content="#06060c" />
-  <meta property="og:title" content="Innotronia — E-commerce Growth & Logistics" />
-  <meta property="og:description" content="Channel operations, new marketplace expansion, creative studio, US last-mile and international parcel shipping." />
+  <link rel="canonical" href="https://innotronia.com/" />
+  <link rel="alternate" hreflang="en" href="https://innotronia.com/" />
+  <link rel="alternate" hreflang="zh" href="https://innotronia.com/?lang=zh" />
+  <link rel="alternate" hreflang="x-default" href="https://innotronia.com/" />
+
+  <!-- Social sharing -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Innotronia" />
+  <meta property="og:url" content="https://innotronia.com/" />
+  <meta property="og:title" content="Innotronia — E-commerce Growth & Logistics" />
+  <meta property="og:description" content="10+ years running Amazon, Walmart, Wayfair, Temu, SHEIN & TikTok Shop stores. Channel takeover, new-channel expansion, creative studio, US last-mile & international shipping." />
+  <meta property="og:image" content="https://innotronia.com/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Innotronia — We run your stores. We move your parcels." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Innotronia — E-commerce Growth & Logistics" />
+  <meta name="twitter:description" content="Channel takeover, new-channel expansion, creative studio, US last-mile & international shipping." />
+  <meta name="twitter:image" content="https://innotronia.com/assets/img/og-image.png" />
+
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://innotronia.com/#organization",
+    "name": "Innotronia",
+    "url": "https://innotronia.com/",
+    "logo": "https://innotronia.com/assets/img/apple-touch-icon.png",
+    "image": "https://innotronia.com/assets/img/og-image.png",
+    "description": "Full-service e-commerce agency and logistics partner with 10+ years of marketplace operating experience.",
+    "areaServed": ["US", "Worldwide"],
+    "knowsLanguage": ["en", "zh"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Channel Takeover", "description": "A–Z marketplace operations for Amazon, Walmart, Wayfair, Temu, SHEIN and TikTok Shop." }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": 999, "priceCurrency": "USD", "unitText": "MONTH" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Channel Expansion", "description": "Open and grow new sales channels for 5% of net revenue." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creative Studio", "description": "Main images, A+ content, Brand Store design and AI-generated product videos." }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": 699, "priceCurrency": "USD", "unitText": "MONTH" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "US Last-Mile Delivery" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "International Parcel Shipping" } }
+      ]
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -704,6 +750,7 @@
               <button type="button" class="btn btn--grad magnetic" id="surveyNext" data-i18n="btn.next">Continue</button>
               <button type="submit" class="btn btn--grad magnetic" id="surveySend" hidden><span data-i18n="btn.send">Send</span></button>
             </div>
+            <p class="form-consent" id="surveyConsent" hidden data-i18n-html="form.consent">By sending, you agree to our <a href="privacy.html">Privacy Policy</a>. We'll only use your details to respond to your inquiry.</p>
             <p class="form-error" role="alert" hidden></p>
           </form>
 
@@ -770,6 +817,7 @@
             <div class="survey__nav survey__nav--end">
               <button type="submit" class="btn btn--grad magnetic"><span data-i18n="btn.send">Send</span></button>
             </div>
+            <p class="form-consent" data-i18n-html="form.consent">By sending, you agree to our <a href="privacy.html">Privacy Policy</a>. We'll only use your details to respond to your inquiry.</p>
             <p class="form-error" role="alert" hidden></p>
           </form>
 
@@ -782,7 +830,6 @@
           </div>
         </div>
 
-        <p class="contact__direct reveal"><span data-i18n="contact.direct">Prefer email?</span> <a href="mailto:info@innotronia.com">info@innotronia.com</a></p>
       </div>
     </section>
   </main>
@@ -808,7 +855,7 @@
         </div>
         <div>
           <h5 data-i18n="footer.contact">Contact</h5>
-          <a href="mailto:info@innotronia.com">info@innotronia.com</a>
+          <a href="#contact" data-tab-target="ecom" data-i18n="footer.message">Send us a message</a>
           <a href="#contact" data-tab-target="shipping" data-i18n="tab.shipping">Shipping quote</a>
           <a href="#contact" data-tab-target="ecom" data-i18n="tab.ecom">E-commerce consultation</a>
         </div>
@@ -816,12 +863,12 @@
     </div>
     <div class="container footer__bottom">
       <span>© <span id="year">2026</span> Innotronia. <span data-i18n="footer.rights">All rights reserved.</span></span>
-      <a href="#top" class="to-top" data-i18n="footer.top">Back to top ↑</a>
+      <span class="footer__links"><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a><a href="#top" class="to-top" data-i18n="footer.top">Back to top ↑</a></span>
     </div>
     <p class="container footer__legal" data-i18n="footer.legal">Amazon, Walmart, Wayfair, Temu, SHEIN and TikTok are trademarks of their respective owners. Innotronia is an independent service provider and is not affiliated with or endorsed by these platforms.</p>
   </footer>
 
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

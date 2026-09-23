@@ -5,10 +5,13 @@
   "use strict";
 
   /* ---------- config ---------- */
-  // Where form submissions are delivered. Uses FormSubmit (https://formsubmit.co):
-  // the very first submission sends an activation email to this address — click it once.
-  const CONTACT_EMAIL = "info@innotronia.com";
-  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
+  // Where form submissions are delivered, via FormSubmit (https://formsubmit.co).
+  // The first submission sends an activation email to the inbox — click it once.
+  // After activation, FormSubmit gives you a random alias (e.g. "a1b2c3…"); put it in
+  // FORM_ALIAS so the real address never appears in the site code.
+  const FORM_ALIAS = "";
+  const inbox = ["info", "innotronia.com"].join("@"); // assembled at runtime to keep scrapers off it
+  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${FORM_ALIAS || inbox}`;
 
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -26,17 +29,28 @@
     "calc.withCreative": "incl. Creative Studio",
     "survey.pick": "Please choose an option to continue.",
     "f.required": "Please enter your name and a valid email address.",
-    "err.send": "Sorry, something went wrong. Please try again or email us directly at",
+    "err.send": "Sorry, the message couldn't be sent. Please check your connection and try again in a moment.",
     "survey.parcels": "parcels"
   };
   // Saved choice wins; otherwise follow the browser language.
   let saved = null;
   try { saved = localStorage.getItem("inno-lang"); } catch (e) { /* storage unavailable */ }
-  let lang = saved || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
+  // ?lang=zh / ?lang=en in the URL wins (shareable links), then the saved choice, then the browser language.
+  const urlLang = new URLSearchParams(location.search).get("lang");
+  let lang = (urlLang === "zh" || urlLang === "en") ? urlLang
+    : saved || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
+  if (urlLang === "zh" || urlLang === "en") { try { localStorage.setItem("inno-lang", urlLang); } catch (e) { /* ignore */ } }
+  const META = {
+    en: { title: document.title, desc: document.querySelector('meta[name="description"]').content },
+    zh: { title: "Innotronia — 电商代运营与物流服务", desc: "Innotronia 拥有 10 年以上电商运营经验，提供 Amazon、Walmart、Wayfair、Temu、SHEIN、TikTok Shop 渠道接管与全托管运营、新渠道开拓、创意设计（主图、A+、视频），以及美国尾程派送与国际包裹物流服务。" }
+  };
   const t = (key) => (lang === "zh" && window.I18N.zh[key]) || EN[key] || key;
 
   function applyLang() {
     document.documentElement.lang = lang === "zh" ? "zh" : "en";
+    document.title = META[lang].title;
+    document.querySelector('meta[name="description"]').content = META[lang].desc;
+    document.querySelector('link[rel="canonical"]').href = "https://innotronia.com/" + (lang === "zh" ? "?lang=zh" : "");
     $$("[data-i18n]").forEach((el) => {
       if (el.dataset.en === undefined) el.dataset.en = el.textContent;
       const zh = window.I18N.zh[el.dataset.i18n];
@@ -59,6 +73,10 @@
   $("#langToggle").addEventListener("click", () => {
     lang = lang === "zh" ? "en" : "zh";
     try { localStorage.setItem("inno-lang", lang); } catch (e) { /* ignore */ }
+    // keep the address bar in sync so the current language can be shared
+    const u = new URL(location.href);
+    if (lang === "zh") u.searchParams.set("lang", "zh"); else u.searchParams.delete("lang");
+    history.replaceState(null, "", u.pathname + u.search + u.hash);
     applyLang();
   });
 
@@ -205,7 +223,7 @@
     window.addEventListener("resize", resize);
 
     // fibonacci sphere of dots
-    const N = 1100, pts = [];
+    const N = window.innerWidth < 700 ? 600 : 1100, pts = []; // lighter on phones
     const golden = Math.PI * (3 - Math.sqrt(5));
     for (let i = 0; i < N; i++) {
       const y = 1 - (i / (N - 1)) * 2, rad = Math.sqrt(1 - y * y), th = golden * i;
@@ -247,7 +265,7 @@
     let last = performance.now();
     function frame(now) {
       const dt = Math.min(now - last, 50); last = now;
-      if (visible) {
+      if (visible && !document.hidden) {
         if (!reduceMotion) rot += dt * 0.00006;
         mouseX += (targetMouse - mouseX) * 0.03;
         ctx.clearRect(0, 0, W, H);
@@ -300,7 +318,9 @@
       }
       requestAnimationFrame(frame);
     }
-    requestAnimationFrame(frame);
+    // start after the page has loaded so the globe never delays first paint
+    const start = () => requestAnimationFrame(frame);
+    if (document.readyState === "complete") start(); else window.addEventListener("load", start, { once: true });
   })();
 
   /* ---------- A–Z process ---------- */
@@ -488,6 +508,7 @@
     backBtn.style.visibility = q === 0 ? "hidden" : "visible";
     nextBtn.hidden = q === qs.length - 1;
     sendBtn.hidden = q !== qs.length - 1;
+    $("#surveyConsent").hidden = q !== qs.length - 1;
     hideError(survey);
     if (q === qs.length - 1) renderSummary();
   }
@@ -508,15 +529,9 @@
   });
 
   /* ---------- validation + submit ---------- */
-  function showError(form, msg, withMail = false) {
+  function showError(form, msg) {
     const box = $(".form-error", form);
-    box.innerHTML = "";
-    box.append(msg);
-    if (withMail) {
-      const a = document.createElement("a");
-      a.href = `mailto:${CONTACT_EMAIL}`; a.textContent = CONTACT_EMAIL;
-      box.append(" ", a);
-    }
+    box.textContent = msg;
     box.hidden = false;
   }
   function hideError(form) { $(".form-error", form).hidden = true; }
@@ -532,6 +547,12 @@
   }
   $$(".field input").forEach((i) => i.addEventListener("input", () => i.parentElement.classList.remove("is-invalid")));
 
+  // Confirmation email FormSubmit sends to the person who submitted the form.
+  const AUTO_REPLY = {
+    en: "Thank you for contacting Innotronia! We've received your inquiry and our team will get back to you within one business day.\n\nThis is an automatic confirmation — no need to reply.\n\n— The Innotronia Team\nhttps://innotronia.com",
+    zh: "感谢您联系 Innotronia！我们已收到您的咨询，团队会在一个工作日内与您联系。\n\n这是一封自动确认邮件，无需回复。\n\n— Innotronia 团队\nhttps://innotronia.com"
+  };
+
   async function send(form, payload, btn) {
     hideError(form);
     if ($('input[name="_honey"]', form).value) return; // bot
@@ -540,7 +561,7 @@
       const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ ...payload, _template: "table", _captcha: "false" })
+        body: JSON.stringify({ ...payload, _template: "table", _captcha: "false", _autoresponse: AUTO_REPLY[lang] })
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || String(data.success) === "false") throw new Error(data.message || res.statusText);
@@ -550,7 +571,7 @@
       $(".contact").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
     } catch (err) {
       console.error(err);
-      showError(form, t("err.send"), true);
+      showError(form, t("err.send"));
     } finally {
       btn.classList.remove("is-loading"); btn.disabled = false;
     }

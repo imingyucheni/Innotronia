@@ -14,13 +14,15 @@ assets/js/main.js     Interactions, pricing calculators, survey, form sending
 assets/img/           Favicon
 ```
 
-## Contact forms → info@innotronia.com
+## Contact forms
 
-Both forms (shipping survey and e-commerce consultation) post to [FormSubmit](https://formsubmit.co), which forwards to `info@innotronia.com`. No server needed.
+Both forms (shipping survey and e-commerce consultation) post to [FormSubmit](https://formsubmit.co), which forwards them to the company inbox. No server needed. The address is not shown anywhere on the site.
 
-**One-time activation:** after the site is live, submit a form once. FormSubmit sends a confirmation email to info@innotronia.com. Click **Activate Form**, and after that every submission arrives in the inbox.
+**One-time activation:** after the site is live, submit a form once. FormSubmit sends a confirmation email to the inbox. Click **Activate Form**, and after that every submission arrives in the inbox.
 
-To change the recipient, edit `CONTACT_EMAIL` at the top of `assets/js/main.js`.
+After activation, FormSubmit also provides a random alias string. Put it in `FORM_ALIAS` at the top of `assets/js/main.js` so the real address is removed from the site code entirely. To change the recipient, edit `inbox` in the same place.
+
+Each person who submits a form also gets an automatic confirmation email (`AUTO_REPLY` in `main.js`, English or Chinese depending on the site language).
 
 ## Editing content
 
@@ -49,8 +51,15 @@ To change the recipient, edit `CONTACT_EMAIL` at the top of `assets/js/main.js`.
    | AAAA  | @    | 2606:50c0:8000::153 (and ::8001, ::8002, ::8003 — optional) |
    | CNAME | www  | imingyucheni.github.io |
 
-   Remove any other A / CNAME records on `@` and `www` (e.g. registrar parking pages). **Do not touch MX records** — they deliver info@innotronia.com.
+   Remove any other A / CNAME records on `@` and `www` (e.g. registrar parking pages). **Do not touch MX records** — they deliver the company email.
 4. After the site is live, submit a form once and click **Activate Form** in the FormSubmit email.
+
+## SEO & sharing
+
+- `sitemap.xml`, `robots.txt`, canonical + hreflang links, and Organization/Service structured data (JSON-LD) in `index.html`.
+- Chinese version is shareable as `https://innotronia.com/?lang=zh`.
+- Social share image: `assets/img/og-image.png` (1200×630). App icon: `assets/img/apple-touch-icon.png`.
+- `404.html` (custom not-found page) and `privacy.html` (privacy policy, EN/中文).
 
 ## Local preview
 

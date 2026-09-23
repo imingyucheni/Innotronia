@@ -274,7 +274,9 @@ window.I18N = {
     "contact.eyebrow": "联系我们",
     "contact.title": "一起<em>开启</em>合作。",
     "contact.lead": "请选择您需要的服务，我们通常会在一个工作日内回复。",
-    "contact.direct": "更喜欢邮件联系？",
+    "form.consent": "提交即表示您同意我们的<a href=\"privacy.html\">隐私政策</a>。您的信息仅用于回复本次咨询。",
+    "footer.message": "给我们留言",
+    "footer.privacy": "隐私政策",
     "tab.shipping": "运费报价",
     "tab.ecom": "电商咨询",
 
@@ -314,7 +316,7 @@ window.I18N = {
     "btn.next": "继续",
     "btn.send": "发送",
 
-    "err.send": "发送失败，请稍后重试，或直接发邮件至",
+    "err.send": "发送失败，请检查网络后重试。如果仍然无法发送，请稍后再试。",
 
     "success.t": "感谢您，我们已收到信息。",
     "success.d": "我们的团队会在一个工作日内与您联系。",
