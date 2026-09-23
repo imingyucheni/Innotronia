@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innotronia — E-commerce Growth &amp; Logistics</title>
+  <meta name="description" content="Innotronia is a full-service e-commerce agency and logistics partner. We run your Amazon, Walmart, Wayfair, Temu, Shein and TikTok Shop channels end-to-end, open new sales channels, and ship with US last-mile and international parcel services." />
+  <meta name="theme-color" content="#07090d" />
+  <meta property="og:title" content="Innotronia — E-commerce Growth & Logistics" />
+  <meta property="og:description" content="Channel operations, new marketplace expansion, US last-mile and international parcel shipping." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="Innotronia home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M16 8 V24 M10 12 L16 8 L22 12" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="logo__text">Innotronia</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#ecommerce" data-i18n="nav.ecom">E-commerce</a>
+        <a href="#pricing" data-i18n="nav.pricing">Plans</a>
+        <a href="#logistics" data-i18n="nav.logistics">Logistics</a>
+        <a href="#brands" data-i18n="nav.brands">Clients</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+          <span data-lang="en">EN</span><span class="lang-toggle__sep">/</span><span data-lang="zh">中文</span>
+        </button>
+        <a href="#contact" class="btn btn--gold btn--sm magnetic" data-i18n="nav.cta">Get in touch</a>
+        <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#ecommerce" data-i18n="nav.ecom">E-commerce</a>
+      <a href="#pricing" data-i18n="nav.pricing">Plans</a>
+      <a href="#logistics" data-i18n="nav.logistics">Logistics</a>
+      <a href="#brands" data-i18n="nav.brands">Clients</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" class="btn btn--gold" data-i18n="nav.cta">Get in touch</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="globe" class="hero__globe" aria-hidden="true"></canvas>
+      <div class="hero__fade" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow reveal"><span class="dot"></span><span data-i18n="hero.eyebrow">E-commerce Agency · Logistics Partner</span></p>
+        <h1 class="hero__title reveal" data-i18n-html="hero.title">We run your stores.<br/>We move your <em>parcels.</em></h1>
+        <p class="hero__lead reveal" data-i18n="hero.lead">Innotronia takes over marketplace operations from A to Z, opens new sales channels, and ships your orders across the US and around the world — so your brand can focus on building great products.</p>
+        <div class="hero__ctas reveal">
+          <a href="#pricing" class="btn btn--gold magnetic" data-i18n="hero.cta1">Explore plans</a>
+          <a href="#contact" class="btn btn--ghost magnetic" data-tab-target="shipping" data-i18n="hero.cta2">Get a shipping quote</a>
+        </div>
+        <dl class="hero__stats reveal">
+          <div><dt><span class="count" data-to="6">0</span>+</dt><dd data-i18n="hero.s1">Marketplaces operated</dd></div>
+          <div><dt>A–Z</dt><dd data-i18n="hero.s2">Full-service operations</dd></div>
+          <div><dt><span class="count" data-to="2">0</span></dt><dd data-i18n="hero.s3">Logistics networks</dd></div>
+          <div><dt><span class="count" data-to="7">0</span>+</dt><dd data-i18n="hero.s4">Brand partners</dd></div>
+        </dl>
+      </div>
+      <a href="#brands" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ BRANDS ============ -->
+    <section class="brands" id="brands">
+      <p class="brands__label" data-i18n="brands.label">Trusted by growing brands</p>
+      <div class="marquee" aria-label="Brands we have worked with">
+        <div class="marquee__track">
+          <span>SNP</span><span>Rom America</span><span>Celavi</span><span>Delxo</span><span>Acko</span><span>Halulu</span><span>Lexvss</span>
+          <span aria-hidden="true">SNP</span><span aria-hidden="true">Rom America</span><span aria-hidden="true">Celavi</span><span aria-hidden="true">Delxo</span><span aria-hidden="true">Acko</span><span aria-hidden="true">Halulu</span><span aria-hidden="true">Lexvss</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PILLARS ============ -->
+    <section class="section pillars">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="pillars.eyebrow">What we do</span></p>
+          <h2 class="section__title" data-i18n-html="pillars.title">One partner for the <em>entire</em> journey — from listing to doorstep.</h2>
+        </div>
+        <div class="pillars__grid">
+          <a href="#ecommerce" class="pillar tilt reveal">
+            <span class="pillar__num">01</span>
+            <h3 data-i18n="pillars.p1.t">E-commerce Operations</h3>
+            <p data-i18n="pillars.p1.d">Channel takeover and full-service management across the leading US marketplaces, plus new-channel expansion on a performance basis.</p>
+            <ul class="pillar__tags"><li>Amazon</li><li>Walmart</li><li>Wayfair</li><li>Temu</li><li>Shein</li><li>TikTok Shop</li></ul>
+            <span class="pillar__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#logistics" class="pillar tilt reveal">
+            <span class="pillar__num">02</span>
+            <h3 data-i18n="pillars.p2.t">Shipping &amp; Logistics</h3>
+            <p data-i18n="pillars.p2.d">US last-mile delivery and international parcel shipping for small, medium and large items — priced to your volume.</p>
+            <ul class="pillar__tags"><li data-i18n="pillars.tag1">US Last-Mile</li><li data-i18n="pillars.tag2">International Parcel</li><li data-i18n="pillars.tag3">Tracking</li></ul>
+            <span class="pillar__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ E-COMMERCE ============ -->
+    <section class="section ecom" id="ecommerce">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="ecom.eyebrow">E-commerce Agency</span></p>
+          <h2 class="section__title" data-i18n-html="ecom.title">Your marketplaces, <em>expertly</em> run.</h2>
+          <p class="section__lead" data-i18n="ecom.lead">We take over the channels you already sell on and operate them end-to-end — or open brand-new ones for you. Don't see your platform? Ask us.</p>
+        </div>
+
+        <div class="channels reveal">
+          <div class="channel"><span class="channel__name">Amazon</span></div>
+          <div class="channel"><span class="channel__name">Walmart</span></div>
+          <div class="channel"><span class="channel__name">Wayfair</span></div>
+          <div class="channel"><span class="channel__name">Temu</span></div>
+          <div class="channel"><span class="channel__name">Shein</span></div>
+          <div class="channel"><span class="channel__name">TikTok Shop</span></div>
+          <a href="#contact" class="channel channel--more" data-tab-target="ecom"><span class="channel__name" data-i18n="ecom.more">+ Other platforms</span><span class="channel__hint" data-i18n="ecom.moreHint">Ask us</span></a>
+        </div>
+
+        <!-- A–Z process -->
+        <div class="process">
+          <div class="process__intro reveal">
+            <h3 class="h3" data-i18n-html="ecom.az.title">Channel takeover, <em>A to Z.</em></h3>
+            <p class="muted" data-i18n="ecom.az.lead">When we take over an existing channel, we own every step of the operation. Select a stage to see what's included.</p>
+          </div>
+          <div class="process__body reveal">
+            <ol class="steps" role="tablist" aria-label="Operation stages">
+              <li><button role="tab" class="step is-active" data-step="0" aria-selected="true"><span class="step__n">01</span><span data-i18n="az.s1">Product Selection</span></button></li>
+              <li><button role="tab" class="step" data-step="1" aria-selected="false"><span class="step__n">02</span><span data-i18n="az.s2">Logistics Integration</span></button></li>
+              <li><button role="tab" class="step" data-step="2" aria-selected="false"><span class="step__n">03</span><span data-i18n="az.s3">Product Listing</span></button></li>
+              <li><button role="tab" class="step" data-step="3" aria-selected="false"><span class="step__n">04</span><span data-i18n="az.s4">Optimization</span></button></li>
+              <li><button role="tab" class="step" data-step="4" aria-selected="false"><span class="step__n">05</span><span data-i18n="az.s5">Advertising</span></button></li>
+              <li><button role="tab" class="step" data-step="5" aria-selected="false"><span class="step__n">06</span><span data-i18n="az.s6">Customer Service</span></button></li>
+              <li><button role="tab" class="step" data-step="6" aria-selected="false"><span class="step__n">07</span><span data-i18n="az.s7">Replenishment</span></button></li>
+            </ol>
+            <div class="step-panel" role="tabpanel" aria-live="polite">
+              <div class="step-panel__n" id="stepN">01</div>
+              <h4 id="stepTitle">Product Selection</h4>
+              <p id="stepDesc">Market and competitor research to decide which SKUs to launch, prioritize or retire on each channel — backed by demand, margin and review data.</p>
+              <div class="step-panel__bar"><span id="stepBar"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="pricing.eyebrow">Plans &amp; Pricing</span></p>
+          <h2 class="section__title" data-i18n-html="pricing.title">Transparent plans, <em>built to scale.</em></h2>
+          <p class="section__lead" data-i18n="pricing.lead">Every engagement starts with a 3-month minimum term, so we have the time to deliver measurable results.</p>
+        </div>
+
+        <div class="plans">
+          <!-- Plan 1 -->
+          <article class="plan plan--featured reveal">
+            <div class="plan__badge" data-i18n="plan1.badge">Most popular</div>
+            <p class="plan__kicker" data-i18n="plan1.kicker">Existing channels</p>
+            <h3 class="plan__name" data-i18n="plan1.name">Channel Takeover</h3>
+            <p class="plan__desc" data-i18n="plan1.desc">Full A–Z management of the marketplaces you already sell on.</p>
+            <div class="plan__price">
+              <span class="plan__currency">$</span><span class="plan__amount" id="calcMonthly">999</span><span class="plan__per" data-i18n="per.mo">/mo</span>
+            </div>
+            <p class="plan__extra" data-i18n-html="plan1.extra">+ <strong>$199</strong> one-time setup · + <strong>1%</strong> of ad revenue</p>
+
+            <div class="calc">
+              <div class="calc__row">
+                <label for="skuRange" data-i18n="calc.label">Number of SKUs</label>
+                <output id="skuOut" for="skuRange">10</output>
+              </div>
+              <input type="range" id="skuRange" min="1" max="60" value="10" step="1" aria-describedby="calcNote" />
+              <div class="calc__scale"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50+</span></div>
+              <p class="calc__note" id="calcNote" data-i18n="calc.note">Starter covers up to 10 SKUs. Each additional 10 SKUs adds $499/mo.</p>
+              <div class="calc__total">
+                <span data-i18n="calc.first">Est. first 3-month term</span>
+                <strong id="calcTerm">$3,196</strong>
+              </div>
+              <p class="calc__fine" data-i18n="calc.fine">Setup fee + 3 months of management. Excludes the 1% ad-revenue fee and your ad spend.</p>
+            </div>
+
+            <ul class="plan__list">
+              <li data-i18n="plan1.f1">Product selection &amp; catalog strategy</li>
+              <li data-i18n="plan1.f2">Logistics &amp; warehouse integration</li>
+              <li data-i18n="plan1.f3">Listing creation, content &amp; SEO optimization</li>
+              <li data-i18n="plan1.f4">Advertising setup, bidding &amp; management</li>
+              <li data-i18n="plan1.f5">Customer service &amp; after-sales handling</li>
+              <li data-i18n="plan1.f6">Inventory planning &amp; replenishment</li>
+              <li data-i18n="plan1.f7">Dedicated account manager &amp; monthly performance review</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold btn--block magnetic" data-tab-target="ecom" data-plan="takeover" data-i18n="plan.cta1">Start with Takeover</a>
+          </article>
+
+          <!-- Plan 2 -->
+          <article class="plan reveal">
+            <p class="plan__kicker" data-i18n="plan2.kicker">New channels</p>
+            <h3 class="plan__name" data-i18n="plan2.name">Channel Expansion</h3>
+            <p class="plan__desc" data-i18n="plan2.desc">We open and grow brand-new sales channels for you — and only earn when you sell.</p>
+            <div class="plan__price">
+              <span class="plan__amount">5%</span><span class="plan__per" data-i18n="plan2.per">of net revenue</span>
+            </div>
+            <p class="plan__extra" data-i18n="plan2.extra">Net revenue = gross sales minus returns</p>
+
+            <div class="rev">
+              <div class="calc__row">
+                <label for="revRange" data-i18n="rev.label">Monthly net revenue</label>
+                <output id="revOut" for="revRange">$50,000</output>
+              </div>
+              <input type="range" id="revRange" min="5000" max="500000" value="50000" step="5000" />
+              <div class="calc__total">
+                <span data-i18n="rev.fee">Your monthly fee</span>
+                <strong id="revFee">$2,500</strong>
+              </div>
+            </div>
+
+            <ul class="plan__list">
+              <li data-i18n="plan2.f1">Channel &amp; market-fit assessment</li>
+              <li data-i18n="plan2.f2">Store application, onboarding &amp; compliance setup</li>
+              <li data-i18n="plan2.f3">Catalog migration &amp; localized listings</li>
+              <li data-i18n="plan2.f4">Launch strategy, promotions &amp; advertising</li>
+              <li data-i18n="plan2.f5">Fulfillment &amp; logistics connection</li>
+              <li data-i18n="plan2.f6">Ongoing operations &amp; performance reporting</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block magnetic" data-tab-target="ecom" data-plan="expansion" data-i18n="plan.cta2">Expand my channels</a>
+          </article>
+
+          <!-- Plan 3 -->
+          <article class="plan reveal">
+            <p class="plan__kicker" data-i18n="plan3.kicker">50+ SKUs</p>
+            <h3 class="plan__name" data-i18n="plan3.name">Enterprise</h3>
+            <p class="plan__desc" data-i18n="plan3.desc">For large catalogs and multi-channel brands that need a tailored team and structure.</p>
+            <div class="plan__price">
+              <span class="plan__amount plan__amount--text" data-i18n="plan3.price">Custom</span>
+            </div>
+            <p class="plan__extra" data-i18n="plan3.extra">Scoped to your catalog, channels &amp; goals</p>
+            <ul class="plan__list">
+              <li data-i18n="plan3.f1">Everything in Channel Takeover</li>
+              <li data-i18n="plan3.f2">Multi-channel operations under one team</li>
+              <li data-i18n="plan3.f3">Combine takeover &amp; expansion plans</li>
+              <li data-i18n="plan3.f4">Custom reporting cadence &amp; KPIs</li>
+              <li data-i18n="plan3.f5">Bundled logistics pricing available</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block magnetic" data-tab-target="ecom" data-plan="enterprise" data-i18n="plan.cta3">Talk to us</a>
+          </article>
+        </div>
+
+        <div class="terms reveal">
+          <div class="term"><span class="term__k">3</span><span data-i18n="terms.t1">Month minimum contract on every plan</span></div>
+          <div class="term"><span class="term__k">$499</span><span data-i18n="terms.t2">Per additional 10 SKUs / month (Takeover)</span></div>
+          <div class="term"><span class="term__k">50+</span><span data-i18n="terms.t3">SKUs? Contact us for a custom quote</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOGISTICS ============ -->
+    <section class="section logistics" id="logistics">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="log.eyebrow">Shipping &amp; Logistics</span></p>
+          <h2 class="section__title" data-i18n-html="log.title">Delivered, <em>domestically</em> and across borders.</h2>
+          <p class="section__lead" data-i18n="log.lead">Competitive rates for small parcels through large, bulky items. Tell us what you ship and how much — we'll build a quote around your volume.</p>
+        </div>
+
+        <div class="log__grid">
+          <article class="log-card tilt reveal">
+            <div class="log-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M4 30V14h24v16M28 20h9l7 7v3h-16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="13" cy="33" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="33" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3 data-i18n="log.c1.t">US Last-Mile Delivery</h3>
+            <p data-i18n="log.c1.d">The final leg from warehouse to your customer's door — residential and commercial addresses, with end-to-end tracking.</p>
+            <ul class="checks">
+              <li data-i18n="log.c1.f1">Small, medium &amp; large / bulky parcels</li>
+              <li data-i18n="log.c1.f2">Tracking uploaded to your marketplaces</li>
+              <li data-i18n="log.c1.f3">Volume-based pricing, daily pickups</li>
+            </ul>
+          </article>
+          <article class="log-card tilt reveal">
+            <div class="log-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 24h36M24 6c6 5 8 11 8 18s-2 13-8 18c-6-5-8-11-8-18s2-13 8-18z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3 data-i18n="log.c2.t">International Parcels</h3>
+            <p data-i18n="log.c2.d">Cross-border parcel shipping with customs handling, so your products reach customers around the world reliably.</p>
+            <ul class="checks">
+              <li data-i18n="log.c2.f1">Door-to-door cross-border delivery</li>
+              <li data-i18n="log.c2.f2">Customs clearance support</li>
+              <li data-i18n="log.c2.f3">Full shipment visibility</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="log__cta reveal">
+          <p data-i18n="log.ctaText">Takes about 60 seconds — 3 quick questions.</p>
+          <a href="#contact" class="btn btn--gold magnetic" data-tab-target="shipping" data-i18n="log.cta">Start shipping survey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section why">
+      <div class="container why__grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="why.eyebrow">Why Innotronia</span></p>
+          <h2 class="section__title" data-i18n-html="why.title">Operators first. <em>Partners</em> always.</h2>
+        </div>
+        <div class="why__items">
+          <div class="why__item reveal"><span class="why__n">i.</span><div><h4 data-i18n="why.i1.t">Sales + logistics under one roof</h4><p data-i18n="why.i1.d">Your operations team and shipping partner talk to each other every day — fewer handoffs, faster fixes.</p></div></div>
+          <div class="why__item reveal"><span class="why__n">ii.</span><div><h4 data-i18n="why.i2.t">Clear, predictable pricing</h4><p data-i18n="why.i2.d">Fixed monthly fees or pure performance pricing. No hidden line items.</p></div></div>
+          <div class="why__item reveal"><span class="why__n">iii.</span><div><h4 data-i18n="why.i3.t">Hands-on across every major marketplace</h4><p data-i18n="why.i3.d">Amazon, Walmart, Wayfair, Temu, Shein, TikTok Shop and more — each run with platform-specific playbooks.</p></div></div>
+          <div class="why__item reveal"><span class="why__n">iv.</span><div><h4 data-i18n="why.i4.t">Bilingual team</h4><p data-i18n="why.i4.d">We work fluently in English and Chinese, bridging brands, factories and US marketplaces.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__inner">
+        <div class="section__head reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="faq.eyebrow">FAQ</span></p>
+          <h2 class="section__title" data-i18n-html="faq.title">Good <em>questions.</em></h2>
+        </div>
+        <div class="faq__list">
+          <details class="qa reveal"><summary data-i18n="faq.q1">How long is the contract?</summary><p data-i18n="faq.a1">All plans start with a 3-month minimum term. After that, the engagement continues month-to-month unless agreed otherwise.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q2">How is the Channel Takeover fee calculated?</summary><p data-i18n="faq.a2">The Starter package covers up to 10 SKUs for $999/month, plus a one-time $199 setup fee and 1% of advertising revenue. Every additional 10 SKUs adds $499/month. For more than 50 SKUs, we'll build a custom quote.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q3">Is ad spend included?</summary><p data-i18n="faq.a3">No. Advertising budget is paid directly by you on each platform. Our fee covers strategy and management of those campaigns.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q4">What counts as "net revenue" for Channel Expansion?</summary><p data-i18n="faq.a4">Net revenue is your gross sales on the new channel minus returns. Our fee is 5% of that amount.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q5">Can I combine e-commerce and logistics services?</summary><p data-i18n="faq.a5">Yes. Many clients use us for both — we'll connect your marketplace operations directly to our shipping services.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q6">My platform isn't listed. Can you still help?</summary><p data-i18n="faq.a6">Very likely. Send us a message with the platform name and we'll let you know how we can support it.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="contact.eyebrow">Contact</span></p>
+          <h2 class="section__title" data-i18n-html="contact.title">Let's build <em>something</em> together.</h2>
+          <p class="section__lead" data-i18n="contact.lead">Choose what you need. We typically reply within one business day.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Inquiry type">
+          <button class="tab is-active" role="tab" data-tab="shipping" aria-selected="true" data-i18n="tab.shipping">Shipping quote</button>
+          <button class="tab" role="tab" data-tab="ecom" aria-selected="false" data-i18n="tab.ecom">E-commerce consultation</button>
+          <span class="tabs__ink" aria-hidden="true"></span>
+        </div>
+
+        <div class="panel-wrap reveal">
+          <!-- ===== Shipping Survey ===== -->
+          <form class="panel survey is-active" id="surveyForm" data-panel="shipping" novalidate>
+            <div class="survey__progress"><span id="surveyBar"></span></div>
+            <div class="survey__meta"><span data-i18n="survey.step">Step</span> <span id="surveyStepNum">1</span> / 4</div>
+
+            <!-- Step 1 -->
+            <fieldset class="q is-active" data-q="0">
+              <legend class="q__title" data-i18n="survey.q1">Which service do you need?</legend>
+              <div class="options options--2">
+                <label class="opt">
+                  <input type="radio" name="service" value="US Last-Mile Delivery" required />
+                  <span class="opt__body">
+                    <span class="opt__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M4 30V14h24v16M28 20h9l7 7v3h-16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="13" cy="33" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="33" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                    <strong data-i18n="log.c1.t">US Last-Mile Delivery</strong>
+                    <small data-i18n="survey.o1d">Domestic final-leg delivery within the US</small>
+                  </span>
+                </label>
+                <label class="opt">
+                  <input type="radio" name="service" value="International Parcel" />
+                  <span class="opt__body">
+                    <span class="opt__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 24h36M24 6c6 5 8 11 8 18s-2 13-8 18c-6-5-8-11-8-18s2-13 8-18z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                    <strong data-i18n="log.c2.t">International Parcels</strong>
+                    <small data-i18n="survey.o2d">Cross-border shipping to or from the US</small>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Step 2 -->
+            <fieldset class="q" data-q="1">
+              <legend class="q__title" data-i18n="survey.q2">What size are your parcels?</legend>
+              <div class="options options--3">
+                <label class="opt">
+                  <input type="radio" name="size" value="Small" />
+                  <span class="opt__body">
+                    <span class="size-box size-box--s" aria-hidden="true"></span>
+                    <strong data-i18n="size.s">Small</strong>
+                    <small data-i18n="size.sd">Poly mailers & small boxes · typically under 5 lb</small>
+                  </span>
+                </label>
+                <label class="opt">
+                  <input type="radio" name="size" value="Medium" />
+                  <span class="opt__body">
+                    <span class="size-box size-box--m" aria-hidden="true"></span>
+                    <strong data-i18n="size.m">Medium</strong>
+                    <small data-i18n="size.md">Standard cartons · typically 5–50 lb</small>
+                  </span>
+                </label>
+                <label class="opt">
+                  <input type="radio" name="size" value="Large" />
+                  <span class="opt__body">
+                    <span class="size-box size-box--l" aria-hidden="true"></span>
+                    <strong data-i18n="size.l">Large</strong>
+                    <small data-i18n="size.ld">Bulky / oversized · typically over 50 lb</small>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Step 3 -->
+            <fieldset class="q" data-q="2">
+              <legend class="q__title" data-i18n="survey.q3">How many parcels do you ship?</legend>
+              <div class="seg" role="radiogroup" aria-label="Frequency">
+                <label><input type="radio" name="period" value="Daily" checked /><span data-i18n="period.d">Per day</span></label>
+                <label><input type="radio" name="period" value="Monthly" /><span data-i18n="period.m">Per month</span></label>
+              </div>
+              <div class="options options--vol" id="volOptions"><!-- filled by JS --></div>
+            </fieldset>
+
+            <!-- Step 4 -->
+            <fieldset class="q" data-q="3">
+              <legend class="q__title" data-i18n="survey.q4">Where should we send your quote?</legend>
+              <div class="summary" id="surveySummary"></div>
+              <div class="fields">
+                <div class="field"><input type="text" id="s_name" name="name" placeholder=" " autocomplete="name" required /><label for="s_name" data-i18n="f.name">Full name *</label></div>
+                <div class="field"><input type="text" id="s_company" name="company" placeholder=" " autocomplete="organization" /><label for="s_company" data-i18n="f.company">Company</label></div>
+                <div class="field"><input type="email" id="s_email" name="email" placeholder=" " autocomplete="email" required /><label for="s_email" data-i18n="f.email">Email *</label></div>
+                <div class="field"><input type="tel" id="s_phone" name="phone" placeholder=" " autocomplete="tel" /><label for="s_phone" data-i18n="f.phone">Phone / WeChat</label></div>
+                <div class="field field--full"><textarea id="s_msg" name="message" rows="4" placeholder=" "></textarea><label for="s_msg" data-i18n="f.msgShip">Anything else? (destinations, product type, current carrier…)</label></div>
+              </div>
+              <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </fieldset>
+
+            <div class="survey__nav">
+              <button type="button" class="btn btn--text" id="surveyBack" data-i18n="btn.back">← Back</button>
+              <button type="button" class="btn btn--gold magnetic" id="surveyNext" data-i18n="btn.next">Continue</button>
+              <button type="submit" class="btn btn--gold magnetic" id="surveySend" hidden><span data-i18n="btn.send">Send</span></button>
+            </div>
+            <p class="form-error" role="alert" hidden></p>
+          </form>
+
+          <!-- ===== E-commerce Form ===== -->
+          <form class="panel ecom-form" id="ecomForm" data-panel="ecom" novalidate>
+            <div class="fields">
+              <div class="field"><input type="text" id="e_name" name="name" placeholder=" " autocomplete="name" required /><label for="e_name" data-i18n="f.name">Full name *</label></div>
+              <div class="field"><input type="text" id="e_company" name="company" placeholder=" " autocomplete="organization" /><label for="e_company" data-i18n="f.brand">Company / Brand</label></div>
+              <div class="field"><input type="email" id="e_email" name="email" placeholder=" " autocomplete="email" required /><label for="e_email" data-i18n="f.email">Email *</label></div>
+              <div class="field"><input type="tel" id="e_phone" name="phone" placeholder=" " autocomplete="tel" /><label for="e_phone" data-i18n="f.phone">Phone / WeChat</label></div>
+            </div>
+
+            <div class="group">
+              <p class="group__label" data-i18n="f.plan">Which plan interests you?</p>
+              <div class="chips chips--radio">
+                <label><input type="radio" name="plan" value="Channel Takeover" /><span data-i18n="plan1.name">Channel Takeover</span></label>
+                <label><input type="radio" name="plan" value="Channel Expansion" /><span data-i18n="plan2.name">Channel Expansion</span></label>
+                <label><input type="radio" name="plan" value="Enterprise (50+ SKUs)" /><span data-i18n="plan3.chip">Enterprise (50+ SKUs)</span></label>
+                <label><input type="radio" name="plan" value="Not sure yet" checked /><span data-i18n="f.notsure">Not sure yet</span></label>
+              </div>
+            </div>
+
+            <div class="group">
+              <p class="group__label" data-i18n="f.platforms">Platforms (select all that apply)</p>
+              <div class="chips">
+                <label><input type="checkbox" name="platforms" value="Amazon" /><span>Amazon</span></label>
+                <label><input type="checkbox" name="platforms" value="Walmart" /><span>Walmart</span></label>
+                <label><input type="checkbox" name="platforms" value="Wayfair" /><span>Wayfair</span></label>
+                <label><input type="checkbox" name="platforms" value="Temu" /><span>Temu</span></label>
+                <label><input type="checkbox" name="platforms" value="Shein" /><span>Shein</span></label>
+                <label><input type="checkbox" name="platforms" value="TikTok Shop" /><span>TikTok Shop</span></label>
+                <label><input type="checkbox" name="platforms" value="Other" /><span data-i18n="f.other">Other</span></label>
+              </div>
+            </div>
+
+            <div class="group">
+              <p class="group__label" data-i18n="f.skus">Approximate number of SKUs</p>
+              <div class="chips chips--radio">
+                <label><input type="radio" name="skus" value="1–10" /><span>1–10</span></label>
+                <label><input type="radio" name="skus" value="11–20" /><span>11–20</span></label>
+                <label><input type="radio" name="skus" value="21–30" /><span>21–30</span></label>
+                <label><input type="radio" name="skus" value="31–50" /><span>31–50</span></label>
+                <label><input type="radio" name="skus" value="50+" /><span>50+</span></label>
+              </div>
+            </div>
+
+            <div class="fields">
+              <div class="field field--full"><textarea id="e_msg" name="message" rows="4" placeholder=" "></textarea><label for="e_msg" data-i18n="f.msgEcom">Tell us about your brand, goals, or other platforms</label></div>
+            </div>
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="survey__nav survey__nav--end">
+              <button type="submit" class="btn btn--gold magnetic"><span data-i18n="btn.send">Send</span></button>
+            </div>
+            <p class="form-error" role="alert" hidden></p>
+          </form>
+
+          <!-- ===== Success ===== -->
+          <div class="panel success" id="success" data-panel="success" aria-live="polite">
+            <svg class="success__check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none"/><path fill="none" d="M15 27l7 7 15-16"/></svg>
+            <h3 data-i18n="success.t">Thank you — message received.</h3>
+            <p data-i18n="success.d">Our team will get back to you within one business day.</p>
+            <button type="button" class="btn btn--ghost" id="successReset" data-i18n="success.again">Send another inquiry</button>
+          </div>
+        </div>
+
+        <p class="contact__direct reveal"><span data-i18n="contact.direct">Prefer email?</span> <a href="mailto:info@innotronia.com">info@innotronia.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="logo">
+          <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M16 8 V24 M10 12 L16 8 L22 12" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          <span class="logo__text">Innotronia</span>
+        </a>
+        <p class="muted" data-i18n="footer.tag">E-commerce operations &amp; logistics for ambitious brands.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h5 data-i18n="footer.services">Services</h5>
+          <a href="#ecommerce" data-i18n="plan1.name">Channel Takeover</a>
+          <a href="#pricing" data-i18n="plan2.name">Channel Expansion</a>
+          <a href="#logistics" data-i18n="log.c1.t">US Last-Mile Delivery</a>
+          <a href="#logistics" data-i18n="log.c2.t">International Parcels</a>
+        </div>
+        <div>
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <a href="mailto:info@innotronia.com">info@innotronia.com</a>
+          <a href="#contact" data-i18n="tab.shipping">Shipping quote</a>
+          <a href="#contact" data-i18n="tab.ecom">E-commerce consultation</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> Innotronia. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <a href="#top" class="to-top" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
