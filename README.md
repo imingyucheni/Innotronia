@@ -31,6 +31,27 @@ To change the recipient, edit `CONTACT_EMAIL` at the top of `assets/js/main.js`.
 - **Platform logos:** inline SVG in the `#platforms` section of `index.html`. Amazon, Walmart and TikTok marks come from Simple Icons; Wayfair, Temu and SHEIN are simplified lockups in brand colours. Swap in official files from each platform's brand/partner kit if you have them.
 - **Shipping volume ranges:** `VOLUMES` in `assets/js/main.js`.
 
+## Hosting (GitHub Pages + innotronia.com)
+
+`CNAME` (contains `innotronia.com`) and `.nojekyll` are already in the repo.
+
+1. GitHub → repo **Settings → Pages** → Source: *Deploy from a branch* → select the site branch, folder `/ (root)` → Save.
+   (Pages on a private repo needs GitHub Pro / Team, or make the repo public.)
+2. Custom domain: `innotronia.com` → Save. Tick **Enforce HTTPS** once the certificate is issued.
+3. DNS at your domain registrar:
+
+   | Type  | Host | Value |
+   |-------|------|-------|
+   | A     | @    | 185.199.108.153 |
+   | A     | @    | 185.199.109.153 |
+   | A     | @    | 185.199.110.153 |
+   | A     | @    | 185.199.111.153 |
+   | AAAA  | @    | 2606:50c0:8000::153 (and ::8001, ::8002, ::8003 — optional) |
+   | CNAME | www  | imingyucheni.github.io |
+
+   Remove any other A / CNAME records on `@` and `www` (e.g. registrar parking pages). **Do not touch MX records** — they deliver info@innotronia.com.
+4. After the site is live, submit a form once and click **Activate Form** in the FormSubmit email.
+
 ## Local preview
 
 ```
