@@ -5,6 +5,9 @@
 window.I18N = {
   zh: {
     "nav.services": "服务内容",
+    "rail.home": "首页",
+    "rail.platforms": "合作平台",
+    "rail.strategy": "运营策略",
     "nav.why": "我们的优势",
     "nav.ecom": "电商服务",
     "nav.pricing": "方案价格",
@@ -22,7 +25,7 @@ window.I18N = {
     "cr.tag3": "视频",
 
     "svc.eyebrow": "服务详情",
-    "svc.title": "店铺所需的一切，<em>全部搞定。</em>",
+    "svc.title": "店铺所需的一切，<em class=\"nw\">全部搞定。</em>",
     "svc.lead": "接管渠道后，以下工作由我们的团队日常负责 —— 确保每个环节都不遗漏。",
     "svc.1.t": "店铺与账号健康",
     "svc.1.a": "账号健康与平台政策监控",

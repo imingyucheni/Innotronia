@@ -77,15 +77,52 @@
   burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
   $$("a", mobileMenu).forEach((a) => a.addEventListener("click", () => setMenu(false)));
 
-  // highlight current section in nav
+  /* ---------- section tracking: top nav, side rail, mobile quick menu ---------- */
+  const rail = $("#rail"), quick = $("#quick"), quickBtn = $("#quickBtn");
   const navLinks = $$(".nav__links a");
-  const sectionObs = new IntersectionObserver((entries) => {
-    entries.forEach((e) => {
-      if (!e.isIntersecting) return;
-      navLinks.forEach((a) => a.classList.toggle("is-current", a.getAttribute("href") === "#" + e.target.id));
-    });
-  }, { rootMargin: "-45% 0px -50% 0px" });
-  ["ecommerce", "pricing", "logistics", "brands", "faq"].forEach((id) => { const s = document.getElementById(id); if (s) sectionObs.observe(s); });
+  const jumpLinks = $$("[data-sec]");
+  // the hero counts as "top"; everything between tracked sections inherits the previous one
+  const TRACKED = ["hero", "platforms", "services", "strategy", "pricing", "logistics", "why", "faq", "contact"];
+  const trackedEls = TRACKED.map((id) => document.getElementById(id)).filter(Boolean);
+  let currentSec = "";
+  function setCurrent(id) {
+    if (id === currentSec) return;
+    currentSec = id;
+    const key = id === "hero" ? "top" : id;
+    jumpLinks.forEach((a) => a.classList.toggle("is-current", a.dataset.sec === key));
+    navLinks.forEach((a) => a.classList.toggle("is-current", a.getAttribute("href") === "#" + key));
+  }
+  function onScrollTrack() {
+    const y = window.scrollY, vh = window.innerHeight;
+    const max = document.documentElement.scrollHeight - vh;
+    document.documentElement.style.setProperty("--scroll", max > 0 ? Math.min(y / max, 1).toFixed(4) : 0);
+    const show = y > vh * 0.6;
+    rail.classList.toggle("is-on", show);
+    quick.classList.toggle("is-on", show);
+    if (!show) setQuick(false);
+    // current = last section whose top has passed 40% of the viewport
+    let cur = trackedEls[0].id;
+    for (const el of trackedEls) if (el.getBoundingClientRect().top <= vh * 0.4) cur = el.id;
+    if (max - y < 4) cur = trackedEls[trackedEls.length - 1].id;
+    setCurrent(cur);
+  }
+  let trackQueued = false;
+  window.addEventListener("scroll", () => {
+    if (trackQueued) return;
+    trackQueued = true;
+    requestAnimationFrame(() => { trackQueued = false; onScrollTrack(); });
+  }, { passive: true });
+  window.addEventListener("resize", onScrollTrack);
+  onScrollTrack();
+
+  function setQuick(open) {
+    quickBtn.setAttribute("aria-expanded", String(open));
+    quick.classList.toggle("is-open", open);
+  }
+  quickBtn.addEventListener("click", () => setQuick(quickBtn.getAttribute("aria-expanded") !== "true"));
+  $$("#quickPanel a").forEach((a) => a.addEventListener("click", () => setQuick(false)));
+  document.addEventListener("click", (e) => { if (!quick.contains(e.target)) setQuick(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") setQuick(false); });
 
   /* ---------- reveal on scroll ---------- */
   const revealObs = new IntersectionObserver((entries) => {
