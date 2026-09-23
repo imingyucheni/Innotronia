@@ -135,7 +135,7 @@ window.I18N = {
     "f.creative": "+ 创意设计（图片、A+ 与视频）",
     "f.goal": "您的主要目标",
 
-    "footer.legal": "Amazon、Walmart、Wayfair、Temu、SHEIN 及 TikTok 均为其各自所有者的商标。Innotronia 为独立服务商，与上述平台无隶属或背书关系。",
+    "footer.legal": "Amazon、Walmart、Wayfair、Temu、SHEIN、TikTok、DHL、FedEx、UPS 及 USPS 均为其各自所有者的商标。Innotronia 为独立服务商，与上述平台无隶属或背书关系。",
 
     "hero.eyebrow": "电商代运营 · 物流合作伙伴",
     "hero.title": "<span class=\"nw\">店铺交给我们运营，</span><br/><span class=\"nw\">包裹交给我们<em>派送。</em></span>",
@@ -242,6 +242,8 @@ window.I18N = {
     "log.c2.f1": "门到门跨境派送",
     "log.c2.f2": "清关协助",
     "log.c2.f3": "全程物流可视",
+    "log.carriers": "通过可靠的物流网络派送",
+    "log.carriersMore": "更多区域尾程合作商",
     "log.ctaText": "只需约 60 秒 —— 3 个简单问题。",
     "log.cta": "开始运费问卷",
 
