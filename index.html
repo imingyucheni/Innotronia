@@ -64,9 +64,8 @@
     }
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/fraunces-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -125,6 +124,7 @@
       <li><a href="#services" data-sec="services"><span class="rail__label" data-i18n="nav.services">Services</span><span class="rail__dot"></span></a></li>
       <li><a href="#strategy" data-sec="strategy"><span class="rail__label" data-i18n="rail.strategy">Strategy</span><span class="rail__dot"></span></a></li>
       <li><a href="#pricing" data-sec="pricing"><span class="rail__label" data-i18n="nav.pricing">Plans</span><span class="rail__dot"></span></a></li>
+      <li><a href="#accelerator" data-sec="accelerator"><span class="rail__label" data-i18n="rail.accel">Accelerator</span><span class="rail__dot"></span></a></li>
       <li><a href="#logistics" data-sec="logistics"><span class="rail__label" data-i18n="nav.logistics">Logistics</span><span class="rail__dot"></span></a></li>
       <li><a href="#why" data-sec="why"><span class="rail__label" data-i18n="nav.why">Why us</span><span class="rail__dot"></span></a></li>
       <li><a href="#faq" data-sec="faq"><span class="rail__label" data-i18n="nav.faq">FAQ</span><span class="rail__dot"></span></a></li>
@@ -140,10 +140,11 @@
         <a href="#services" data-sec="services"><span class="quick__n">03</span><span data-i18n="nav.services">Services</span></a>
         <a href="#strategy" data-sec="strategy"><span class="quick__n">04</span><span data-i18n="rail.strategy">Strategy</span></a>
         <a href="#pricing" data-sec="pricing"><span class="quick__n">05</span><span data-i18n="nav.pricing">Plans</span></a>
-        <a href="#logistics" data-sec="logistics"><span class="quick__n">06</span><span data-i18n="nav.logistics">Logistics</span></a>
-        <a href="#why" data-sec="why"><span class="quick__n">07</span><span data-i18n="nav.why">Why us</span></a>
-        <a href="#faq" data-sec="faq"><span class="quick__n">08</span><span data-i18n="nav.faq">FAQ</span></a>
-        <a href="#contact" data-sec="contact"><span class="quick__n">09</span><span data-i18n="contact.eyebrow">Contact</span></a>
+        <a href="#accelerator" data-sec="accelerator"><span class="quick__n">06</span><span data-i18n="rail.accel">Accelerator</span></a>
+        <a href="#logistics" data-sec="logistics"><span class="quick__n">07</span><span data-i18n="nav.logistics">Logistics</span></a>
+        <a href="#why" data-sec="why"><span class="quick__n">08</span><span data-i18n="nav.why">Why us</span></a>
+        <a href="#faq" data-sec="faq"><span class="quick__n">09</span><span data-i18n="nav.faq">FAQ</span></a>
+        <a href="#contact" data-sec="contact"><span class="quick__n">10</span><span data-i18n="contact.eyebrow">Contact</span></a>
     </div>
     <button class="quick__btn" id="quickBtn" type="button" aria-label="Jump to section" aria-expanded="false" aria-controls="quickPanel">
       <svg viewBox="0 0 36 36" class="quick__ring" aria-hidden="true"><circle cx="18" cy="18" r="16.5"/><circle class="quick__ring-fill" cx="18" cy="18" r="16.5" pathLength="100"/></svg>
@@ -603,7 +604,7 @@
           </div>
         </div>
         <div class="log__cta reveal">
-          <p data-i18n="log.ctaText">Takes about 60 seconds — 3 quick questions.</p>
+          <p data-i18n="log.ctaText">Takes about 60 seconds — 4 quick steps.</p>
           <a href="#contact" class="btn btn--grad magnetic" data-tab-target="shipping" data-i18n="log.cta">Start shipping survey</a>
         </div>
       </div>
@@ -677,7 +678,7 @@
           <span class="clogo clogo--celavi"><img src="assets/img/clients/celavi.png" alt="Celavi" decoding="async" /></span>
           <span class="clogo clogo--delxo"><img src="assets/img/clients/delxo.png" alt="Delxo" decoding="async" /></span>
           <span class="clogo clogo--acko"><img src="assets/img/clients/acko.png" alt="Acko" decoding="async" /></span>
-          <span class="clogo clogo--halulu"><img src="assets/img/clients/halulu.png" alt="Halulu" decoding="async" /></span>
+          <span class="clogo clogo--halulu"><img src="assets/img/clients/halulu.png" alt="Halulu (HouseDay)" decoding="async" /></span>
           <span class="clogo clogo--lexvss"><img src="assets/img/clients/lexvss.png" alt="Lexvss" decoding="async" /></span>
           <span class="clogo clogo--snp" aria-hidden="true"><img src="assets/img/clients/snp.png" alt="" decoding="async" /></span>
           <span class="clogo clogo--rom" aria-hidden="true"><img src="assets/img/clients/rom-america.png" alt="" decoding="async" /></span>
@@ -812,8 +813,17 @@
                 <div class="field"><input type="text" id="s_name" name="name" placeholder=" " autocomplete="name" required /><label for="s_name" data-i18n="f.name">Full name *</label></div>
                 <div class="field"><input type="text" id="s_company" name="company" placeholder=" " autocomplete="organization" /><label for="s_company" data-i18n="f.company">Company</label></div>
                 <div class="field"><input type="email" id="s_email" name="email" placeholder=" " autocomplete="email" required /><label for="s_email" data-i18n="f.email">Email *</label></div>
-                <div class="field"><input type="tel" id="s_phone" name="phone" placeholder=" " autocomplete="tel" /><label for="s_phone" data-i18n="f.phone">Phone / WeChat</label></div>
-                <div class="field field--full"><textarea id="s_msg" name="message" rows="4" placeholder=" "></textarea><label for="s_msg" data-i18n="f.msgShip">Anything else? (destinations, product type, current carrier…)</label></div>
+                <div class="field"><input type="tel" id="s_phone" name="phone" placeholder=" " autocomplete="tel" /><label for="s_phone" data-i18n="f.phone">Phone / WhatsApp</label></div>
+              </div>
+              <p class="group__label group__label--sub" data-i18n="f.quoteFaster">Help us quote faster (optional)</p>
+              <div class="fields fields--4">
+                <div class="field"><input type="text" id="s_zip" name="zip" placeholder=" " inputmode="numeric" autocomplete="postal-code" /><label for="s_zip" data-i18n="f.zip">Ship-from ZIP</label></div>
+                <div class="field"><input type="text" id="s_weight" name="weight" placeholder=" " /><label for="s_weight" data-i18n="f.weight">Avg. weight (lb)</label></div>
+                <div class="field"><input type="text" id="s_carrier" name="carrier" placeholder=" " /><label for="s_carrier" data-i18n="f.carrier">Current carrier</label></div>
+                <div class="field"><input type="text" id="s_software" name="software" placeholder=" " /><label for="s_software" data-i18n="f.software">Shipping software / API</label></div>
+              </div>
+              <div class="fields">
+                <div class="field field--full"><textarea id="s_msg" name="message" rows="3" placeholder=" "></textarea><label for="s_msg" data-i18n="f.msgShip">Anything else? (destinations, dimensions, residential %, pickup needs…)</label></div>
               </div>
               <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
             </fieldset>
@@ -833,7 +843,7 @@
               <div class="field"><input type="text" id="e_name" name="name" placeholder=" " autocomplete="name" required /><label for="e_name" data-i18n="f.name">Full name *</label></div>
               <div class="field"><input type="text" id="e_company" name="company" placeholder=" " autocomplete="organization" /><label for="e_company" data-i18n="f.brand">Company / Brand</label></div>
               <div class="field"><input type="email" id="e_email" name="email" placeholder=" " autocomplete="email" required /><label for="e_email" data-i18n="f.email">Email *</label></div>
-              <div class="field"><input type="tel" id="e_phone" name="phone" placeholder=" " autocomplete="tel" /><label for="e_phone" data-i18n="f.phone">Phone / WeChat</label></div>
+              <div class="field"><input type="tel" id="e_phone" name="phone" placeholder=" " autocomplete="tel" /><label for="e_phone" data-i18n="f.phone">Phone / WhatsApp</label></div>
             </div>
 
             <div class="group">
@@ -847,6 +857,27 @@
               </div>
               <div class="chips chips--addon">
                 <label><input type="checkbox" name="creative" value="Yes" /><span data-i18n="f.creative">+ Creative Studio (images, A+ &amp; video)</span></label>
+              </div>
+            </div>
+
+            <div class="group accel-fields" id="accelFields" hidden>
+              <p class="group__label" data-i18n="f.accelTitle">About your brand (Accelerator)</p>
+              <div class="fields">
+                <div class="field"><input type="text" id="a_markets" name="markets" placeholder=" " /><label for="a_markets" data-i18n="f.markets">Current markets (e.g. China, SE Asia)</label></div>
+                <div class="field"><input type="text" id="a_certs" name="certs" placeholder=" " /><label for="a_certs" data-i18n="f.certs">Certifications (FCC, UL, FDA…)</label></div>
+              </div>
+              <p class="group__label group__label--sub" data-i18n="f.revenue">Annual revenue</p>
+              <div class="chips chips--radio">
+                <label><input type="radio" name="revenue" value="< $1M" /><span>&lt; $1M</span></label>
+                <label><input type="radio" name="revenue" value="$1–5M" /><span>$1–5M</span></label>
+                <label><input type="radio" name="revenue" value="$5–20M" /><span>$5–20M</span></label>
+                <label><input type="radio" name="revenue" value="$20M+" /><span>$20M+</span></label>
+              </div>
+              <p class="group__label group__label--sub" data-i18n="f.usEntity">US company / entity?</p>
+              <div class="chips chips--radio">
+                <label><input type="radio" name="entity" value="Yes" /><span data-i18n="f.yes">Yes</span></label>
+                <label><input type="radio" name="entity" value="No" /><span data-i18n="f.no">No</span></label>
+                <label><input type="radio" name="entity" value="In progress" /><span data-i18n="f.inprogress">In progress</span></label>
               </div>
             </div>
 

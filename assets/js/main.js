@@ -31,6 +31,8 @@
     "f.required": "Please enter your name and a valid email address.",
     "err.send": "Sorry, the message couldn't be sent. Please check your connection and try again in a moment.",
     "survey.parcels": "parcels",
+    "survey.day": "day",
+    "survey.month": "month",
     "book.loading": "Loading calendar…"
   };
   // Saved choice wins; otherwise follow the browser language.
@@ -101,7 +103,7 @@
   const navLinks = $$(".nav__links a");
   const jumpLinks = $$("[data-sec]");
   // the hero counts as "top"; everything between tracked sections inherits the previous one
-  const TRACKED = ["hero", "platforms", "services", "strategy", "pricing", "logistics", "why", "faq", "contact"];
+  const TRACKED = ["hero", "platforms", "services", "strategy", "pricing", "accelerator", "logistics", "why", "faq", "contact"];
   const trackedEls = TRACKED.map((id) => document.getElementById(id)).filter(Boolean);
   let currentSec = "";
   function setCurrent(id) {
@@ -494,6 +496,14 @@
       if (r) r.checked = true;
       const wantsCreative = a.dataset.creative === "1" || (a.dataset.plan === "takeover" && creativeToggle.checked);
       if (wantsCreative) $('#ecomForm input[name="creative"]').checked = true;
+      // carry the SKU count from the pricing slider into the form
+      if (a.dataset.plan === "takeover") {
+        const n = +skuRange.value;
+        const bucket = n <= 10 ? "1–10" : n <= 20 ? "11–20" : n <= 30 ? "21–30" : n <= 50 ? "31–50" : "50+";
+        const sk = $(`#ecomForm input[name="skus"][value="${bucket}"]`);
+        if (sk) sk.checked = true;
+      }
+      syncAccelFields();
     }
   }));
 
@@ -507,11 +517,16 @@
     Daily: ["< 50", "50–200", "200–500", "500–1,000", "1,000+"],
     Monthly: ["< 1,000", "1,000–5,000", "5,000–20,000", "20,000–50,000", "50,000+"]
   };
+  let lastPeriod = "Daily";
   function renderVolumes() {
     const period = $('input[name="period"]:checked', survey).value;
     const prev = ($('input[name="volume"]:checked', survey) || {}).value;
+    // switching per-day / per-month keeps the same bucket position instead of clearing the answer
+    const idx = prev ? VOLUMES[lastPeriod].indexOf(prev) : -1;
+    const keep = idx >= 0 ? VOLUMES[period][idx] : prev;
+    lastPeriod = period;
     $("#volOptions").innerHTML = VOLUMES[period].map((v) => `
-      <label class="opt"><input type="radio" name="volume" value="${v}" ${v === prev ? "checked" : ""}/>
+      <label class="opt"><input type="radio" name="volume" value="${v}" ${v === keep ? "checked" : ""}/>
       <span class="opt__body"><strong>${v}</strong><small>${t("survey.parcels")}</small></span></label>`).join("");
   }
   $$('input[name="period"]', survey).forEach((r) => r.addEventListener("change", renderVolumes));
@@ -528,13 +543,14 @@
     const items = [
       [0, labelFor("service")],
       [1, labelFor("size")],
-      [2, val("volume") ? `${val("volume")} ${t("survey.parcels")} / ${period.nextElementSibling.textContent}` : ""]
+      [2, val("volume") ? `${val("volume")} ${t("survey.parcels")} / ${t(period.value === "Daily" ? "survey.day" : "survey.month")}` : ""]
     ].filter(([, v]) => v);
     box.innerHTML = items.map(([i, v]) => `<button type="button" data-goto="${i}">${v}</button>`).join("");
-    $$("button", box).forEach((b) => b.addEventListener("click", () => goTo(+b.dataset.goto)));
+    $$("button", box).forEach((b) => b.addEventListener("click", () => { editing = true; goTo(+b.dataset.goto, true); }));
   }
 
-  function goTo(i) {
+  let editing = false; // opened a step from the summary chips → return to the summary afterwards
+  function goTo(i, focus = false) {
     const back = i < q;
     q = i;
     qs.forEach((f, j) => { f.classList.toggle("is-active", j === q); f.classList.toggle("is-back", back && j === q); });
@@ -546,17 +562,31 @@
     $("#surveyConsent").hidden = q !== qs.length - 1;
     hideError(survey);
     if (q === qs.length - 1) renderSummary();
+    if (focus) { const lg = $(".q__title", qs[q]); lg.setAttribute("tabindex", "-1"); lg.focus({ preventScroll: true }); }
   }
   const required = ["service", "size", "volume"];
   function next() {
     if (q < required.length && !val(required[q])) return showError(survey, t("survey.pick"));
-    goTo(Math.min(q + 1, qs.length - 1));
+    const target = editing ? qs.length - 1 : Math.min(q + 1, qs.length - 1);
+    if (target === qs.length - 1) editing = false;
+    goTo(target, true);
   }
   nextBtn.addEventListener("click", next);
   backBtn.addEventListener("click", () => goTo(Math.max(q - 1, 0)));
-  // auto-advance when a choice card is picked
+  // Auto-advance only when a card is tapped/clicked. Arrow keys just move the selection
+  // (Enter continues), so keyboard users can reach the option they want.
+  let tap = null;
+  survey.addEventListener("pointerdown", (e) => {
+    const opt = e.target.closest(".opt");
+    tap = opt ? { input: $("input", opt), wasChecked: $("input", opt).checked } : null;
+  });
   survey.addEventListener("change", (e) => {
-    if (["service", "size", "volume"].includes(e.target.name)) setTimeout(next, 280);
+    if (!["service", "size", "volume"].includes(e.target.name)) return;
+    if (tap && tap.input === e.target) { tap = null; setTimeout(next, 280); }
+  });
+  // tapping the answer that is already selected (e.g. when editing) also moves on
+  survey.addEventListener("click", (e) => {
+    if (e.target.tagName === "INPUT" && tap && tap.input === e.target && tap.wasChecked) { tap = null; setTimeout(next, 200); }
   });
   // Enter in a text input on the last step shouldn't skip validation
   survey.addEventListener("keydown", (e) => {
@@ -602,6 +632,7 @@
       if (!res.ok || String(data.success) === "false") throw new Error(data.message || res.statusText);
       lastContact = { name: payload["Name"] || "", email: payload.email || "" };
       form.reset();
+      syncAccelFields();
       renderVolumes();
       showPanel("success");
       mountBooking();
@@ -659,7 +690,10 @@
     else if (d.platforms.length) score += 1; else missing.push("运营平台");
     if (d.creative) { score += 1; reasons.push("需要创意设计"); }
     if (has(d.goal)) score += 1; else missing.push("经营目标");
-    if (d.plan === "Brand Accelerator") score += 1;
+    if (d.plan === "Brand Accelerator") {
+      score += 1;
+      if (d.revenue === "$5–20M" || d.revenue === "$20M+") { score += 2; reasons.push(`年营业额 ${d.revenue}`); }
+    }
     score += contactPoints(d, reasons, missing);
     const tier = tierOf(score, 7, 4);
 
@@ -690,10 +724,14 @@
     const daily = d.period === "Daily";
     const i = (daily ? DAILY : MONTHLY).indexOf(d.volume);
     score += daily ? i + 1 : i;
-    if (i >= 3) reasons.push("大货量");
+    if (i >= 3) { score += 2; reasons.push("大货量"); }
     if (d.size === "Large") { score += 1; reasons.push("大件（单票价值高）"); }
     score += contactPoints(d, reasons, missing);
-    if (!has(d.message)) missing.push("目的地 / 产品类型 / 现用物流商（留言为空）");
+    const detail = [["zip", "发货地邮编"], ["weight", "平均重量"], ["carrier", "现用物流商"], ["software", "发货软件"]];
+    const given = detail.filter(([k]) => has(d[k]));
+    if (given.length >= 2) { score += 1; reasons.push("提供了报价细节"); }
+    detail.filter(([k]) => !has(d[k])).forEach(([, zh]) => missing.push(zh));
+    if (!has(d.message)) missing.push("目的地 / 尺寸 / 住宅件比例（留言为空）");
     const tier = tierOf(score, 6, 3);
     const vol = `${d.volume} 件 / ${daily ? "天" : "月"}${daily ? `（${DAILY_AS_MONTH[i]}）` : ""}`;
     const summary = `运费报价｜${SERVICE_ZH[d.service]}｜${SIZE_ZH[d.size]}｜${vol}`;
@@ -708,7 +746,8 @@
     if (!validContact(survey)) return showError(survey, t("f.required"));
     const lead = analyzeShipping({
       service: val("service"), size: val("size"), volume: val("volume"), period: val("period"),
-      company: fieldVal(survey, "company"), phone: fieldVal(survey, "phone"), message: fieldVal(survey, "message")
+      company: fieldVal(survey, "company"), phone: fieldVal(survey, "phone"), message: fieldVal(survey, "message"),
+      zip: fieldVal(survey, "zip"), weight: fieldVal(survey, "weight"), carrier: fieldVal(survey, "carrier"), software: fieldVal(survey, "software")
     });
     send(survey, {
       _subject: `[${lead["① 线索等级"][0]}] 运费报价 — ${SERVICE_ZH[val("service")]} · ${fieldVal(survey, "company") !== "—" ? fieldVal(survey, "company") : fieldVal(survey, "name")}`,
@@ -720,13 +759,23 @@
       "Name": fieldVal(survey, "name"),
       "Company": fieldVal(survey, "company"),
       "email": fieldVal(survey, "email"),
-      "Phone / WeChat": fieldVal(survey, "phone"),
+      "Phone": fieldVal(survey, "phone"),
+      "Ship-from ZIP": fieldVal(survey, "zip"),
+      "Avg. weight (lb)": fieldVal(survey, "weight"),
+      "Current carrier": fieldVal(survey, "carrier"),
+      "Shipping software / API": fieldVal(survey, "software"),
       "Message": fieldVal(survey, "message"),
       "Site language": lang
     }, sendBtn);
   });
 
   const ecomForm = $("#ecomForm");
+  // Accelerator applicants get a few extra questions
+  function syncAccelFields() {
+    const on = (($('input[name="plan"]:checked', ecomForm) || {}).value) === "Brand Accelerator";
+    $("#accelFields").hidden = !on;
+  }
+  $$('input[name="plan"]', ecomForm).forEach((r) => r.addEventListener("change", syncAccelFields));
   ecomForm.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!validContact(ecomForm)) return showError(ecomForm, t("f.required"));
@@ -738,8 +787,15 @@
     const skus = (($('input[name="skus"]:checked', ecomForm) || {}).value) || "—";
     const lead = analyzeEcom({
       plan, platforms: platformList, creative, goal, skus,
-      company: fieldVal(ecomForm, "company"), phone: fieldVal(ecomForm, "phone"), message: fieldVal(ecomForm, "message")
+      company: fieldVal(ecomForm, "company"), phone: fieldVal(ecomForm, "phone"), message: fieldVal(ecomForm, "message"),
+      revenue: (($('input[name="revenue"]:checked', ecomForm) || {}).value) || "—"
     });
+    const accel = plan === "Brand Accelerator" ? {
+      "Current markets": fieldVal(ecomForm, "markets"),
+      "Annual revenue": (($('input[name="revenue"]:checked', ecomForm) || {}).value) || "—",
+      "US entity": (($('input[name="entity"]:checked', ecomForm) || {}).value) || "—",
+      "Certifications": fieldVal(ecomForm, "certs")
+    } : {};
     send(ecomForm, {
       _subject: `[${lead["① 线索等级"][0]}] 电商咨询 — ${PLAN_ZH[plan]} · ${fieldVal(ecomForm, "company") !== "—" ? fieldVal(ecomForm, "company") : fieldVal(ecomForm, "name")}`,
       ...lead,
@@ -749,10 +805,11 @@
       "Main goal": goal,
       "Platforms": platforms,
       "SKUs": skus,
+      ...accel,
       "Name": fieldVal(ecomForm, "name"),
       "Company / Brand": fieldVal(ecomForm, "company"),
       "email": fieldVal(ecomForm, "email"),
-      "Phone / WeChat": fieldVal(ecomForm, "phone"),
+      "Phone": fieldVal(ecomForm, "phone"),
       "Message": fieldVal(ecomForm, "message"),
       "Site language": lang
     }, $('button[type="submit"]', ecomForm));

@@ -3,6 +3,18 @@
    Palette: deep ink base + vivid violet / magenta / amber accents
    ========================================================= */
 
+/* self-hosted fonts (no Google Fonts: faster in mainland China) */
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 300; font-display: swap; src: url("../fonts/fraunces-latin-300-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 300; font-display: swap; src: url("../fonts/fraunces-latin-300-italic.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/fraunces-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/fraunces-latin-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500 600; font-display: swap; src: url("../fonts/fraunces-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/inter-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/inter-latin-800-normal.woff2") format("woff2"); }
+
 :root {
   --bg: #06060c;
   --bg-2: #0a0a14;
@@ -28,8 +40,8 @@
   --grad-soft: linear-gradient(100deg, rgba(139,108,255,.18), rgba(255,61,139,.14) 52%, rgba(255,162,74,.14));
   --danger: #ff7a6b;
 
-  --serif: "Fraunces", "Noto Serif SC", Georgia, serif;
-  --sans: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: "Fraunces", Georgia, "Songti SC", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
 
   --radius: 22px;
   --radius-sm: 14px;
@@ -696,6 +708,11 @@ html[lang="zh"] .group__label { letter-spacing: .04em; }
 .chips--addon span { border-style: dashed; }
 .chips input:focus-visible + span { outline: 2px solid var(--pink); outline-offset: 2px; }
 .ecom-form .fields + .group { margin-top: 32px; }
+.group__label--sub { margin: 22px 0 10px; font-size: 12px; }
+.fields--4 { grid-template-columns: repeat(4, 1fr); margin-bottom: 16px; }
+@media (max-width: 900px) { .fields--4 { grid-template-columns: 1fr 1fr; } }
+.accel-fields { padding: 20px; border-radius: 18px; border: 1px solid rgba(46,230,214,.3); background: rgba(46,230,214,.05); }
+.accel-fields .group__label:first-child { color: var(--teal); margin-top: 0; }
 .ecom-form .group + .fields { margin-top: 28px; }
 
 .survey__nav { display: flex; justify-content: space-between; align-items: center; margin-top: 36px; gap: 16px; }
