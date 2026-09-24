@@ -30,7 +30,8 @@
     "survey.pick": "Please choose an option to continue.",
     "f.required": "Please enter your name and a valid email address.",
     "err.send": "Sorry, the message couldn't be sent. Please check your connection and try again in a moment.",
-    "survey.parcels": "parcels"
+    "survey.parcels": "parcels",
+    "book.loading": "Loading calendar…"
   };
   // Saved choice wins; otherwise follow the browser language.
   let saved = null;
@@ -443,6 +444,40 @@
   function showPanel(name) {
     panels.forEach((p) => p.classList.toggle("is-active", p.dataset.panel === name));
   }
+
+  /* ---------- Calendly booking ----------
+     Only offered on the thank-you screen after a form is sent, prefilled with the sender's
+     name and email. The Calendly script loads at that moment, not on page load. */
+  const CALENDLY_URL = "https://calendly.com/innotronia-info/30min";
+  let lastContact = { name: "", email: "" };
+  const calendlyUrl = () => {
+    const q = new URLSearchParams({ hide_gdpr_banner: "1", locale: lang === "zh" ? "zh" : "en", name: lastContact.name, email: lastContact.email });
+    return `${CALENDLY_URL}?${q}`;
+  };
+  let calendlyReady = null;
+  function loadCalendly() {
+    if (calendlyReady) return calendlyReady;
+    calendlyReady = new Promise((resolve, reject) => {
+      const css = document.createElement("link");
+      css.rel = "stylesheet"; css.href = "https://assets.calendly.com/assets/external/widget.css";
+      document.head.appendChild(css);
+      const js = document.createElement("script");
+      js.src = "https://assets.calendly.com/assets/external/widget.js"; js.async = true;
+      js.onload = () => (window.Calendly ? resolve(window.Calendly) : reject(new Error("Calendly missing")));
+      js.onerror = reject;
+      document.head.appendChild(js);
+      setTimeout(() => reject(new Error("Calendly timeout")), 10000);
+    });
+    calendlyReady.catch(() => { calendlyReady = null; $("#bookPanel").classList.add("is-failed"); });
+    return calendlyReady;
+  }
+  function mountBooking() {
+    const box = $("#calendlyInline"), panel = $("#bookPanel");
+    panel.classList.remove("is-failed");
+    $(".book__fallback a", panel).href = calendlyUrl();
+    box.innerHTML = `<div class="book__loading"><span class="book__spinner" aria-hidden="true"></span><span>${t("book.loading")}</span></div>`;
+    loadCalendly().then((C) => { box.innerHTML = ""; C.initInlineWidget({ url: calendlyUrl(), parentElement: box }); }).catch(() => {});
+  }
   function selectTab(name) {
     tabs.forEach((tb) => { const on = tb.dataset.tab === name; tb.classList.toggle("is-active", on); tb.setAttribute("aria-selected", String(on)); });
     showPanel(name);
@@ -565,9 +600,11 @@
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || String(data.success) === "false") throw new Error(data.message || res.statusText);
+      lastContact = { name: payload["Name"] || "", email: payload.email || "" };
       form.reset();
       renderVolumes();
       showPanel("success");
+      mountBooking();
       $(".contact").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
     } catch (err) {
       console.error(err);

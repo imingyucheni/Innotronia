@@ -283,6 +283,11 @@ window.I18N = {
     "footer.privacy": "隐私政策",
     "tab.shipping": "运费报价",
     "tab.ecom": "电商咨询",
+    "book.title": "想尽快沟通？预约 30 分钟通话",
+    "book.lead": "选择您方便的时间，我们通过 Zoom 详细沟通您的需求。您的姓名和邮箱已自动填好。",
+    "book.loading": "日历加载中…",
+    "book.fallback": "日历没有显示？",
+    "book.open": "打开预约页面 ↗",
 
     "survey.step": "步骤",
     "survey.q1": "您需要哪项服务？",

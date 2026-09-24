@@ -865,6 +865,20 @@
             <h3 data-i18n="success.t">Thank you — message received.</h3>
             <p data-i18n="success.d">Our team will get back to you within one business day.</p>
             <button type="button" class="btn btn--ghost" id="successReset" data-i18n="success.again">Send another inquiry</button>
+            <!-- Booking: only offered after a successful form submission -->
+            <div class="book" id="bookPanel">
+              <div class="book__head">
+                <span class="book__icon" aria-hidden="true"><svg class="i-cal" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                <div>
+                  <h3 class="book__title" data-i18n="book.title">Want to talk sooner? Book a 30-minute call</h3>
+                  <p class="book__lead" data-i18n="book.lead">Pick a time that suits you — we'll meet on Zoom to go through your request. Your name and email are already filled in.</p>
+                </div>
+              </div>
+              <div class="book__embed" id="calendlyInline" aria-live="polite">
+                <div class="book__loading"><span class="book__spinner" aria-hidden="true"></span><span data-i18n="book.loading">Loading calendar…</span></div>
+              </div>
+              <p class="book__fallback"><span data-i18n="book.fallback">Calendar not showing?</span> <a href="https://calendly.com/innotronia-info/30min" target="_blank" rel="noopener" data-i18n="book.open">Open the booking page ↗</a></p>
+            </div>
           </div>
         </div>
 

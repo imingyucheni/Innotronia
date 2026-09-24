@@ -584,7 +584,7 @@ html[lang="zh"] .bento__card--xl h3 { font-family: var(--sans); font-weight: 700
 .tab { position: relative; z-index: 1; padding: 12px 26px; border-radius: 999px; font-size: 14px; font-weight: 500; color: var(--muted); transition: color .35s; }
 .tab.is-active { color: #fff; font-weight: 600; }
 .tabs__ink { position: absolute; top: 5px; bottom: 5px; left: 5px; border-radius: 999px; background: var(--grad); box-shadow: 0 8px 24px -8px rgba(255,61,139,.7); transition: transform .5s var(--ease), width .5s var(--ease); }
-@media (max-width: 480px) { .tab { padding: 11px 16px; font-size: 13px; } }
+
 
 .panel-wrap { position: relative; max-width: 880px; margin: 0 auto; }
 .panel { display: none; padding: clamp(24px, 4vw, 48px); border-radius: 28px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015)); box-shadow: 0 40px 100px -40px rgba(0,0,0,.8); }
@@ -771,6 +771,27 @@ html[lang="zh"] .success h3 { font-family: var(--sans); font-weight: 700; }
 @media (max-width: 640px) { .form-consent { text-align: left; } }
 .footer__links { display: inline-flex; gap: 20px; }
 .footer__links a:hover { color: var(--accent); }
+
+/* ---------- booking (Calendly, shown after form submission) ---------- */
+@media (max-width: 480px) { .tab { padding: 11px 16px; font-size: 13px; } }
+.i-cal { width: 16px; height: 16px; flex: none; }
+.book { margin-top: 44px; padding-top: 36px; border-top: 1px solid var(--line); text-align: left; }
+.book__head { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 22px; }
+.book__icon { width: 52px; height: 52px; flex: none; border-radius: 16px; display: grid; place-items: center; color: #fff; background: var(--grad); box-shadow: 0 10px 26px -10px rgba(255,61,139,.7); }
+.book__icon .i-cal { width: 24px; height: 24px; }
+.book__title { font-family: var(--serif); font-weight: 400; font-size: clamp(24px, 3vw, 32px); margin: 0 0 6px; line-height: 1.2; }
+html[lang="zh"] .book__title { font-family: var(--sans); font-weight: 700; }
+.book__lead { color: var(--muted); margin: 0; }
+.book__embed { position: relative; min-height: 700px; border-radius: 18px; overflow: hidden; background: #fff; }
+.book__embed .calendly-inline-widget, .book__embed iframe { width: 100%; min-width: 280px; height: 700px; border: 0; }
+.book__loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #555; font-size: 14px; }
+.book__spinner { width: 28px; height: 28px; border-radius: 50%; border: 3px solid #eee; border-top-color: var(--pink); animation: spin .8s linear infinite; }
+.book.is-failed .book__embed { min-height: 0; background: none; }
+.book.is-failed .book__loading { display: none; }
+.book__fallback { margin: 14px 0 0; text-align: center; font-size: 13.5px; color: var(--dim); }
+.book__fallback a { color: var(--text); text-decoration: underline; text-decoration-color: var(--pink); text-underline-offset: 3px; }
+.book.is-failed .book__fallback { font-size: 16px; padding: 30px 0 10px; }
+@media (max-width: 640px) { .book__embed { min-height: 760px; } .book__embed .calendly-inline-widget, .book__embed iframe { height: 760px; } .book__head { gap: 14px; } .book__icon { width: 44px; height: 44px; } }
 
 /* ---------- reveal ---------- */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s var(--ease), transform 1s var(--ease); transition-delay: var(--d, 0s); }
