@@ -605,7 +605,7 @@
       renderVolumes();
       showPanel("success");
       mountBooking();
-      $(".contact").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      $("#success").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
     } catch (err) {
       console.error(err);
       showError(form, t("err.send"));
@@ -659,6 +659,7 @@
     else if (d.platforms.length) score += 1; else missing.push("运营平台");
     if (d.creative) { score += 1; reasons.push("需要创意设计"); }
     if (has(d.goal)) score += 1; else missing.push("经营目标");
+    if (d.plan === "Brand Accelerator") score += 1;
     score += contactPoints(d, reasons, missing);
     const tier = tierOf(score, 7, 4);
 
@@ -667,7 +668,7 @@
 
     let value;
     const addon = d.creative ? 699 : 0;
-    if (d.plan === "Brand Accelerator") { score += 1; value = "品牌加速器深度合作：合作模式（按业绩 / 营收分成 / 组合）需面谈，建议先了解产品、现有销售与品牌规划"; }
+    if (d.plan === "Brand Accelerator") { value = "品牌加速器深度合作：合作模式（按业绩 / 营收分成 / 组合）需面谈，建议先了解产品、现有销售与品牌规划"; }
     else if (d.skus === "50+" || d.plan === "Enterprise (50+ SKUs)") value = "定制报价（50+ SKU），需沟通具体渠道与产品数量";
     else if (d.plan === "Channel Expansion") value = "按新渠道净营业额 5% 收费；需了解客户目前 / 预期月销售额";
     else if (TAKEOVER_FEE[d.skus]) {

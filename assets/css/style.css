@@ -707,7 +707,7 @@ html[lang="zh"] .group__label { letter-spacing: .04em; }
 .form-error { margin: 18px 0 0; padding: 14px 18px; border-radius: 12px; border: 1px solid rgba(255,122,107,.4); background: rgba(255,122,107,.1); color: #ffc9c1; font-size: 14px; }
 .form-error a { color: #fff; text-decoration: underline; }
 
-.success { text-align: center; padding: clamp(48px, 7vw, 80px) 24px; }
+.success { text-align: center; padding: clamp(48px, 7vw, 80px) 24px; scroll-margin-top: 90px; }
 .success__check { width: 88px; height: 88px; margin: 0 auto 28px; }
 .success__check circle { stroke: url(#sg); stroke-width: 2; stroke-dasharray: 151; stroke-dashoffset: 151; }
 .success__check path { stroke: url(#sg); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 36; stroke-dashoffset: 36; }
@@ -775,7 +775,11 @@ html[lang="zh"] .success h3 { font-family: var(--sans); font-weight: 700; }
 /* ---------- quick menu (mobile / tablet) ---------- */
 .quick { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 45; display: none; flex-direction: column; align-items: flex-end; gap: 12px;
   opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .4s var(--ease), transform .4s var(--ease); }
-.quick.is-on { opacity: 1; transform: none; pointer-events: auto; }
+/* the container never takes clicks itself — only the button, and the panel while open */
+.quick.is-on { opacity: 1; transform: none; }
+.quick.is-on .quick__btn, .quick.is-on.is-open .quick__panel { pointer-events: auto; }
+.quick__panel { pointer-events: none; }
+@media (max-width: 1100px) { .footer { padding-bottom: 96px; } }
 @media (max-width: 1100px) { .quick { display: flex; } }
 .quick__btn { position: relative; width: 54px; height: 54px; border-radius: 50%; background: rgba(12,12,24,.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid var(--line-2); box-shadow: 0 14px 34px -10px rgba(0,0,0,.8), 0 0 24px -6px rgba(255,61,139,.5); display: grid; place-items: center; }
 .quick__ring { position: absolute; inset: 1px; width: calc(100% - 2px); height: calc(100% - 2px); transform: rotate(-90deg); }

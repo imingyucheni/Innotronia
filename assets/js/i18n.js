@@ -349,7 +349,7 @@ window.I18N = {
 
     "err.send": "发送失败，请检查网络后重试。如果仍然无法发送，请稍后再试。",
 
-    "success.t": "感谢您，我们已收到信息。",
+    "success.t": "感谢您，<span class=\"nw\">信息已收到。</span>",
     "success.d": "我们的团队会在一个工作日内与您联系。",
     "success.again": "再次提交咨询",
 
