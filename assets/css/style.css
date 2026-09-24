@@ -525,7 +525,8 @@ html[lang="zh"] .accel__title { font-family: var(--sans); font-weight: 700; }
 
 /* who pays what */
 .pay { margin-top: 20px; padding: clamp(22px, 3vw, 32px); border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
-.pay__title { margin: 0 0 16px; font-size: 18px; font-weight: 600; }
+.pay__lead { margin: -6px 0 16px; color: var(--muted); font-size: 14.5px; max-width: 760px; }
+.pay__title { margin: 0 0 12px; font-size: 18px; font-weight: 600; }
 .pay__scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .pay__table { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 14px; }
 .pay__table th, .pay__table td { text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
