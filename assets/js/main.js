@@ -618,6 +618,15 @@
     zh: "感谢您联系 Atronia Innovations！我们已收到您的咨询，团队会在一个工作日内与您联系。\n\n这是一封自动确认邮件，无需回复。\n\n— Atronia Innovations 团队\nhttps://innotronia.com"
   };
 
+  // "Prefer WeChat" → tell the team in the summary and show a note on the thank-you screen
+  function withWechat(form, lead, payload) {
+    const on = $('input[name="wechat"]', form).checked;
+    if (on) lead["⑤ 建议下一步"] += "。⚠️ 客户希望通过微信联系：请把微信发给客户";
+    payload["Preferred contact"] = on ? "WeChat" : "Email / phone";
+    return on;
+  }
+  let wantsWechat = false;
+
   async function send(form, payload, btn) {
     hideError(form);
     if ($('input[name="_honey"]', form).value) return; // bot
@@ -635,6 +644,7 @@
       syncAccelFields();
       renderVolumes();
       showPanel("success");
+      $("#successWechat").hidden = !wantsWechat;
       mountBooking();
       $("#success").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
     } catch (err) {
@@ -704,10 +714,10 @@
     const addon = d.creative ? 699 : 0;
     if (d.plan === "Brand Accelerator") { value = "品牌加速器深度合作：合作模式（按业绩 / 营收分成 / 组合）需面谈，建议先了解产品、现有销售与品牌规划"; }
     else if (d.skus === "50+" || d.plan === "Enterprise (50+ SKUs)") value = "定制报价（50+ SKU），需沟通具体渠道与产品数量";
-    else if (d.plan === "Channel Expansion") value = "按新渠道净营业额 5% 收费；需了解客户目前 / 预期月销售额";
+    else if (d.plan === "Channel Expansion") value = "按新渠道营业额 5% 收费（产品线好、有市场优势可免开户费）；需了解客户目前 / 预期月销售额";
     else if (TAKEOVER_FEE[d.skus]) {
       const fee = TAKEOVER_FEE[d.skus].map((x) => x + addon);
-      value = `${d.plan === "Channel Takeover" ? "" : "若选渠道接管："}约 ${range$(fee)}/月${d.creative ? "（含创意设计 $699）" : ""} + $199 开户费 + 1% 广告营业额；首期 3 个月合同约 ${range$(fee.map((x) => 199 + 3 * x))}`;
+      value = `${d.plan === "Channel Takeover" ? "" : "若选渠道接管："}约 ${range$(fee)}/月${d.creative ? "（含创意设计 $699）" : ""} + $199 开户费 + 广告带来销售额的 1%；首期 3 个月合同约 ${range$(fee.map((x) => 199 + 3 * x))}`;
     } else value = "暂无法估算（缺少 SKU 数量）";
 
     return report(tier, score, reasons, summary, value, missing, TIER_NEXT[tier], lang);
@@ -749,7 +759,7 @@
       company: fieldVal(survey, "company"), phone: fieldVal(survey, "phone"), message: fieldVal(survey, "message"),
       zip: fieldVal(survey, "zip"), weight: fieldVal(survey, "weight"), carrier: fieldVal(survey, "carrier"), software: fieldVal(survey, "software")
     });
-    send(survey, {
+    const shipPayload = {
       _subject: `[${lead["① 线索等级"][0]}] 运费报价 — ${SERVICE_ZH[val("service")]} · ${fieldVal(survey, "company") !== "—" ? fieldVal(survey, "company") : fieldVal(survey, "name")}`,
       ...lead,
       "Inquiry type": "Shipping quote",
@@ -766,7 +776,10 @@
       "Shipping software / API": fieldVal(survey, "software"),
       "Message": fieldVal(survey, "message"),
       "Site language": lang
-    }, sendBtn);
+    };
+    wantsWechat = withWechat(survey, lead, shipPayload);
+    Object.assign(shipPayload, lead);
+    send(survey, shipPayload, sendBtn);
   });
 
   const ecomForm = $("#ecomForm");
@@ -796,7 +809,7 @@
       "US entity": (($('input[name="entity"]:checked', ecomForm) || {}).value) || "—",
       "Certifications": fieldVal(ecomForm, "certs")
     } : {};
-    send(ecomForm, {
+    const ecomPayload = {
       _subject: `[${lead["① 线索等级"][0]}] 电商咨询 — ${PLAN_ZH[plan]} · ${fieldVal(ecomForm, "company") !== "—" ? fieldVal(ecomForm, "company") : fieldVal(ecomForm, "name")}`,
       ...lead,
       "Inquiry type": "E-commerce consultation",
@@ -812,7 +825,10 @@
       "Phone": fieldVal(ecomForm, "phone"),
       "Message": fieldVal(ecomForm, "message"),
       "Site language": lang
-    }, $('button[type="submit"]', ecomForm));
+    };
+    wantsWechat = withWechat(ecomForm, lead, ecomPayload);
+    Object.assign(ecomPayload, lead);
+    send(ecomForm, ecomPayload, $('button[type="submit"]', ecomForm));
   });
 
   $("#successReset").addEventListener("click", () => {

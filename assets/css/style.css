@@ -523,6 +523,24 @@ html[lang="zh"] .accel__title { font-family: var(--sans); font-weight: 700; }
 .accel__list strong { display: block; font-weight: 600; font-size: 15.5px; margin-bottom: 4px; }
 .accel__list small { color: var(--muted); font-size: 13px; line-height: 1.5; display: block; }
 
+/* who pays what */
+.pay { margin-top: 20px; padding: clamp(22px, 3vw, 32px); border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
+.pay__title { margin: 0 0 16px; font-size: 18px; font-weight: 600; }
+.pay__scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.pay__table { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 14px; }
+.pay__table th, .pay__table td { text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.pay__table thead th { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+html[lang="zh"] .pay__table thead th { letter-spacing: .04em; }
+.pay__table tbody th { color: var(--text); font-weight: 600; width: 22%; }
+.pay__table td { color: var(--muted); }
+.pay__table tbody tr:last-child th, .pay__table tbody tr:last-child td { border-bottom: 0; }
+.pay__table tbody tr:hover td, .pay__table tbody tr:hover th { background: rgba(255,255,255,.02); }
+.pay__note { margin: 12px 0 0; font-size: 12.5px; color: var(--dim); }
+.chips--wechat { margin: 16px 0 4px; }
+.chips--wechat span { border-color: rgba(7,193,96,.45); }
+.chips--wechat input:checked + span { border-color: #07c160; background: rgba(7,193,96,.16); color: #fff; }
+.success__wechat { margin: -18px auto 26px !important; padding: 10px 16px; width: fit-content; max-width: 100%; border-radius: 12px; background: rgba(7,193,96,.12); border: 1px solid rgba(7,193,96,.4); color: #c8f5dc !important; font-size: 14px; }
+
 /* ---------- logistics ---------- */
 .log__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 800px) { .log__grid { grid-template-columns: 1fr; } }
