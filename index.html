@@ -55,7 +55,7 @@
       "name": "Services",
       "itemListElement": [
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Channel Takeover", "description": "A–Z marketplace operations for Amazon, Walmart, Wayfair, Overstock, Temu, SHEIN and TikTok Shop." }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": 999, "priceCurrency": "USD", "unitText": "MONTH" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Channel Expansion", "description": "Open and grow new sales channels for 5% of revenue, with no setup fee for qualifying brands." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Channel Expansion", "description": "Open and grow new sales channels for 5% of net revenue (gross sales minus returns), with no setup fee for qualifying brands." } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Accelerator", "description": "Long-term growth partnership for selected brands with performance-based, revenue-share or hybrid terms." } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creative Studio", "description": "Main images, A+ content, Brand Store design and AI-generated product videos." }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": 699, "priceCurrency": "USD", "unitText": "MONTH" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "US Last-Mile Delivery" } },
@@ -455,13 +455,13 @@
             <h3 class="plan__name" data-i18n="plan2.name">Channel Expansion</h3>
             <p class="plan__desc" data-i18n="plan2.desc">We open and grow brand-new sales channels for you. No setup fee for brands with a strong catalog and a clear market edge.</p>
             <div class="plan__price">
-              <span class="plan__amount">5%</span><span class="plan__per" data-i18n="plan2.per">of revenue</span>
+              <span class="plan__amount">5%</span><span class="plan__per" data-i18n="plan2.per">of net revenue</span>
             </div>
-            <p class="plan__extra" data-i18n="plan2.extra">Of sales on the new channel(s) · No setup fee</p>
+            <p class="plan__extra" data-i18n="plan2.extra">Net revenue = gross sales on the new channel(s) minus returns · No setup fee</p>
 
             <div class="rev">
               <div class="calc__row">
-                <label for="revRange" data-i18n="rev.label">Monthly revenue</label>
+                <label for="revRange" data-i18n="rev.label">Monthly net revenue</label>
                 <output id="revOut" for="revRange">$50,000</output>
               </div>
               <input type="range" id="revRange" min="5000" max="500000" value="50000" step="5000" />
@@ -554,7 +554,7 @@
             <table class="pay__table">
               <thead><tr><th></th><th data-i18n="pay.col.t">Channel Takeover</th><th data-i18n="pay.col.e">Channel Expansion</th><th data-i18n="pay.col.a">Brand Accelerator</th></tr></thead>
               <tbody>
-              <tr><th scope="row" data-i18n="pay.fee">Our fee</th><td data-i18n="pay.fee.t">$999+/mo + 1% of ad-generated sales</td><td data-i18n="pay.fee.e">5% of revenue</td><td data-i18n="pay.agree">Per agreement</td></tr>
+              <tr><th scope="row" data-i18n="pay.fee">Our fee</th><td data-i18n="pay.fee.t">$999+/mo + 1% of ad-generated sales (returns not deducted)</td><td data-i18n="pay.fee.e">5% of net revenue (gross minus returns)</td><td data-i18n="pay.agree">Per agreement</td></tr>
               <tr><th scope="row" data-i18n="pay.setup">Setup fee</th><td data-i18n="pay.setup.t">$199 one-time</td><td data-i18n="pay.setup.e">None*</td><td data-i18n="pay.agree">Per agreement</td></tr>
               <tr><th scope="row" data-i18n="pay.ads">Ad spend</th><td data-i18n="pay.you">You — per approved proposal</td><td data-i18n="pay.you">You — per approved proposal</td><td data-i18n="pay.agree">Per agreement</td></tr>
               <tr><th scope="row" data-i18n="pay.samples">Samples &amp; influencer seeding</th><td data-i18n="pay.you">You — per approved proposal</td><td data-i18n="pay.you">You — per approved proposal</td><td data-i18n="pay.agree">Per agreement</td></tr>
@@ -720,12 +720,12 @@
           <details class="qa reveal"><summary data-i18n="faq.q10">Do you guarantee results?</summary><p data-i18n="faq.a10">Performance commitments and KPIs are discussed and agreed before onboarding, based on your products, channels and starting point.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q11">Do you need my account password?</summary><p data-i18n="faq.a11">No. You simply invite us as a user on your seller account (user permissions). You keep full ownership and control of your account at all times.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q12">What if my account gets suspended?</summary><p data-i18n="faq.a12">We follow platform policies strictly. We aren't responsible for suspensions caused by seller-side issues — for example, incomplete identity verification — but we'll assist you through the appeal and reinstatement process to make it as smooth as possible.</p></details>
-          <details class="qa reveal"><summary data-i18n="faq.q2">How is the Channel Takeover fee calculated?</summary><p data-i18n="faq.a2">The Starter package covers up to 10 SKUs for $999/month, plus a one-time $199 setup fee and 1% of the sales generated by ads. Every additional 10 SKUs adds $499/month. For more than 50 SKUs, we'll build a custom quote.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q2">How is the Channel Takeover fee calculated?</summary><p data-i18n="faq.a2">The Starter package covers up to 10 SKUs for $999/month, plus a one-time $199 setup fee and 1% of the sales generated by ads (calculated on ad-generated sales, returns not deducted). Every additional 10 SKUs adds $499/month. For more than 50 SKUs, we'll build a custom quote.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q7">What does the Creative Studio add-on include?</summary><p data-i18n="faq.a7">For +$699/month on top of your management fee, we produce main images, secondary and infographic images, A+ / Premium A+ content, Brand Store and brand visuals, ad creatives, and product videos. It's available with Channel Takeover, and can be added to Channel Expansion by agreement.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q9">How is the Brand Accelerator different from your agency plans?</summary><p data-i18n="faq.a9">Our agency plans are services for a set fee. The Accelerator is a deeper, long-term partnership: what each side invests — team, ad budget, inventory or capital — and how results are shared is agreed between us. We're open to discussing the right structure for your brand.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q8">Do you shoot product photos or videos?</summary><p data-i18n="faq.a8">We don't offer on-location shoots. Instead, we generate and edit videos and lifestyle visuals with AI tools, using the product photos and footage you provide.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q3">Is ad spend included? Who pays for samples?</summary><p data-i18n="faq.a3">No. Ad spend, influencer samples and similar costs are paid by you, based on a proposal we prepare for your approval — our fee covers strategy and management. Under an Accelerator or cooperation agreement, costs are shared as agreed.</p></details>
-          <details class="qa reveal"><summary data-i18n="faq.q4">How is the Channel Expansion fee calculated?</summary><p data-i18n="faq.a4">5% of the sales revenue generated on the new channel(s). There's no setup fee for brands with a strong catalog and a clear advantage in the market — we assess this together during the consultation.</p></details>
+          <details class="qa reveal"><summary data-i18n="faq.q4">How is the Channel Expansion fee calculated?</summary><p data-i18n="faq.a4">5% of net revenue on the new channel(s) — that is, gross sales minus returns. There's no setup fee for brands with a strong catalog and a clear advantage in the market — we assess this together during the consultation.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q13">How does your shipping service work?</summary><p data-i18n="faq.a13">We provide shipping labels at discounted rates negotiated with our carrier partners — UniUni, GOFO, SwiftX and USPS for US last-mile, and FedEx, UPS, ePost and DHL for international. Pickup can be arranged with our help, or by your own team. The service is currently open to businesses looking for discounted carrier rates.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q14">Do you manage TikTok Shop?</summary><p data-i18n="faq.a14">Yes. We list your products, run promotions, send samples to influencers and create content to drive sales.</p></details>
           <details class="qa reveal"><summary data-i18n="faq.q5">Can I combine e-commerce and logistics services?</summary><p data-i18n="faq.a5">Yes. Many clients use us for both — we'll connect your marketplace operations directly to our shipping services.</p></details>

@@ -714,10 +714,10 @@
     const addon = d.creative ? 699 : 0;
     if (d.plan === "Brand Accelerator") { value = "品牌加速器深度合作：合作模式（按业绩 / 营收分成 / 组合）需面谈，建议先了解产品、现有销售与品牌规划"; }
     else if (d.skus === "50+" || d.plan === "Enterprise (50+ SKUs)") value = "定制报价（50+ SKU），需沟通具体渠道与产品数量";
-    else if (d.plan === "Channel Expansion") value = "按新渠道营业额 5% 收费（产品线好、有市场优势可免开户费）；需了解客户目前 / 预期月销售额";
+    else if (d.plan === "Channel Expansion") value = "按新渠道净营业额（销售额 − 退货）5% 收费（产品线好、有市场优势可免开户费）；需了解客户目前 / 预期月销售额";
     else if (TAKEOVER_FEE[d.skus]) {
       const fee = TAKEOVER_FEE[d.skus].map((x) => x + addon);
-      value = `${d.plan === "Channel Takeover" ? "" : "若选渠道接管："}约 ${range$(fee)}/月${d.creative ? "（含创意设计 $699）" : ""} + $199 开户费 + 广告带来销售额的 1%；首期 3 个月合同约 ${range$(fee.map((x) => 199 + 3 * x))}`;
+      value = `${d.plan === "Channel Takeover" ? "" : "若选渠道接管："}约 ${range$(fee)}/月${d.creative ? "（含创意设计 $699）" : ""} + $199 开户费 + 广告带来销售额的 1%（不扣退货）；首期 3 个月合同约 ${range$(fee.map((x) => 199 + 3 * x))}`;
     } else value = "暂无法估算（缺少 SKU 数量）";
 
     return report(tier, score, reasons, summary, value, missing, TIER_NEXT[tier], lang);
