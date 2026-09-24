@@ -43,7 +43,7 @@
   if (urlLang === "zh" || urlLang === "en") { try { localStorage.setItem("inno-lang", urlLang); } catch (e) { /* ignore */ } }
   const META = {
     en: { title: document.title, desc: document.querySelector('meta[name="description"]').content },
-    zh: { title: "Atronia Innovations — 电商代运营与物流服务", desc: "Atronia Innovations 拥有 10 年以上电商运营经验，提供 Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok Shop 渠道接管与全托管运营、新渠道开拓、创意设计（主图、A+、视频），以及美国尾程派送与国际包裹物流服务。" }
+    zh: { title: "Atronia Innovations — 电商代运营与物流服务", desc: "Atronia Innovations 团队拥有 12 年以上电商运营经验，提供 Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok Shop 渠道接管与全托管运营、新渠道开拓、创意设计（主图、A+、视频），以及美国尾程派送与国际包裹物流服务。" }
   };
   const t = (key) => (lang === "zh" && window.I18N.zh[key]) || EN[key] || key;
 
