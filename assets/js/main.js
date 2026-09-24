@@ -489,7 +489,7 @@
   $$("[data-tab-target]").forEach((a) => a.addEventListener("click", () => {
     selectTab(a.dataset.tabTarget);
     if (a.dataset.plan) {
-      const map = { takeover: "Channel Takeover", expansion: "Channel Expansion", enterprise: "Enterprise (50+ SKUs)" };
+      const map = { takeover: "Channel Takeover", expansion: "Channel Expansion", enterprise: "Enterprise (50+ SKUs)", accelerator: "Brand Accelerator" };
       const r = $(`#ecomForm input[name="plan"][value="${map[a.dataset.plan]}"]`);
       if (r) r.checked = true;
       const wantsCreative = a.dataset.creative === "1" || (a.dataset.plan === "takeover" && creativeToggle.checked);
@@ -645,7 +645,7 @@
   });
 
   const TAKEOVER_FEE = { "1–10": [999, 999], "11–20": [1498, 1498], "21–30": [1997, 1997], "31–50": [2496, 2995] };
-  const PLAN_ZH = { "Channel Takeover": "渠道接管", "Channel Expansion": "新渠道开拓", "Enterprise (50+ SKUs)": "企业定制（50+ SKU）", "Not sure yet": "未确定方案" };
+  const PLAN_ZH = { "Channel Takeover": "渠道接管", "Channel Expansion": "新渠道开拓", "Enterprise (50+ SKUs)": "企业定制（50+ SKU）", "Brand Accelerator": "品牌加速器（深度合作）", "Not sure yet": "未确定方案" };
   const GOAL_ZH = { "Profit-first": "重利润", "Balanced": "利润销量平衡", "Volume-first": "重销量" };
   const range$ = ([lo, hi]) => (lo === hi ? money(lo) : `${money(lo)}–${money(hi)}`);
 
@@ -667,7 +667,8 @@
 
     let value;
     const addon = d.creative ? 699 : 0;
-    if (d.skus === "50+" || d.plan === "Enterprise (50+ SKUs)") value = "定制报价（50+ SKU），需沟通具体渠道与产品数量";
+    if (d.plan === "Brand Accelerator") { score += 1; value = "品牌加速器深度合作：合作模式（按业绩 / 营收分成 / 组合）需面谈，建议先了解产品、现有销售与品牌规划"; }
+    else if (d.skus === "50+" || d.plan === "Enterprise (50+ SKUs)") value = "定制报价（50+ SKU），需沟通具体渠道与产品数量";
     else if (d.plan === "Channel Expansion") value = "按新渠道净营业额 5% 收费；需了解客户目前 / 预期月销售额";
     else if (TAKEOVER_FEE[d.skus]) {
       const fee = TAKEOVER_FEE[d.skus].map((x) => x + addon);
