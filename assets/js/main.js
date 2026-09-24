@@ -763,6 +763,19 @@
     if (active === "shipping") goTo(0);
   });
 
+  /* ---------- office local clocks ---------- */
+  const clocks = $$(".office__time");
+  function tickClocks() {
+    clocks.forEach((el) => {
+      try {
+        el.textContent = new Intl.DateTimeFormat(lang === "zh" ? "zh-CN" : "en-US", { hour: "numeric", minute: "2-digit", timeZone: el.dataset.tz }).format(new Date());
+      } catch (e) { el.textContent = ""; }
+    });
+  }
+  tickClocks();
+  setInterval(tickClocks, 30000);
+  $("#langToggle").addEventListener("click", tickClocks);
+
   /* ---------- init ---------- */
   $("#year").textContent = new Date().getFullYear();
   renderVolumes();

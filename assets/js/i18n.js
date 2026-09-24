@@ -125,7 +125,12 @@ window.I18N = {
     "why.b5.d": "先全面审查 Listing、广告、库存与账号健康，给出清晰的行动计划，再开始调整。",
     "why.b6.k": "中文 / EN",
     "why.b6.t": "中英双语团队，响应迅速",
-    "why.b6.d": "我们以中英文无缝沟通，跨时区连接品牌、工厂与美国电商平台。",
+    "why.b6.d": "我们在洛杉矶和深圳设有办公室，以中英文无缝沟通，跨时区连接品牌、工厂与美国电商平台。",
+    "off.la": "美国 · 洛杉矶",
+    "off.sz": "中国 · 深圳",
+    "off.local": "当地时间",
+    "off.note": "两地办公，横跨中美时区 —— 几乎随时都有人为您服务。",
+    "footer.offices": "办公地点",
 
     "faq.q7": "创意设计增值服务包含哪些内容？",
     "faq.a7": "在运营月费基础上每月 +$699，我们为您制作主图、副图与信息图、A+ / 高级 A+ 页面、品牌旗舰店与品牌视觉、广告素材以及产品视频。",
@@ -152,7 +157,7 @@ window.I18N = {
     "f.creative": "+ 创意设计（图片、A+ 与视频）",
     "f.goal": "您的主要目标",
 
-    "footer.legal": "Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok、UniUni、GOFO、SwiftX、USPS、FedEx、UPS、ePost 及 DHL 均为其各自所有者的商标。Atronia Innovations 为独立服务商，与上述平台无隶属或背书关系。",
+    "footer.legal": "Amazon、Walmart、Wayfair、Overstock、Temu、SHEIN、TikTok、UniUni、GOFO、SwiftX、USPS、FedEx、UPS、ePost 及 DHL 均为其各自所有者的商标。文中品牌名称与标志仅用于标识，不代表相关公司的背书。",
 
     "hero.eyebrow": "电商代运营与品牌加速 · 物流合作伙伴",
     "hero.title": "<span class=\"nw\">店铺交给我们运营，</span><br/><span class=\"nw\">包裹交给我们<em>派送。</em></span>",

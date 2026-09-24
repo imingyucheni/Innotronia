@@ -719,6 +719,18 @@ html[lang="zh"] .success h3 { font-family: var(--sans); font-weight: 700; }
 .success p { color: var(--muted); margin: 0 0 32px; }
 
 
+/* offices (contact) */
+.offices { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 880px; margin: 0 auto 30px; }
+.office { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); }
+.office__pin { width: 42px; height: 42px; flex: none; border-radius: 12px; display: grid; place-items: center; color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); }
+.office__pin svg { width: 20px; height: 20px; }
+.office strong { display: block; font-weight: 600; font-size: 15.5px; }
+.office small { color: var(--muted); font-size: 13px; }
+.office__time { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; margin-left: 4px; }
+.offices__note { grid-column: 1 / -1; margin: 0; text-align: center; font-size: 13.5px; color: var(--dim); }
+@media (max-width: 560px) { .offices { grid-template-columns: 1fr; } }
+.footer__office { display: block; color: var(--muted); font-size: 14px; padding: 5px 0; }
+
 /* ---------- footer ---------- */
 .footer { position: relative; z-index: 1; border-top: 1px solid var(--line); padding: 72px 0 28px; background: var(--bg); }
 .footer::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: var(--grad); opacity: .6; }

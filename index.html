@@ -45,6 +45,10 @@
     "image": "https://innotronia.com/assets/img/og-image.png",
     "description": "Full-service e-commerce agency and logistics partner with 12+ years of team experience in marketplace operations.",
     "areaServed": ["US", "Worldwide"],
+    "address": [
+      { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
+      { "@type": "PostalAddress", "addressLocality": "Shenzhen", "addressRegion": "Guangdong", "addressCountry": "CN" }
+    ],
     "knowsLanguage": ["en", "zh"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -657,7 +661,7 @@
           <article class="bento__card bento__card--c6 reveal">
             <span class="bento__k" data-i18n="why.b6.k">中文 / EN</span>
             <h3 data-i18n="why.b6.t">Bilingual team, fast response</h3>
-            <p data-i18n="why.b6.d">We work fluently in English and Chinese, bridging brands, factories and US marketplaces across time zones.</p>
+            <p data-i18n="why.b6.d">With offices in Los Angeles and Shenzhen, we work fluently in English and Chinese — bridging brands, factories and US marketplaces across time zones.</p>
           </article>
         </div>
       </div>
@@ -714,6 +718,18 @@
           <p class="eyebrow"><span class="dot"></span><span data-i18n="contact.eyebrow">Contact</span></p>
           <h2 class="section__title" data-i18n-html="contact.title">Let's build <em>something</em> together.</h2>
           <p class="section__lead" data-i18n="contact.lead">Choose what you need. We typically reply within one business day.</p>
+        </div>
+
+        <div class="offices reveal">
+          <div class="office" style="--c:#8b6cff">
+            <span class="office__pin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <div><strong data-i18n="off.la">Los Angeles, USA</strong><small><span data-i18n="off.local">Local time</span> <time class="office__time" data-tz="America/Los_Angeles">--:--</time></small></div>
+          </div>
+          <div class="office" style="--c:#ff3d8b">
+            <span class="office__pin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <div><strong data-i18n="off.sz">Shenzhen, China</strong><small><span data-i18n="off.local">Local time</span> <time class="office__time" data-tz="Asia/Shanghai">--:--</time></small></div>
+          </div>
+          <p class="offices__note" data-i18n="off.note">Two offices, two time zones — someone is almost always online for you.</p>
         </div>
 
         <div class="tabs reveal" role="tablist" aria-label="Inquiry type">
@@ -931,13 +947,18 @@
           <a href="#contact" data-tab-target="shipping" data-i18n="tab.shipping">Shipping quote</a>
           <a href="#contact" data-tab-target="ecom" data-i18n="tab.ecom">E-commerce consultation</a>
         </div>
+        <div>
+          <h5 data-i18n="footer.offices">Offices</h5>
+          <span class="footer__office" data-i18n="off.la">Los Angeles, USA</span>
+          <span class="footer__office" data-i18n="off.sz">Shenzhen, China</span>
+        </div>
       </div>
     </div>
     <div class="container footer__bottom">
       <span>© <span id="year">2026</span> Atronia Innovations Inc. <span data-i18n="footer.rights">All rights reserved.</span></span>
       <span class="footer__links"><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a><a href="#top" class="to-top" data-i18n="footer.top">Back to top ↑</a></span>
     </div>
-    <p class="container footer__legal" data-i18n="footer.legal">Amazon, Walmart, Wayfair, Overstock, Temu, SHEIN, TikTok, UniUni, GOFO, SwiftX, USPS, FedEx, UPS, ePost and DHL are trademarks of their respective owners. Atronia Innovations is an independent service provider and is not affiliated with or endorsed by these platforms.</p>
+    <p class="container footer__legal" data-i18n="footer.legal">Amazon, Walmart, Wayfair, Overstock, Temu, SHEIN, TikTok, UniUni, GOFO, SwiftX, USPS, FedEx, UPS, ePost and DHL are trademarks of their respective owners. Brand names and logos are used for identification only and do not imply endorsement.</p>
   </footer>
 
   <script src="assets/js/i18n.js" defer></script>
