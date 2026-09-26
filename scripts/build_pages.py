@@ -17,7 +17,8 @@ PUBLISHED = "2026-09-26"
 
 # display order + accent colour per category
 ORDER = ["choose-ecommerce-agency", "us-market-entry-checklist", "cut-us-shipping-costs", "tiktok-shop-creator-sampling"]
-CAT_COLOR = {"Choosing an agency": "#8b6cff", "Going global": "#2ee6d6", "Shipping & logistics": "#ffa24a", "TikTok Shop": "#ff3d8b"}
+CAT_COLOR = {"Choosing an agency": "#8b6cff", "Going global": "#2ee6d6", "Shipping & logistics": "#ffa24a", "TikTok Shop": "#ff3d8b",
+             "Industry news": "#4f8bff", "Amazon": "#ffd84a", "Walmart": "#6ee7a8", "Temu & SHEIN": "#ff7a6b", "Ads & growth": "#c084fc"}
 
 
 def esc(s):
@@ -99,12 +100,15 @@ FOOT = f"""  <footer class="sub-foot">
 
 
 def load_articles():
-    arts = {}
+    """Newest first (by "date"); ORDER breaks ties for the launch articles."""
+    arts = []
     for p in (ROOT / "content" / "insights").glob("*.json"):
         a = json.loads(p.read_text(encoding="utf-8"))
-        arts[a["slug"]] = a
-    order = [s for s in ORDER if s in arts] + sorted(s for s in arts if s not in ORDER)
-    return [arts[s] for s in order]
+        a.setdefault("date", PUBLISHED)
+        arts.append(a)
+    rank = {s: i for i, s in enumerate(ORDER)}
+    arts.sort(key=lambda a: (a["date"], -rank.get(a["slug"], -1)), reverse=True)
+    return arts
 
 
 def build_article(a, all_articles):
@@ -114,19 +118,21 @@ def build_article(a, all_articles):
     ld = {
         "@context": "https://schema.org", "@type": "Article",
         "headline": a["title_en"], "alternativeHeadline": a["title_zh"], "description": a["desc_en"],
-        "inLanguage": ["en", "zh"], "datePublished": PUBLISHED, "dateModified": PUBLISHED,
+        "inLanguage": ["en", "zh"], "datePublished": a["date"], "dateModified": a.get("updated", a["date"]),
         "keywords": ", ".join(a.get("keywords_en", []) + a.get("keywords_zh", [])),
         "mainEntityOfPage": SITE + path, "image": SITE + "/assets/img/og-image.png",
         "author": {"@type": "Organization", "name": "Atronia Innovations"},
         "publisher": {"@type": "Organization", "name": "Atronia Innovations", "logo": {"@type": "ImageObject", "url": SITE + "/assets/img/logo.png"}},
     }
     extra = f'  <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n'
-    others = [o for o in all_articles if o["slug"] != slug][:3]
+    # related: same category first, then the newest others
+    rest = [o for o in all_articles if o["slug"] != slug]
+    others = ([o for o in rest if o["category_en"] == a["category_en"]] + [o for o in rest if o["category_en"] != a["category_en"]])[:3]
 
     def one(lang):
         t, cat, body = a[f"title_{lang}"], a[f"category_{lang}"], a[f"body_{lang}"]
         mins = a["read_min"]
-        meta = f"Atronia Innovations · {PUBLISHED} · {mins} min read" if lang == "en" else f"Atronia Innovations · {PUBLISHED} · 约 {mins} 分钟阅读"
+        meta = f"Atronia Innovations · {a['date']} · {mins} min read" if lang == "en" else f"Atronia Innovations · {a['date']} · 约 {mins} 分钟阅读"
         rel_h = "Keep reading" if lang == "en" else "继续阅读"
         rel = "\n".join(
             f'        <a href="/insights/{o["slug"]}.html"><small>{esc(o[f"category_{lang}"])}</small>{esc(o[f"title_{lang}"])}</a>' for o in others)
@@ -173,7 +179,7 @@ def build_index(all_articles):
         out = []
         for a in all_articles:
             color = CAT_COLOR.get(a["category_en"], "#8b6cff")
-            read = f'{a["read_min"]} min read' if lang == "en" else f'约 {a["read_min"]} 分钟'
+            read = (f'{a["date"]} · {a["read_min"]} min read' if lang == "en" else f'{a["date"]} · 约 {a["read_min"]} 分钟')
             more = "Read →" if lang == "en" else "阅读 →"
             out.append(f"""      <a class="ins-card" style="--c:{color}" href="/insights/{a['slug']}.html">
         <span class="ins-card__cat">{esc(a[f'category_{lang}'])}</span>
@@ -297,11 +303,12 @@ def build_sitemap(all_articles):
     alt = lambda u: (f'    <xhtml:link rel="alternate" hreflang="en" href="{u}" />\n'
                      f'    <xhtml:link rel="alternate" hreflang="zh" href="{u}?lang=zh" />\n'
                      f'    <xhtml:link rel="alternate" hreflang="x-default" href="{u}" />\n')
-    urls = [(SITE + "/", "1.0", "monthly"), (SITE + "/insights/", "0.8", "weekly"),
-            (SITE + "/tools/shipping.html", "0.8", "monthly")]
-    urls += [(f"{SITE}/insights/{a['slug']}.html", "0.7", "monthly") for a in all_articles]
-    body = "".join(f"  <url>\n    <loc>{u}</loc>\n{alt(u)}    <lastmod>{PUBLISHED}</lastmod>\n    <changefreq>{f}</changefreq>\n    <priority>{p}</priority>\n  </url>\n"
-                   for u, p, f in urls)
+    newest = all_articles[0]["date"] if all_articles else PUBLISHED
+    urls = [(SITE + "/", "1.0", "monthly", PUBLISHED), (SITE + "/insights/", "0.8", "daily", newest),
+            (SITE + "/tools/shipping.html", "0.8", "monthly", PUBLISHED)]
+    urls += [(f"{SITE}/insights/{a['slug']}.html", "0.7", "monthly", a.get("updated", a["date"])) for a in all_articles]
+    body = "".join(f"  <url>\n    <loc>{u}</loc>\n{alt(u)}    <lastmod>{d}</lastmod>\n    <changefreq>{f}</changefreq>\n    <priority>{p}</priority>\n  </url>\n"
+                   for u, p, f, d in urls)
     body += f"  <url>\n    <loc>{SITE}/privacy.html</loc>\n    <lastmod>{PUBLISHED}</lastmod>\n    <changefreq>yearly</changefreq>\n    <priority>0.3</priority>\n  </url>\n"
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
                                       + body + "</urlset>\n", encoding="utf-8")
