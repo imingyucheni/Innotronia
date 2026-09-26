@@ -5,22 +5,67 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/" />
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://innotronia.com/?lang=zh</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/?lang=zh" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/" />
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://innotronia.com/insights/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/tools/shipping.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/tools/shipping.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/tools/shipping.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/tools/shipping.html" />
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/choose-ecommerce-agency.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/choose-ecommerce-agency.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/choose-ecommerce-agency.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/choose-ecommerce-agency.html" />
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/us-market-entry-checklist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/us-market-entry-checklist.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/us-market-entry-checklist.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/us-market-entry-checklist.html" />
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/cut-us-shipping-costs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/cut-us-shipping-costs.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/cut-us-shipping-costs.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/cut-us-shipping-costs.html" />
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/tiktok-shop-creator-sampling.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/tiktok-shop-creator-sampling.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/tiktok-shop-creator-sampling.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/tiktok-shop-creator-sampling.html" />
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/privacy.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

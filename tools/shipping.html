@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Shipping Tools — DIM Weight Calculator &amp; Savings Estimator | Atronia Innovations</title>
+  <meta name="title-en" content="Free Shipping Tools — DIM Weight Calculator &amp; Savings Estimator | Atronia Innovations" />
+  <meta name="title-zh" content="免费运费工具 — 体积重计算器与运费节省估算 | Atronia Innovations" />
+  <meta name="description" content="Free dimensional weight calculator (in/lb or cm/kg) and shipping savings estimator for US e-commerce parcels. See your billable weight and potential savings." />
+  <meta name="desc-en" content="Free dimensional weight calculator (in/lb or cm/kg) and shipping savings estimator for US e-commerce parcels. See your billable weight and potential savings." />
+  <meta name="desc-zh" content="免费体积重计算器（支持英寸/磅与厘米/公斤）和运费节省估算器，快速算出美国电商包裹的计费重量与可节省的运费。" />
+  <meta name="theme-color" content="#06060c" />
+  <link rel="canonical" href="https://innotronia.com/tools/shipping.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Atronia Innovations" />
+  <meta property="og:url" content="https://innotronia.com/tools/shipping.html" />
+  <meta property="og:title" content="Free Shipping Tools — DIM Weight Calculator &amp; Savings Estimator | Atronia Innovations" />
+  <meta property="og:description" content="Free dimensional weight calculator (in/lb or cm/kg) and shipping savings estimator for US e-commerce parcels. See your billable weight and potential savings." />
+  <meta property="og:image" content="https://innotronia.com/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Shipping cost tools \u2014 dimensional weight calculator & savings estimator", "url": "https://innotronia.com/tools/shipping.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "Atronia Innovations"}}</script>
+</head>
+<body>
+  <header class="sub-nav">
+    <div class="container nav__inner">
+      <a href="/" data-home class="logo" aria-label="Atronia Innovations home"><img class="logo__img" src="/assets/img/logo-light.png" alt="Atronia Innovations" width="130" height="53" /></a>
+      <nav class="sub-nav__links" aria-label="Primary">
+        <a href="/" data-home=""><span data-l="en">Home</span><span data-l="zh" hidden>首页</span></a>
+        <a href="/#services" data-home="#services"><span data-l="en">Services</span><span data-l="zh" hidden>服务内容</span></a>
+        <a href="/insights/"><span data-l="en">Insights</span><span data-l="zh" hidden>电商干货</span></a>
+        <a href="/tools/shipping.html" aria-current="page"><span data-l="en">Shipping tools</span><span data-l="zh" hidden>运费工具</span></a>
+      </nav>
+      <div class="nav__actions" style="display:flex">
+        <button class="lang-toggle" type="button" aria-label="Switch language"><span data-lang="en">EN</span><span class="lang-toggle__sep">/</span><span data-lang="zh">中文</span></button>
+        <a href="/#contact" data-home="#contact" class="btn btn--grad btn--sm"><span data-l="en">Get in touch</span><span data-l="zh" hidden>联系我们</span></a>
+      </div>
+    </div>
+  </header>
+  <div class="aurora" aria-hidden="true" style="position:fixed"><span class="aurora__b aurora__b--1"></span><span class="aurora__b aurora__b--3"></span></div>
+  <main class="container">
+    <section class="ins-hero">
+      <p class="eyebrow"><span class="dot"></span><span data-l="en">Free shipping tools</span><span data-l="zh" hidden>免费运费工具</span></p>
+      <h1><span data-l="en">Know your <em>real</em> shipping cost.</span><span data-l="zh" hidden>算清您的<em>真实</em>运费。</span></h1>
+      <p><span data-l="en">Check the billable (dimensional) weight of a parcel and estimate what better carrier rates could save you each month.</span><span data-l="zh" hidden>计算包裹的计费重量（体积重），并估算更优的物流协议价每月能为您省下多少运费。</span></p>
+    </section>
+
+    <div class="tools">
+      <section class="tool" id="dimTool">
+        <h2><span data-l="en">Dimensional weight calculator</span><span data-l="zh" hidden>体积重计算器</span></h2>
+        <p><span data-l="en">Carriers charge the greater of actual weight and dimensional weight. Enter your box size to see the billable weight.</span><span data-l="zh" hidden>物流商按实际重量与体积重中较大的一个计费。输入箱子尺寸，查看计费重量。</span></p>
+        <div class="seg" role="radiogroup" aria-label="Units">
+          <label><input type="radio" name="dimUnit" value="imperial" checked /><span>in / lb</span></label>
+          <label><input type="radio" name="dimUnit" value="metric" /><span>cm / kg</span></label>
+        </div>
+        <div class="tool__grid tool__grid--3">
+          <label class="in"><span><span data-l="en">Length</span><span data-l="zh" hidden>长</span> (<i class="u-len">in</i>)</span><input type="number" id="dL" min="0" step="0.1" value="16" inputmode="decimal" /></label>
+          <label class="in"><span><span data-l="en">Width</span><span data-l="zh" hidden>宽</span> (<i class="u-len">in</i>)</span><input type="number" id="dW" min="0" step="0.1" value="12" inputmode="decimal" /></label>
+          <label class="in"><span><span data-l="en">Height</span><span data-l="zh" hidden>高</span> (<i class="u-len">in</i>)</span><input type="number" id="dH" min="0" step="0.1" value="8" inputmode="decimal" /></label>
+        </div>
+        <div class="tool__grid" style="margin-top:12px">
+          <label class="in"><span><span data-l="en">Actual weight</span><span data-l="zh" hidden>实际重量</span> (<i class="u-wt">lb</i>)</span><input type="number" id="dWt" min="0" step="0.1" value="6" inputmode="decimal" /></label>
+          <label class="in"><span><span data-l="en">DIM divisor</span><span data-l="zh" hidden>体积重系数</span></span>
+            <select id="dDiv">
+              <option value="139">139 — <span data-l="en">common for UPS / FedEx</span><span data-l="zh" hidden>UPS / FedEx 常用</span></option>
+              <option value="166">166 — <span data-l="en">USPS (packages over 1 cu ft)</span><span data-l="zh" hidden>USPS（超过 1 立方英尺的包裹）</span></option>
+              <option value="custom"><span data-l="en">Custom…</span><span data-l="zh" hidden>自定义…</span></option>
+            </select>
+          </label>
+          <label class="in" id="dDivCustomWrap" hidden><span><span data-l="en">Custom divisor</span><span data-l="zh" hidden>自定义系数</span></span><input type="number" id="dDivCustom" min="1" step="1" value="139" /></label>
+        </div>
+        <div class="tool__out">
+          <div class="tool__stat"><small><span data-l="en">Volume</span><span data-l="zh" hidden>体积</span></small><strong id="oVol">—</strong></div>
+          <div class="tool__stat"><small><span data-l="en">Dimensional weight</span><span data-l="zh" hidden>体积重</span></small><strong id="oDim">—</strong></div>
+          <div class="tool__stat tool__stat--hl"><small><span data-l="en">Billable weight</span><span data-l="zh" hidden>计费重量</span></small><strong id="oBill">—</strong></div>
+        </div>
+        <p class="tool__note" id="oNote"></p>
+        <p class="tool__note"><span data-l="en">Formula: length × width × height (inches) ÷ divisor, rounded up to the next pound. Divisors, rounding and when DIM pricing applies vary by carrier, service and contract — always check your carrier’s current rules.</span><span data-l="zh" hidden>公式：长 × 宽 × 高（英寸）÷ 系数，向上取整到下一磅。不同物流商、服务与协议的系数、取整规则及体积重适用条件各不相同，请以物流商最新规则为准。</span></p>
+      </section>
+
+      <section class="tool" id="saveTool">
+        <h2><span data-l="en">Shipping savings estimator</span><span data-l="zh" hidden>运费节省估算器</span></h2>
+        <p><span data-l="en">See what a lower average cost per parcel adds up to over a month and a year.</span><span data-l="zh" hidden>看看每票平均运费降低一点，一个月、一年累计能省多少。</span></p>
+        <div class="tool__grid">
+          <label class="in"><span><span data-l="en">Parcels per month</span><span data-l="zh" hidden>每月发货件数</span></span><input type="number" id="sQty" min="0" step="100" value="15000" inputmode="numeric" /></label>
+          <label class="in"><span><span data-l="en">Current avg. cost per parcel ($)</span><span data-l="zh" hidden>目前平均每票运费（美元）</span></span><input type="number" id="sCost" min="0" step="0.1" value="8.5" inputmode="decimal" /></label>
+        </div>
+        <div style="margin-top:16px">
+          <div class="tool__range-row"><span><span data-l="en">Assumed saving per parcel</span><span data-l="zh" hidden>假设每票节省比例</span></span><output id="sPctOut">15%</output></div>
+          <input type="range" id="sPct" min="5" max="40" step="1" value="15" />
+        </div>
+        <div class="tool__out">
+          <div class="tool__stat"><small><span data-l="en">New avg. cost</span><span data-l="zh" hidden>优化后每票</span></small><strong id="oNew">—</strong></div>
+          <div class="tool__stat"><small><span data-l="en">Monthly saving</span><span data-l="zh" hidden>每月节省</span></small><strong id="oMonth">—</strong></div>
+          <div class="tool__stat tool__stat--hl"><small><span data-l="en">Annual saving</span><span data-l="zh" hidden>每年节省</span></small><strong id="oYear">—</strong></div>
+        </div>
+        <p class="tool__note"><span data-l="en">Illustrative only. Your actual rates depend on weights, dimensions, zones, service level and volume. Get a real quote for your shipping profile — it’s free.</span><span data-l="zh" hidden>仅为示意估算。实际运费取决于重量、尺寸、区域、服务类型与货量。免费获取基于您真实发货数据的报价。</span></p>
+        <div class="tool__cta">
+          <a href="/#contact" data-home="#contact" class="btn btn--grad"><span data-l="en">Get my real rates</span><span data-l="zh" hidden>获取我的真实报价</span></a>
+          <a href="/insights/cut-us-shipping-costs.html" class="btn btn--ghost"><span data-l="en">7 ways to cut shipping costs</span><span data-l="zh" hidden>省运费的 7 个方法</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="sub-foot">
+    <div class="container">
+      <span>© 2026 Atronia Innovations Inc.</span>
+      <span class="sub-foot__links">
+        <a href="/" data-home><span data-l="en">Home</span><span data-l="zh" hidden>首页</span></a>
+        <a href="/insights/"><span data-l="en">Insights</span><span data-l="zh" hidden>电商干货</span></a>
+        <a href="/tools/shipping.html"><span data-l="en">Shipping tools</span><span data-l="zh" hidden>运费工具</span></a>
+        <a href="/privacy.html"><span data-l="en">Privacy Policy</span><span data-l="zh" hidden>隐私政策</span></a>
+      </span>
+    </div>
+  </footer>
+  <script src="/assets/js/page.js" defer></script>
+  <script src="/assets/js/tools.js" defer></script>
+</body>
+</html>

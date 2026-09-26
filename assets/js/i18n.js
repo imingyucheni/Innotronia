@@ -28,6 +28,10 @@ window.I18N = {
     "nav.logistics": "物流服务",
     "nav.brands": "合作品牌",
     "nav.faq": "常见问题",
+    "nav.insights": "电商干货",
+    "footer.resources": "资源",
+    "footer.tools": "运费工具",
+    "log.tools": "免费工具：体积重计算器与运费节省估算 →",
     "nav.cta": "联系我们",
 
     "platforms.label": "深耕全球主流电商平台",

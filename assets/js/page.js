@@ -13,6 +13,8 @@
     document.querySelectorAll(".lang-toggle [data-lang]").forEach((s) => s.classList.toggle("is-on", s.dataset.lang === lang));
     const title = document.querySelector(`meta[name="title-${lang}"]`);
     if (title) document.title = title.content;
+    const desc = document.querySelector(`meta[name="desc-${lang}"]`);
+    if (desc) document.querySelector('meta[name="description"]').content = desc.content;
     // carry the language to links back to the home page
     document.querySelectorAll("a[data-home]").forEach((a) => { a.href = "/" + (lang === "zh" ? "?lang=zh" : "") + (a.dataset.home || ""); });
   };

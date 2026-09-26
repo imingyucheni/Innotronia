@@ -61,6 +61,20 @@ Each person who submits a form also gets an automatic confirmation email (`AUTO_
 - Social share image: `assets/img/og-image.png` (1200×630). App icon: `assets/img/apple-touch-icon.png`.
 - `404.html` (custom not-found page) and `privacy.html` (privacy policy, EN/中文).
 
+## Insights (articles) & shipping tools
+
+- Articles are data files in `content/insights/<slug>.json` (bilingual: `title_en/zh`, `desc_en/zh`, `category_en/zh`, `read_min`, `keywords_en/zh`, `body_en/zh` as HTML).
+- After adding or editing an article, run `python3 scripts/build_pages.py`. It regenerates `insights/index.html`, every `insights/<slug>.html`, `tools/shipping.html` and `sitemap.xml`.
+- Add a new slug to `ORDER` (and a colour for any new category in `CAT_COLOR`) in `scripts/build_pages.py` to control the listing order.
+- Shipping tools logic: `assets/js/tools.js` (DIM weight calculator with in/lb and cm/kg, savings estimator).
+
+## Google Search Console
+
+1. search.google.com/search-console → Add property → **Domain** → `innotronia.com`.
+2. Google shows a TXT record (`google-site-verification=…`). Add it in Squarespace → Domains → innotronia.com → DNS → Custom records (Type TXT, Name `@`). Keep the existing TXT record.
+3. Verify, then Sitemaps → submit `https://innotronia.com/sitemap.xml`.
+4. Bing Webmaster Tools can import the site directly from Search Console.
+
 ## Local preview
 
 ```
