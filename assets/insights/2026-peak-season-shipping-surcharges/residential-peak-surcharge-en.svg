@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="552" viewBox="0 0 640 552" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="552" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="551" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Peak-of-peak residential demand</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">surcharge per package</text>
+  <rect x="32" y="120" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="132" font-size="17" fill="#a3a1b8">2025</text>
+  <rect x="116.08000000000001" y="120" width="14" height="14" rx="3" fill="#8b6cff"/><text x="138.08" y="132" font-size="17" fill="#a3a1b8">2026</text>
+  <line x1="76" x2="612" y1="442.0" y2="442.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="447.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.00</text>
+  <line x1="76" x2="612" y1="372.0" y2="372.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="377.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.20</text>
+  <line x1="76" x2="612" y1="302.0" y2="302.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="307.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.40</text>
+  <line x1="76" x2="612" y1="232.0" y2="232.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="237.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.60</text>
+  <line x1="76" x2="612" y1="162.0" y2="162.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="167.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.80</text>
+  <rect x="146.0" y="232.0" width="60.0" height="210.0" rx="6" fill="#ff3d8b"/><text x="176.0" y="223.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$0.60</text>
+  <rect x="210.0" y="179.5" width="60.0" height="262.5" rx="6" fill="#8b6cff"/><text x="240.0" y="170.5" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$0.75</text>
+  <rect x="414.0" y="214.5" width="60.0" height="227.5" rx="6" fill="#ff3d8b"/><text x="444.0" y="205.5" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$0.65</text>
+  <rect x="478.0" y="162.0" width="60.0" height="280.0" rx="6" fill="#8b6cff"/><text x="508.0" y="153.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$0.80</text>
+  <text x="210.0" y="468" font-size="16" fill="#a3a1b8" text-anchor="middle">UPS Ground Residential</text>
+  <text x="478.0" y="468" font-size="16" fill="#a3a1b8" text-anchor="middle">FedEx Ground Residential / Home</text>
+  <text x="478.0" y="487" font-size="16" fill="#a3a1b8" text-anchor="middle">Delivery</text>
+  <text x="32" y="512" font-size="15" fill="#6f6d85">Source: Supply Chain Dive (Jul 23 &amp; Aug 27, 2026); Value Added Resource (Aug</text>
+  <text x="32" y="532" font-size="15" fill="#6f6d85">29, 2026); Reveel</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="516" viewBox="0 0 640 516" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="516" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="515" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">15% 佣金类目在新卖家优惠下的实际佣金率</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">标准佣金</text>
+  <rect x="146.0" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="168.0" y="96" font-size="17" fill="#a3a1b8">享受新卖家优惠后</text>
+  <line x1="76" x2="612" y1="406.0" y2="406.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="411.0" font-size="16" fill="#6f6d85" text-anchor="end">0.0%</text>
+  <line x1="76" x2="612" y1="336.0" y2="336.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="341.0" font-size="16" fill="#6f6d85" text-anchor="end">3.8%</text>
+  <line x1="76" x2="612" y1="266.0" y2="266.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="271.0" font-size="16" fill="#6f6d85" text-anchor="end">7.5%</text>
+  <line x1="76" x2="612" y1="196.0" y2="196.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="201.0" font-size="16" fill="#6f6d85" text-anchor="end">11.2%</text>
+  <line x1="76" x2="612" y1="126.0" y2="126.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="131.0" font-size="16" fill="#6f6d85" text-anchor="end">15.0%</text>
+  <rect x="102.8" y="126.0" width="58.5" height="280.0" rx="6" fill="#ff3d8b"/><text x="132.1" y="117.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.0%</text>
+  <rect x="165.3" y="182.0" width="58.5" height="224.0" rx="6" fill="#8b6cff"/><text x="194.6" y="173.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">12.0%</text>
+  <rect x="281.5" y="126.0" width="58.5" height="280.0" rx="6" fill="#ff3d8b"/><text x="310.7" y="117.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.0%</text>
+  <rect x="344.0" y="210.0" width="58.5" height="196.0" rx="6" fill="#8b6cff"/><text x="373.3" y="201.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">10.5%</text>
+  <rect x="460.1" y="126.0" width="58.5" height="280.0" rx="6" fill="#ff3d8b"/><text x="489.4" y="117.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.0%</text>
+  <rect x="522.7" y="238.0" width="58.5" height="168.0" rx="6" fill="#8b6cff"/><text x="551.9" y="229.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">9.0%</text>
+  <text x="165.3" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">前 5 万美元 GMV</text>
+  <text x="344.0" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">5 万–50 万美元 GMV</text>
+  <text x="522.7" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">50 万美元以上 GMV</text>
+  <text x="32" y="476" font-size="15" fill="#6f6d85">来源：Walmart Marketplace《New-Seller Savings 2026》（佣金减免 20% / 30% /</text>
+  <text x="32" y="496" font-size="15" fill="#6f6d85">40%）。计算：15% ×（1 − 减免比例）。</text>
+</svg>

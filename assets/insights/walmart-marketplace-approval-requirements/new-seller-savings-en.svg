@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="552" viewBox="0 0 640 552" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="552" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="551" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Effective referral fee in a 15% category</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">with New-Seller Savings</text>
+  <rect x="32" y="120" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="132" font-size="17" fill="#a3a1b8">Standard rate</text>
+  <rect x="197.68000000000006" y="120" width="14" height="14" rx="3" fill="#8b6cff"/><text x="219.68000000000006" y="132" font-size="17" fill="#a3a1b8">With New-Seller Savings</text>
+  <line x1="76" x2="612" y1="442.0" y2="442.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="447.0" font-size="16" fill="#6f6d85" text-anchor="end">0.0%</text>
+  <line x1="76" x2="612" y1="372.0" y2="372.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="377.0" font-size="16" fill="#6f6d85" text-anchor="end">3.8%</text>
+  <line x1="76" x2="612" y1="302.0" y2="302.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="307.0" font-size="16" fill="#6f6d85" text-anchor="end">7.5%</text>
+  <line x1="76" x2="612" y1="232.0" y2="232.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="237.0" font-size="16" fill="#6f6d85" text-anchor="end">11.2%</text>
+  <line x1="76" x2="612" y1="162.0" y2="162.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="167.0" font-size="16" fill="#6f6d85" text-anchor="end">15.0%</text>
+  <rect x="102.8" y="162.0" width="58.5" height="280.0" rx="6" fill="#ff3d8b"/><text x="132.1" y="153.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.0%</text>
+  <rect x="165.3" y="218.0" width="58.5" height="224.0" rx="6" fill="#8b6cff"/><text x="194.6" y="209.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">12.0%</text>
+  <rect x="281.5" y="162.0" width="58.5" height="280.0" rx="6" fill="#ff3d8b"/><text x="310.7" y="153.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.0%</text>
+  <rect x="344.0" y="246.0" width="58.5" height="196.0" rx="6" fill="#8b6cff"/><text x="373.3" y="237.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">10.5%</text>
+  <rect x="460.1" y="162.0" width="58.5" height="280.0" rx="6" fill="#ff3d8b"/><text x="489.4" y="153.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.0%</text>
+  <rect x="522.7" y="274.0" width="58.5" height="168.0" rx="6" fill="#8b6cff"/><text x="551.9" y="265.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">9.0%</text>
+  <text x="165.3" y="468" font-size="16" fill="#a3a1b8" text-anchor="middle">First $50K GMV</text>
+  <text x="344.0" y="468" font-size="16" fill="#a3a1b8" text-anchor="middle">$50K–$500K GMV</text>
+  <text x="522.7" y="468" font-size="16" fill="#a3a1b8" text-anchor="middle">Above $500K GMV</text>
+  <text x="32" y="512" font-size="15" fill="#6f6d85">Source: Walmart Marketplace, New-Seller Savings 2026 (20% / 30% / 40% off</text>
+  <text x="32" y="532" font-size="15" fill="#6f6d85">referral fees). Calculation: 15% × (1 − discount).</text>
+</svg>
