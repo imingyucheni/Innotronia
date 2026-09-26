@@ -10,9 +10,14 @@ Outputs insights/index.html, insights/<slug>.html, tools/shipping.html and refre
 import html
 import json
 import pathlib
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://innotronia.com"
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from insights_media import cover_svg  # noqa: E402
+
 PUBLISHED = "2026-09-26"
 
 # display order + accent colour per category
@@ -111,9 +116,23 @@ def load_articles():
     return arts
 
 
+def write_covers(a):
+    """assets/insights/<slug>/cover-en.svg and cover-zh.svg (regenerated every build)."""
+    color = CAT_COLOR.get(a["category_en"], "#8b6cff")
+    out = ROOT / "assets" / "insights" / a["slug"]
+    out.mkdir(parents=True, exist_ok=True)
+    for lang in ("en", "zh"):
+        (out / f"cover-{lang}.svg").write_text(cover_svg(a, lang, color), encoding="utf-8")
+
+
+def cover_src(a, lang):
+    return f'/assets/insights/{a["slug"]}/cover-{lang}.svg'
+
+
 def build_article(a, all_articles):
     slug = a["slug"]
     color = CAT_COLOR.get(a["category_en"], "#8b6cff")
+    write_covers(a)
     path = f"/insights/{slug}.html"
     ld = {
         "@context": "https://schema.org", "@type": "Article",
@@ -149,6 +168,7 @@ def build_article(a, all_articles):
       <span class="ins-card__cat" style="--c:{color}">{esc(cat)}</span>
       <h1>{esc(t)}</h1>
       <p class="article__meta">{meta}</p>
+      <img class="article__cover" src="{cover_src(a, lang)}" alt="{esc(t)}" width="1200" height="630"{' loading="lazy"' if lang == "zh" else ''}>
       <div class="prose">
 {body}
       </div>
@@ -182,7 +202,7 @@ def build_index(all_articles):
             read = (f'{a["date"]} · {a["read_min"]} min read' if lang == "en" else f'{a["date"]} · 约 {a["read_min"]} 分钟')
             more = "Read →" if lang == "en" else "阅读 →"
             out.append(f"""      <a class="ins-card" style="--c:{color}" href="/insights/{a['slug']}.html">
-        <span class="ins-card__cat">{esc(a[f'category_{lang}'])}</span>
+        <img class="ins-card__img" src="{cover_src(a, lang)}" alt="" width="1200" height="630" loading="lazy">
         <h2>{esc(a[f'title_{lang}'])}</h2>
         <p>{esc(a[f'desc_{lang}'])}</p>
         <span class="ins-card__meta"><span>{read}</span><span>{more}</span></span>

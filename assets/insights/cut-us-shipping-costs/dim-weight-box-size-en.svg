@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="320" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="319" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Same 2 lb product, billed weight by box</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">size</text>
+  <text x="172.24000000000007" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Actual weight</text>
+  <rect x="186.24000000000007" y="130" width="47.7" height="24" rx="6" fill="#ff3d8b"/><text x="243.9" y="148" font-size="18" font-weight="600" fill="#f4f2fb">2 lb</text>
+  <text x="172.24000000000007" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">12×10×8 in box</text>
+  <rect x="186.24000000000007" y="182" width="167.0" height="24" rx="6" fill="#ff3d8b"/><text x="363.2" y="200" font-size="18" font-weight="600" fill="#f4f2fb">7 lb</text>
+  <text x="172.24000000000007" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">14×12×10 in box</text>
+  <rect x="186.24000000000007" y="234" width="310.1" height="24" rx="6" fill="#ff3d8b"/><text x="506.3" y="252" font-size="18" font-weight="600" fill="#f4f2fb">13 lb</text>
+  <text x="32" y="300" font-size="15" fill="#6f6d85">Calculation: L×W×H ÷ 139, rounded up (common UPS/FedEx divisor)</text>
+</svg>

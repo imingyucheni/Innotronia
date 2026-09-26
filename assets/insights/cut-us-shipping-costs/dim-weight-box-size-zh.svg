@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="284" viewBox="0 0 640 284" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="284" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="283" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">同一件 2 磅产品，不同箱规的计费重量</text>
+  <text x="174.4" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">实际重量</text>
+  <rect x="188.4" y="94" width="47.4" height="24" rx="6" fill="#ff3d8b"/><text x="245.8" y="112" font-size="18" font-weight="600" fill="#f4f2fb">2 lb</text>
+  <text x="174.4" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">12×10×8 英寸箱</text>
+  <rect x="188.4" y="146" width="165.9" height="24" rx="6" fill="#ff3d8b"/><text x="364.3" y="164" font-size="18" font-weight="600" fill="#f4f2fb">7 lb</text>
+  <text x="174.4" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">14×12×10 英寸箱</text>
+  <rect x="188.4" y="198" width="308.2" height="24" rx="6" fill="#ff3d8b"/><text x="506.6" y="216" font-size="18" font-weight="600" fill="#f4f2fb">13 lb</text>
+  <text x="32" y="264" font-size="15" fill="#6f6d85">计算：长×宽×高 ÷ 139 后向上取整（UPS/FedEx 常用除数）</text>
+</svg>
