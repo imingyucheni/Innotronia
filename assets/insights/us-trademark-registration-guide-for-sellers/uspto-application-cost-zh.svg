@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="506" viewBox="0 0 640 506" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="506" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="505" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">美国商标申请官费（每类）：附加费如何叠加</text>
+  <line x1="76" x2="612" y1="376.0" y2="376.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="381.0" font-size="16" fill="#6f6d85" text-anchor="end">$0</text>
+  <line x1="76" x2="612" y1="306.0" y2="306.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="311.0" font-size="16" fill="#6f6d85" text-anchor="end">$200</text>
+  <line x1="76" x2="612" y1="236.0" y2="236.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="241.0" font-size="16" fill="#6f6d85" text-anchor="end">$400</text>
+  <line x1="76" x2="612" y1="166.0" y2="166.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="171.0" font-size="16" fill="#6f6d85" text-anchor="end">$600</text>
+  <line x1="76" x2="612" y1="96.0" y2="96.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="101.0" font-size="16" fill="#6f6d85" text-anchor="end">$800</text>
+  <rect x="111.0" y="253.5" width="60.0" height="122.5" rx="6" fill="#ff3d8b"/><text x="141.0" y="244.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$350</text>
+  <rect x="245.0" y="183.5" width="60.0" height="192.5" rx="6" fill="#ff3d8b"/><text x="275.0" y="174.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$550</text>
+  <rect x="379.0" y="148.5" width="60.0" height="227.5" rx="6" fill="#ff3d8b"/><text x="409.0" y="139.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$650</text>
+  <rect x="513.0" y="113.5" width="60.0" height="262.5" rx="6" fill="#ff3d8b"/><text x="543.0" y="104.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$750</text>
+  <text x="143.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">使用 ID Manual</text>
+  <text x="143.0" y="421" font-size="16" fill="#a3a1b8" text-anchor="middle">标准描述</text>
+  <text x="277.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">自拟商品描述</text>
+  <text x="411.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">自拟描述 + 信息</text>
+  <text x="411.0" y="421" font-size="16" fill="#a3a1b8" text-anchor="middle">不全</text>
+  <text x="545.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">自拟描述</text>
+  <text x="545.0" y="421" font-size="16" fill="#a3a1b8" text-anchor="middle">1,001–2,000 字符</text>
+  <text x="32" y="446" font-size="15" fill="#6f6d85">来源：USPTO 2025 年 1 月 18 日生效的收费规则，据 Gerben IP（2024 年 11 月 22</text>
+  <text x="32" y="466" font-size="15" fill="#6f6d85">日）与 Reed Smith（2025 年 1 月 16 日）整理。计算：基础费 350 + 自拟描述 200 +</text>
+  <text x="32" y="486" font-size="15" fill="#6f6d85">每超 1,000 字符 200 + 信息不全 100 美元。</text>
+</svg>
