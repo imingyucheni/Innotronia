@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Adobe 预测：2026 年节日季关键日期美国线</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">上消费</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.0</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">$5.0</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">$10.0</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">$15.0</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">$20.0</text>
+  <rect x="133.3" y="315.4" width="60.0" height="96.6" rx="6" fill="#ff3d8b"/><text x="163.3" y="306.4" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$6.9</text>
+  <rect x="312.0" y="231.4" width="60.0" height="180.6" rx="6" fill="#ff3d8b"/><text x="342.0" y="222.4" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$12.9</text>
+  <rect x="490.7" y="200.6" width="60.0" height="211.4" rx="6" fill="#ff3d8b"/><text x="520.7" y="191.6" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$15.1</text>
+  <text x="165.3" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">感恩节</text>
+  <text x="344.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">黑色星期五</text>
+  <text x="522.7" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">网络星期一</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">来源：Adobe Digital Insights 节日季预测（2026 年 9 月 28 日），单位：十亿美</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">元。</text>
+</svg>

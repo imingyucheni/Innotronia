@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/2026-holiday-ecommerce-forecasts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/2026-holiday-ecommerce-forecasts.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/2026-holiday-ecommerce-forecasts.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/2026-holiday-ecommerce-forecasts.html" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/shipping-to-us-after-de-minimis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/shipping-to-us-after-de-minimis.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/shipping-to-us-after-de-minimis.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/shipping-to-us-after-de-minimis.html" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/us-trademark-registration-guide-for-sellers.html</loc>
