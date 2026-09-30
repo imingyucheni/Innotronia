@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="392" viewBox="0 0 640 392" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="392" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="391" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">FedEx 2027 年调价：平均涨幅与部分项目对</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">比</text>
+  <text x="226.24" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">平均涨幅（GRI）</text>
+  <rect x="240.24" y="130" width="179.2" height="24" rx="6" fill="#ff3d8b"/><text x="429.5" y="148" font-size="18" font-weight="600" fill="#f4f2fb">5.90%</text>
+  <text x="226.24" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Ground 1–5 磅包裹</text>
+  <rect x="240.24" y="182" width="197.1" height="24" rx="6" fill="#ff3d8b"/><text x="447.4" y="200" font-size="18" font-weight="600" fill="#f4f2fb">6.49%</text>
+  <text x="226.24" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">Ground 偏远地区附加费</text>
+  <rect x="240.24" y="234" width="246.3" height="24" rx="6" fill="#ff3d8b"/><text x="496.6" y="252" font-size="18" font-weight="600" fill="#f4f2fb">8.11%</text>
+  <text x="226.24" y="304" font-size="18" fill="#d9d6e6" text-anchor="end">延伸偏远地区附加费</text>
+  <rect x="240.24" y="286" width="276.1" height="24" rx="6" fill="#ff3d8b"/><text x="526.4" y="304" font-size="18" font-weight="600" fill="#f4f2fb">9.09%</text>
+  <text x="32" y="352" font-size="15" fill="#6f6d85">来源：FedEx，据 Logistics Management（2026 年 9 月）；The Loadstar 引述</text>
+  <text x="32" y="372" font-size="15" fill="#6f6d85">Loop 分析（2026 年 9 月）</text>
+</svg>

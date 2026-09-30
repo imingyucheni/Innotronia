@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="392" viewBox="0 0 640 392" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="392" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="391" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">FedEx 2027: headline increase vs selected</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">line items</text>
+  <text x="238.48000000000013" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Headline average (GRI)</text>
+  <rect x="252.48000000000013" y="130" width="172.0" height="24" rx="6" fill="#ff3d8b"/><text x="434.5" y="148" font-size="18" font-weight="600" fill="#f4f2fb">5.90%</text>
+  <text x="238.48000000000013" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Ground, 1–5 lb parcels</text>
+  <rect x="252.48000000000013" y="182" width="189.2" height="24" rx="6" fill="#ff3d8b"/><text x="451.7" y="200" font-size="18" font-weight="600" fill="#f4f2fb">6.49%</text>
+  <text x="238.48000000000013" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">Ground DAS</text>
+  <rect x="252.48000000000013" y="234" width="236.4" height="24" rx="6" fill="#ff3d8b"/><text x="498.9" y="252" font-size="18" font-weight="600" fill="#f4f2fb">8.11%</text>
+  <text x="238.48000000000013" y="304" font-size="18" fill="#d9d6e6" text-anchor="end">Extended DAS</text>
+  <rect x="252.48000000000013" y="286" width="265.0" height="24" rx="6" fill="#ff3d8b"/><text x="527.5" y="304" font-size="18" font-weight="600" fill="#f4f2fb">9.09%</text>
+  <text x="32" y="352" font-size="15" fill="#6f6d85">Source: FedEx via Logistics Management (Sept 2026); The Loadstar citing</text>
+  <text x="32" y="372" font-size="15" fill="#6f6d85">Loop analysis (Sept 2026)</text>
+</svg>

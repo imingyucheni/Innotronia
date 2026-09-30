@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Sponsored Products Bidding Strategies and Placement Adjustments Explained | Atronia Innovations</title>
+  <meta name="title-en" content="Amazon Sponsored Products Bidding Strategies and Placement Adjustments Explained | Atronia Innovations" />
+  <meta name="title-zh" content="亚马逊商品推广竞价策略与广告位调整详解 | Atronia Innovations" />
+  <meta name="description" content="How fixed, down-only and up-and-down bidding work, how placement adjustments stack on top, a worked example, and how to choose settings from your own data." />
+  <meta name="desc-en" content="How fixed, down-only and up-and-down bidding work, how placement adjustments stack on top, a worked example, and how to choose settings from your own data." />
+  <meta name="desc-zh" content="固定竞价、仅降低和提高与降低三种竞价策略如何运作，广告位调整怎样叠加在出价之上，以及如何用自己的数据选择设置。本文附带实际计算示例、策略选择表和常见错误清单。" />
+  <meta name="theme-color" content="#06060c" />
+  <link rel="canonical" href="https://innotronia.com/insights/amazon-sponsored-products-bidding-strategies.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Atronia Innovations" />
+  <meta property="og:url" content="https://innotronia.com/insights/amazon-sponsored-products-bidding-strategies.html" />
+  <meta property="og:title" content="Amazon Sponsored Products Bidding Strategies and Placement Adjustments Explained | Atronia Innovations" />
+  <meta property="og:description" content="How fixed, down-only and up-and-down bidding work, how placement adjustments stack on top, a worked example, and how to choose settings from your own data." />
+  <meta property="og:image" content="https://innotronia.com/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Amazon Sponsored Products Bidding Strategies and Placement Adjustments Explained", "alternativeHeadline": "亚马逊商品推广竞价策略与广告位调整详解", "description": "How fixed, down-only and up-and-down bidding work, how placement adjustments stack on top, a worked example, and how to choose settings from your own data.", "inLanguage": ["en", "zh"], "datePublished": "2026-09-30", "dateModified": "2026-09-30", "keywords": "Amazon bidding strategies, dynamic bids up and down, Amazon placement bid adjustment, top of search bid, Sponsored Products bidding, 亚马逊竞价策略, 动态竞价提高和降低, 亚马逊广告位调整, 搜索顶部竞价, 亚马逊商品推广出价", "mainEntityOfPage": "https://innotronia.com/insights/amazon-sponsored-products-bidding-strategies.html", "image": "https://innotronia.com/assets/img/og-image.png", "author": {"@type": "Organization", "name": "Atronia Innovations"}, "publisher": {"@type": "Organization", "name": "Atronia Innovations", "logo": {"@type": "ImageObject", "url": "https://innotronia.com/assets/img/logo.png"}}}</script>
+</head>
+<body>
+  <header class="sub-nav">
+    <div class="container nav__inner">
+      <a href="/" data-home class="logo" aria-label="Atronia Innovations home"><img class="logo__img" src="/assets/img/logo-light.png" alt="Atronia Innovations" width="130" height="53" /></a>
+      <nav class="sub-nav__links" aria-label="Primary">
+        <a href="/" data-home=""><span data-l="en">Home</span><span data-l="zh" hidden>首页</span></a>
+        <a href="/#services" data-home="#services"><span data-l="en">Services</span><span data-l="zh" hidden>服务内容</span></a>
+        <a href="/insights/" aria-current="page"><span data-l="en">Insights</span><span data-l="zh" hidden>电商干货</span></a>
+        <a href="/tools/shipping.html"><span data-l="en">Shipping tools</span><span data-l="zh" hidden>运费工具</span></a>
+      </nav>
+      <div class="nav__actions" style="display:flex">
+        <button class="lang-toggle" type="button" aria-label="Switch language"><span data-lang="en">EN</span><span class="lang-toggle__sep">/</span><span data-lang="zh">中文</span></button>
+        <a href="/#contact" data-home="#contact" class="btn btn--grad btn--sm"><span data-l="en">Get in touch</span><span data-l="zh" hidden>联系我们</span></a>
+      </div>
+    </div>
+  </header>
+  <main class="article">
+    <article data-l="en">
+      <nav class="crumbs"><a href="/insights/">Insights</a> / Ads &amp; growth</nav>
+      <span class="ins-card__cat" style="--c:#c084fc">Ads &amp; growth</span>
+      <h1>Amazon Sponsored Products Bidding Strategies and Placement Adjustments Explained</h1>
+      <p class="article__meta">Atronia Innovations · 2026-09-30 · 6 min read</p>
+      <img class="article__cover" src="/assets/insights/amazon-sponsored-products-bidding-strategies/cover-en.svg" alt="Amazon Sponsored Products Bidding Strategies and Placement Adjustments Explained" width="1200" height="630">
+      <div class="prose">
+<p>Two settings quietly decide how much you pay for every Sponsored Products click: the campaign's bidding strategy and its placement adjustments. Many sellers leave the defaults and then wonder why top-of-search clicks cost far more than their keyword bid. Here is how the settings work, how they combine, and how to choose them.</p>
+
+<h2>The three bidding strategies</h2>
+<ul>
+<li><strong>Dynamic bids – down only.</strong> Amazon may lower your bid in real time when a click seems less likely to convert. It never raises it. This is the most conservative option.</li>
+<li><strong>Dynamic bids – up and down.</strong> Amazon may raise or lower your bid. According to <a href="https://advertising.amazon.com/library/guides/dynamic-bidding-sponsored-products" rel="nofollow noopener" target="_blank">Amazon Ads' guide to dynamic bidding</a>, "we will increase or decrease your bids by up to 100% for all placements based on performance." Amazon's example: a $1.00 bid can go up to a maximum of $2.00.</li>
+<li><strong>Fixed bids.</strong> Amazon uses your exact bid (plus any placement adjustment) and does not change it based on conversion likelihood.</li>
+</ul>
+<blockquote class="tip"><strong>Note:</strong> Some older third-party guides say up-and-down can raise bids by 100% for top of search but only 50% elsewhere. Amazon's current guide says up to 100% for all placements. Check Amazon's help pages for the latest rules, as they can change.</blockquote>
+
+<h2>Placement adjustments</h2>
+<p>Sponsored Products ads show in three placements: <strong>top of search</strong> (first row of results), <strong>rest of search</strong> and <strong>product pages</strong>. You can raise your bid for each placement by a percentage. In January 2024, <a href="https://advertising.amazon.com/resources/whats-new/improve-campaign-performance" rel="nofollow noopener" target="_blank">Amazon Ads announced</a> that advertisers can adjust bids for rest of search by up to 900%, the same as the other placements, and that the control works with fixed and dynamic bidding for both auto and manual campaigns.</p>
+
+<h2>How they combine: a worked example</h2>
+<p>The placement adjustment is applied to your bid first, and dynamic bidding can then adjust that amount, as <a href="https://scaleinsights.com/learn/bid-modifiers-top-of-search-rest-of-search-and-product-placements" rel="nofollow noopener" target="_blank">Scale Insights</a> explains. With a $1.00 keyword bid and a +50% top-of-search adjustment, the maximum bid looks like this:</p>
+<figure><img src="/assets/insights/amazon-sponsored-products-bidding-strategies/max-bid-example-en.svg" alt="Worked example: maximum bid for a $1.00 keyword bid" loading="lazy" width="640" /><figcaption>Maximums only: down-only can lower the bid, and up-and-down can raise or lower it. Actual CPCs are often below your bid.</figcaption></figure>
+<p>With up-and-down bidding, a $1.00 keyword can reach $3.00 at top of search. That is why a campaign with high placement adjustments and aggressive dynamic bidding can spend much faster than its keyword bids suggest. Remember that Sponsored Products is an auction, so the price you actually pay per click is often below your maximum bid.</p>
+
+<h2>Which strategy to use when</h2>
+<table>
+<thead><tr><th>Situation</th><th>Suggested strategy</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>New campaign, little data</td><td>Down only</td><td>Limits overspending while you learn which terms convert</td></tr>
+<tr><td>Proven exact-match keywords with good ACoS</td><td>Up and down</td><td>Lets Amazon bid harder on clicks likely to convert</td></tr>
+<tr><td>Branded keywords, defending your own listings</td><td>Fixed or up and down</td><td>Keeps you visible on searches for your brand</td></tr>
+<tr><td>Tight budget or thin margin</td><td>Down only</td><td>Bids never go above your bid plus any placement adjustment</td></tr>
+<tr><td>Testing placements</td><td>Fixed</td><td>Makes placement results easier to compare</td></tr>
+</tbody>
+</table>
+<p>These are starting points from our experience, not Amazon rules. Your data should decide.</p>
+
+<h2>How to set placement adjustments with data</h2>
+<ol>
+<li><strong>Open the placement report</strong> for the campaign and look at at least 2–4 weeks of data.</li>
+<li><strong>Compare ACoS and conversion rate</strong> by placement. Top of search often converts better but costs more per click.</li>
+<li><strong>Raise the adjustment in small steps</strong> (for example 10–25%) only where ACoS is below your target.</li>
+<li><strong>Lower or remove adjustments</strong> where ACoS is above target, and consider lowering the base bid.</li>
+<li><strong>Change one thing at a time</strong> and wait for new data before the next change.</li>
+<li><strong>Watch budget pacing.</strong> If a campaign runs out of budget early in the day, your adjustments may be too high.</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+<li>Combining high placement adjustments with up-and-down bidding on new, unproven keywords.</li>
+<li>Judging a placement on a few days of data.</li>
+<li>Forgetting that a high base bid multiplies through every adjustment.</li>
+<li>Changing strategy, bids and adjustments all at once, then not knowing what worked.</li>
+</ul>
+<p>For the bigger picture on efficiency targets, read our guide on <a href="/insights/how-to-lower-acos-amazon.html">lowering ACoS without losing sales</a>.</p>
+
+<h2>How Atronia Innovations helps</h2>
+<p>Our team has managed more than $10M in ad spend. We set bidding strategies and placement adjustments from each client's own data and break-even ACoS, and review them weekly. See our <a href="/#pricing">plans</a> or <a href="/#contact">ask for an ads review</a>.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://advertising.amazon.com/library/guides/dynamic-bidding-sponsored-products" rel="nofollow noopener" target="_blank">Amazon Ads — Guide to dynamic bidding (up and down) with Sponsored Products</a></li>
+<li><a href="https://advertising.amazon.com/resources/whats-new/improve-campaign-performance" rel="nofollow noopener" target="_blank">Amazon Ads — Rest of search bid adjustment for Sponsored Products (Jan 9, 2024)</a></li>
+<li><a href="https://scaleinsights.com/learn/bid-modifiers-top-of-search-rest-of-search-and-product-placements" rel="nofollow noopener" target="_blank">Scale Insights — Amazon bid modifiers: top of search, rest of search and product pages</a></li>
+</ul>
+      </div>
+      <aside class="article__cta">
+        <h2>Want a second pair of eyes on your store or shipping costs?</h2>
+        <p>Tell us where you sell and what you ship. We'll reply within one business day with practical next steps.</p>
+        <div class="btns"><a href="/#contact" data-home="#contact" class="btn btn--grad">Get in touch</a><a href="/tools/shipping.html" class="btn btn--ghost">Try the shipping tools</a></div>
+      </aside>
+      <section class="related">
+        <h2>Keep reading</h2>
+        <div class="related__list">
+        <a href="/insights/how-to-lower-acos-amazon.html"><small>Ads &amp; growth</small>How to Lower ACoS on Amazon Without Killing Your Sales</a>
+        <a href="/insights/fedex-2027-rate-increase.html"><small>Shipping &amp; logistics</small>FedEx 2027 Rate Increase: 5.9% Headline, Bigger Hikes for Small Parcels</a>
+        <a href="/insights/2026-holiday-ecommerce-forecasts.html"><small>Industry news</small>2026 Holiday E-commerce Forecasts: Adobe, Deloitte and eMarketer Compared</a>
+        </div>
+      </section>
+    </article>
+    <article data-l="zh" hidden>
+      <nav class="crumbs"><a href="/insights/">电商干货</a> / 广告与增长</nav>
+      <span class="ins-card__cat" style="--c:#c084fc">广告与增长</span>
+      <h1>亚马逊商品推广竞价策略与广告位调整详解</h1>
+      <p class="article__meta">Atronia Innovations · 2026-09-30 · 约 6 分钟阅读</p>
+      <img class="article__cover" src="/assets/insights/amazon-sponsored-products-bidding-strategies/cover-zh.svg" alt="亚马逊商品推广竞价策略与广告位调整详解" width="1200" height="630" loading="lazy">
+      <div class="prose">
+<p>每一次 Sponsored Products（商品推广）点击花多少钱，其实由两个设置悄悄决定：广告活动的竞价策略和广告位调整。很多卖家用默认设置，然后疑惑为什么搜索顶部的点击费远高于关键词出价。下面讲清楚这两个设置怎么运作、如何叠加，以及怎么选。</p>
+
+<h2>三种竞价策略</h2>
+<ul>
+<li><strong>动态竞价 – 仅降低：</strong>当点击转化可能性较低时，亚马逊会实时降低出价，但绝不上调。这是最保守的选项。</li>
+<li><strong>动态竞价 – 提高和降低：</strong>亚马逊可以上调或下调出价。根据 <a href="https://advertising.amazon.com/library/guides/dynamic-bidding-sponsored-products" rel="nofollow noopener" target="_blank">Amazon Ads 动态竞价官方指南</a>，“我们会根据表现将出价在所有广告位上最多提高或降低 100%”。官方示例：1 美元的出价最高可以涨到 2 美元。</li>
+<li><strong>固定竞价：</strong>亚马逊按你设置的出价（加上广告位调整）竞价，不会根据转化可能性调整。</li>
+</ul>
+<blockquote class="tip"><strong>注意：</strong>一些较早的第三方资料说，“提高和降低”在搜索顶部最多上调 100%，其他位置只有 50%。亚马逊目前的官方指南写的是所有广告位最多 100%。规则可能调整，请以亚马逊帮助页面为准。</blockquote>
+
+<h2>广告位调整</h2>
+<p>商品推广广告有三个展示位置：<strong>搜索结果顶部</strong>（首行）、<strong>搜索结果其余位置</strong>和<strong>商品详情页</strong>。你可以按百分比分别提高每个位置的出价。2024 年 1 月，<a href="https://advertising.amazon.com/resources/whats-new/improve-campaign-performance" rel="nofollow noopener" target="_blank">Amazon Ads 宣布</a>“搜索结果其余位置”的出价调整上限也提高到 900%，与另外两个位置相同，并且适用于自动和手动广告的固定竞价和动态竞价。</p>
+
+<h2>两者如何叠加：示例</h2>
+<p>据 <a href="https://scaleinsights.com/learn/bid-modifiers-top-of-search-rest-of-search-and-product-placements" rel="nofollow noopener" target="_blank">Scale Insights</a> 的解释，广告位调整先作用于出价，动态竞价再在此基础上调整。以 1 美元关键词出价、搜索顶部 +50% 为例，最高出价如下：</p>
+<figure><img src="/assets/insights/amazon-sponsored-products-bidding-strategies/max-bid-example-zh.svg" alt="示例：1 美元关键词竞价下的最高出价" loading="lazy" width="640" /><figcaption>图中为最高值：“仅降低”可能下调出价，“提高和降低”可能上调或下调。实际点击费用通常低于出价。</figcaption></figure>
+<p>在“提高和降低”策略下，1 美元的关键词在搜索顶部最高可以出到 3 美元。这就是为什么广告位调整设得高、再加上激进的动态竞价，广告活动花钱会远快于关键词出价给人的印象。另外，商品推广是竞价拍卖，实际点击费用往往低于最高出价。</p>
+
+<h2>不同情况怎么选</h2>
+<table>
+<thead><tr><th>情况</th><th>建议策略</th><th>原因</th></tr></thead>
+<tbody>
+<tr><td>新广告活动、数据少</td><td>仅降低</td><td>在摸清哪些词能转化之前，控制超支</td></tr>
+<tr><td>已验证、ACoS 良好的精准词</td><td>提高和降低</td><td>让亚马逊在高转化点击上出更高价</td></tr>
+<tr><td>品牌词、防守自家 Listing</td><td>固定或提高和降低</td><td>保证自家品牌搜索中的曝光</td></tr>
+<tr><td>预算紧、利润薄</td><td>仅降低</td><td>出价不会超过基础出价加广告位调整</td></tr>
+<tr><td>测试广告位效果</td><td>固定</td><td>更容易比较各广告位的表现</td></tr>
+</tbody>
+</table>
+<p>以上是基于我们经验的起点建议，并非亚马逊规则，最终以你的数据为准。</p>
+
+<h2>用数据设置广告位调整</h2>
+<ol>
+<li><strong>打开广告位报告</strong>，至少看 2–4 周的数据。</li>
+<li><strong>按广告位比较 ACoS 和转化率：</strong>搜索顶部转化通常更好，但单次点击更贵。</li>
+<li><strong>小步提高调整比例</strong>（例如每次 10%–25%），只在 ACoS 低于目标的广告位上调。</li>
+<li><strong>ACoS 高于目标的广告位</strong>降低或取消调整，必要时同时降低基础出价。</li>
+<li><strong>每次只改一个变量</strong>，等有新数据再做下一步调整。</li>
+<li><strong>关注预算消耗：</strong>如果广告活动一早就花完预算，说明调整可能设得过高。</li>
+</ol>
+
+<h2>常见错误</h2>
+<ul>
+<li>对未经验证的新关键词同时使用高广告位调整和“提高和降低”策略；</li>
+<li>只看几天数据就判断广告位好坏；</li>
+<li>忽视基础出价过高会在每一层调整中被放大；</li>
+<li>策略、出价和调整一次全改，最后不知道哪个起了作用。</li>
+</ul>
+<p>关于整体效率目标，可以参考我们的<a href="/insights/how-to-lower-acos-amazon.html">不掉销量的降 ACoS 方法</a>。</p>
+
+<h2>Atronia Innovations 能帮你什么</h2>
+<p>我们团队累计管理广告花费超过 1,000 万美元，根据每个客户自己的数据和盈亏平衡 ACoS 设置竞价策略和广告位调整，并每周复盘。欢迎查看<a href="/#pricing">服务方案</a>，或<a href="/#contact">申请广告诊断</a>。</p>
+
+<h2>信息来源</h2>
+<ul>
+<li><a href="https://advertising.amazon.com/library/guides/dynamic-bidding-sponsored-products" rel="nofollow noopener" target="_blank">Amazon Ads — Guide to dynamic bidding (up and down) with Sponsored Products</a></li>
+<li><a href="https://advertising.amazon.com/resources/whats-new/improve-campaign-performance" rel="nofollow noopener" target="_blank">Amazon Ads — Rest of search bid adjustment for Sponsored Products（2024 年 1 月 9 日）</a></li>
+<li><a href="https://scaleinsights.com/learn/bid-modifiers-top-of-search-rest-of-search-and-product-placements" rel="nofollow noopener" target="_blank">Scale Insights — Amazon bid modifiers: top of search, rest of search and product pages</a></li>
+</ul>
+      </div>
+      <aside class="article__cta">
+        <h2>想让我们帮您看看店铺或运费？</h2>
+        <p>告诉我们您在哪些平台销售、运送什么产品，我们会在一个工作日内给出具体可行的建议。</p>
+        <div class="btns"><a href="/#contact" data-home="#contact" class="btn btn--grad">联系我们</a><a href="/tools/shipping.html" class="btn btn--ghost">试试运费工具</a></div>
+      </aside>
+      <section class="related">
+        <h2>继续阅读</h2>
+        <div class="related__list">
+        <a href="/insights/how-to-lower-acos-amazon.html"><small>广告与增长</small>亚马逊 ACoS 太高怎么办？不掉销量的降 ACoS 方法</a>
+        <a href="/insights/fedex-2027-rate-increase.html"><small>物流运费</small>FedEx 2027 年涨价 5.9%：轻小包裹和附加费涨得更多</a>
+        <a href="/insights/2026-holiday-ecommerce-forecasts.html"><small>行业动态</small>2026 美国节日季电商预测：Adobe、德勤、eMarketer 怎么看</a>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="sub-foot">
+    <div class="container">
+      <span>© 2026 Atronia Innovations Inc.</span>
+      <span class="sub-foot__links">
+        <a href="/" data-home><span data-l="en">Home</span><span data-l="zh" hidden>首页</span></a>
+        <a href="/insights/"><span data-l="en">Insights</span><span data-l="zh" hidden>电商干货</span></a>
+        <a href="/tools/shipping.html"><span data-l="en">Shipping tools</span><span data-l="zh" hidden>运费工具</span></a>
+        <a href="/privacy.html"><span data-l="en">Privacy Policy</span><span data-l="zh" hidden>隐私政策</span></a>
+      </span>
+    </div>
+  </footer>
+  <script src="/assets/js/page.js" defer></script>
+</body>
+</html>
