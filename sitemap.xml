@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/tiktok-shop-account-health-rating.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/tiktok-shop-account-health-rating.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/tiktok-shop-account-health-rating.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/tiktok-shop-account-health-rating.html" />
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/amazon-mcf-prime-delivery-own-website.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/amazon-mcf-prime-delivery-own-website.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/amazon-mcf-prime-delivery-own-website.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/amazon-mcf-prime-delivery-own-website.html" />
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/amazon-sponsored-products-bidding-strategies.html</loc>

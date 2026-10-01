@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">TikTok Shop 美国站：店铺健康分对应的限制</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">天数</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">0</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">8</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">15</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">22</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">30</text>
+  <rect x="133.3" y="346.7" width="60.0" height="65.3" rx="6" fill="#ff3d8b"/><text x="163.3" y="337.7" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">7</text>
+  <rect x="312.0" y="281.3" width="60.0" height="130.7" rx="6" fill="#ff3d8b"/><text x="342.0" y="272.3" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">14</text>
+  <rect x="490.7" y="150.7" width="60.0" height="261.3" rx="6" fill="#ff3d8b"/><text x="520.7" y="141.7" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">28</text>
+  <text x="165.3" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">健康分 150</text>
+  <text x="344.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">健康分 100</text>
+  <text x="522.7" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">健康分 50</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">来源：TikTok Shop 商家大学《Account Health Rating (AHR) Requirements》（</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">2026 年 6 月 29 日更新）</text>
+</svg>

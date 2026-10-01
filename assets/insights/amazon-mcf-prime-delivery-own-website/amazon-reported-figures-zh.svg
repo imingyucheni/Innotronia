@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="284" viewBox="0 0 640 284" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="284" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="283" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">亚马逊在发布时公布的数据</text>
+  <text x="217.60000000000002" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">选择 Prime 配送的订单</text>
+  <rect x="231.60000000000002" y="94" width="249.9" height="24" rx="6" fill="#ff3d8b"/><text x="491.5" y="112" font-size="18" font-weight="600" fill="#f4f2fb">40%</text>
+  <text x="217.60000000000002" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">更可能首次购买的会员</text>
+  <rect x="231.60000000000002" y="146" width="249.9" height="24" rx="6" fill="#ff3d8b"/><text x="491.5" y="164" font-size="18" font-weight="600" fill="#f4f2fb">40%</text>
+  <text x="217.60000000000002" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">更可能复购的会员</text>
+  <rect x="231.60000000000002" y="198" width="312.4" height="24" rx="6" fill="#ff3d8b"/><text x="554.0" y="216" font-size="18" font-weight="600" fill="#f4f2fb">50%</text>
+  <text x="32" y="264" font-size="15" fill="#6f6d85">来源：亚马逊官方公告（2026 年 9 月 24 日），数据由亚马逊公布。</text>
+</svg>
