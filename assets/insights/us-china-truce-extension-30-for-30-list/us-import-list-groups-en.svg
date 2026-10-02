@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="600" viewBox="0 0 640 600" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="600" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="599" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Chinese products on the US &quot;30-for-30&quot;</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">list, by group (HTS lines)</text>
+  <text x="258" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Toys, games, sports, holiday</text>
+  <rect x="272" y="130" width="272.0" height="24" rx="6" fill="#ff3d8b"/><text x="554.0" y="148" font-size="18" font-weight="600" fill="#f4f2fb">25</text>
+  <text x="258" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Home textiles</text>
+  <rect x="272" y="182" width="185.0" height="24" rx="6" fill="#ff3d8b"/><text x="467.0" y="200" font-size="18" font-weight="600" fill="#f4f2fb">17</text>
+  <text x="258" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">Small appliances, scales, lights</text>
+  <rect x="272" y="234" width="163.2" height="24" rx="6" fill="#ff3d8b"/><text x="445.2" y="252" font-size="18" font-weight="600" fill="#f4f2fb">15</text>
+  <text x="258" y="304" font-size="18" fill="#d9d6e6" text-anchor="end">Baby gear, pillows, bags</text>
+  <rect x="272" y="286" width="97.9" height="24" rx="6" fill="#ff3d8b"/><text x="379.9" y="304" font-size="18" font-weight="600" fill="#f4f2fb">9</text>
+  <text x="258" y="356" font-size="18" fill="#d9d6e6" text-anchor="end">Brushes &amp; vacuum flasks</text>
+  <rect x="272" y="338" width="43.5" height="24" rx="6" fill="#ff3d8b"/><text x="325.5" y="356" font-size="18" font-weight="600" fill="#f4f2fb">4</text>
+  <text x="258" y="408" font-size="18" fill="#d9d6e6" text-anchor="end">Plastic tableware &amp; beads</text>
+  <rect x="272" y="390" width="32.6" height="24" rx="6" fill="#ff3d8b"/><text x="314.6" y="408" font-size="18" font-weight="600" fill="#f4f2fb">3</text>
+  <text x="258" y="460" font-size="18" fill="#d9d6e6" text-anchor="end">Umbrellas &amp; artificial flowers</text>
+  <rect x="272" y="442" width="32.6" height="24" rx="6" fill="#ff3d8b"/><text x="314.6" y="460" font-size="18" font-weight="600" fill="#f4f2fb">3</text>
+  <text x="258" y="512" font-size="18" fill="#d9d6e6" text-anchor="end">Fireworks</text>
+  <rect x="272" y="494" width="10.9" height="24" rx="6" fill="#ff3d8b"/><text x="292.9" y="512" font-size="18" font-weight="600" fill="#f4f2fb">1</text>
+  <text x="32" y="560" font-size="15" fill="#6f6d85">Source: White House, U.S. Import List (Sept 27, 2026). Calculation: count of</text>
+  <text x="32" y="580" font-size="15" fill="#6f6d85">the 77 HTSUS lines grouped by chapter (95; 63; 84–85; 94; 96; 39; 66–67; 36).</text>
+</svg>

@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/us-china-truce-extension-30-for-30-list.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/us-china-truce-extension-30-for-30-list.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/us-china-truce-extension-30-for-30-list.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/us-china-truce-extension-30-for-30-list.html" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/how-to-find-hts-code-us-duty-rate.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/how-to-find-hts-code-us-duty-rate.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/how-to-find-hts-code-us-duty-rate.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/how-to-find-hts-code-us-duty-rate.html" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/tiktok-shop-account-health-rating.html</loc>
