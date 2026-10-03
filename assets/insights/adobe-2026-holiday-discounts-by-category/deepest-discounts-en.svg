@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="580" viewBox="0 0 640 580" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="580" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="579" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Forecast deepest holiday discount by</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">category, 2026</text>
+  <text x="258" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Electronics (Cyber Mon.)</text>
+  <rect x="272" y="130" width="272.0" height="24" rx="6" fill="#ff3d8b"/><text x="554.0" y="148" font-size="18" font-weight="600" fill="#f4f2fb">30%</text>
+  <text x="258" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Toys (Black Fri.)</text>
+  <rect x="272" y="182" width="262.9" height="24" rx="6" fill="#ff3d8b"/><text x="544.9" y="200" font-size="18" font-weight="600" fill="#f4f2fb">29%</text>
+  <text x="258" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">TVs (Black Fri.)</text>
+  <rect x="272" y="234" width="208.5" height="24" rx="6" fill="#ff3d8b"/><text x="490.5" y="252" font-size="18" font-weight="600" fill="#f4f2fb">23%</text>
+  <text x="258" y="304" font-size="18" fill="#d9d6e6" text-anchor="end">Apparel (Black Fri.)</text>
+  <rect x="272" y="286" width="208.5" height="24" rx="6" fill="#ff3d8b"/><text x="490.5" y="304" font-size="18" font-weight="600" fill="#f4f2fb">23%</text>
+  <text x="258" y="356" font-size="18" fill="#d9d6e6" text-anchor="end">Computers (Cyber Mon.)</text>
+  <rect x="272" y="338" width="208.5" height="24" rx="6" fill="#ff3d8b"/><text x="490.5" y="356" font-size="18" font-weight="600" fill="#f4f2fb">23%</text>
+  <text x="258" y="408" font-size="18" fill="#d9d6e6" text-anchor="end">Sporting goods (Thanksg.)</text>
+  <rect x="272" y="390" width="172.3" height="24" rx="6" fill="#ff3d8b"/><text x="454.3" y="408" font-size="18" font-weight="600" fill="#f4f2fb">19%</text>
+  <text x="258" y="460" font-size="18" fill="#d9d6e6" text-anchor="end">Appliances (Black Fri.)</text>
+  <rect x="272" y="442" width="163.2" height="24" rx="6" fill="#ff3d8b"/><text x="445.2" y="460" font-size="18" font-weight="600" fill="#f4f2fb">18%</text>
+  <text x="258" y="512" font-size="18" fill="#d9d6e6" text-anchor="end">Furniture (Black Fri.)</text>
+  <rect x="272" y="494" width="163.2" height="24" rx="6" fill="#ff3d8b"/><text x="445.2" y="512" font-size="18" font-weight="600" fill="#f4f2fb">18%</text>
+  <text x="32" y="560" font-size="15" fill="#6f6d85">Source: Adobe Digital Insights, 2026 U.S. Holiday Forecast (Sept 2026)</text>
+</svg>

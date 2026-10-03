@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">US online spend during October Prime Big</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">Deal Days</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.0</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">$2.5</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">$5.0</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">$7.5</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">$10.0</text>
+  <rect x="97.6" y="202.0" width="60.0" height="210.0" rx="6" fill="#ff3d8b"/><text x="127.6" y="193.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$7.5</text>
+  <rect x="204.8" y="188.0" width="60.0" height="224.0" rx="6" fill="#ff3d8b"/><text x="234.8" y="179.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$8.0</text>
+  <rect x="312.0" y="174.0" width="60.0" height="238.0" rx="6" fill="#ff3d8b"/><text x="342.0" y="165.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$8.5</text>
+  <rect x="419.2" y="157.2" width="60.0" height="254.8" rx="6" fill="#ff3d8b"/><text x="449.2" y="148.2" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$9.1</text>
+  <rect x="526.4" y="134.8" width="60.0" height="277.2" rx="6" fill="#ff3d8b"/><text x="556.4" y="125.8" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$9.9</text>
+  <text x="129.6" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2022</text>
+  <text x="236.8" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2023</text>
+  <text x="344.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2024</text>
+  <text x="451.2" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2025</text>
+  <text x="558.4" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2026</text>
+  <text x="558.4" y="457" font-size="16" fill="#a3a1b8" text-anchor="middle">(forecast)</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">Source: Adobe Digital Insights, 2026 U.S. Holiday Forecast (Sept 2026). Spend</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">across US retailers, $ billion.</text>
+</svg>
