@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">2026 年 TikTok Shop 商品交易总额（十亿美</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">元）</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.0</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">$37.5</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">$75.0</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">$112.5</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">$150.0</text>
+  <rect x="133.3" y="390.0" width="60.0" height="22.0" rx="6" fill="#ff3d8b"/><text x="163.3" y="381.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$11.8</text>
+  <rect x="312.0" y="318.1" width="60.0" height="93.9" rx="6" fill="#ff3d8b"/><text x="342.0" y="309.1" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$50.3</text>
+  <rect x="490.7" y="181.5" width="60.0" height="230.5" rx="6" fill="#ff3d8b"/><text x="520.7" y="172.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$123.5</text>
+  <text x="165.3" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">美国 2026 上半年</text>
+  <text x="344.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">全球 2026 上半年</text>
+  <text x="522.7" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">全球 2026 全年预测</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">来源：Momentum Works 与 Tabcut，据 Tubefilter 报道（2026 年 8 月 6 日）。为第</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">三方估算，非 TikTok 官方数据。</text>
+</svg>
