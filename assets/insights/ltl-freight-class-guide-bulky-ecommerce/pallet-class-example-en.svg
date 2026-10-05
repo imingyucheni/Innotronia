@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Same 48×40×48 in pallet, different</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">weight: NMFC density class</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">0.0</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">50.0</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">100.0</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">150.0</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">200.0</text>
+  <rect x="111.0" y="167.0" width="60.0" height="245.0" rx="6" fill="#ff3d8b"/><text x="141.0" y="158.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">175.0</text>
+  <rect x="245.0" y="282.5" width="60.0" height="129.5" rx="6" fill="#ff3d8b"/><text x="275.0" y="273.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">92.5</text>
+  <rect x="379.0" y="321.0" width="60.0" height="91.0" rx="6" fill="#ff3d8b"/><text x="409.0" y="312.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">65.0</text>
+  <rect x="513.0" y="335.0" width="60.0" height="77.0" rx="6" fill="#ff3d8b"/><text x="543.0" y="326.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">55.0</text>
+  <text x="143.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">300 lb</text>
+  <text x="277.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">600 lb</text>
+  <text x="411.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">1,200 lb</text>
+  <text x="545.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2,000 lb</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">Source: NMFC 13-sub density scale effective Jul 19, 2025 (via Cole</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">International). Calculation: 48×40×48 in = 53.3 cu ft; density = weight ÷ 53.3.</text>
+</svg>

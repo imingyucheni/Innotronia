@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/ltl-freight-class-guide-bulky-ecommerce.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/ltl-freight-class-guide-bulky-ecommerce.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/ltl-freight-class-guide-bulky-ecommerce.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/ltl-freight-class-guide-bulky-ecommerce.html" />
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/amazon-walmart-heavy-bulky-shipping-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/amazon-walmart-heavy-bulky-shipping-2026.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/amazon-walmart-heavy-bulky-shipping-2026.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/amazon-walmart-heavy-bulky-shipping-2026.html" />
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/best-buy-tiktok-shop-launch-sellers.html</loc>
