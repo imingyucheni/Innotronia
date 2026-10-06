@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="516" viewBox="0 0 640 516" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="516" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="515" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">不同月销售额下的代运营月费（计算示例）</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">固定月费 + 广告销售额 1%</text>
+  <rect x="275.88000000000005" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="297.88000000000005" y="96" font-size="17" fill="#a3a1b8">净收入 5%</text>
+  <line x1="76" x2="612" y1="406.0" y2="406.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="411.0" font-size="16" fill="#6f6d85" text-anchor="end">$0</text>
+  <line x1="76" x2="612" y1="336.0" y2="336.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="341.0" font-size="16" fill="#6f6d85" text-anchor="end">$2,500</text>
+  <line x1="76" x2="612" y1="266.0" y2="266.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="271.0" font-size="16" fill="#6f6d85" text-anchor="end">$5,000</text>
+  <line x1="76" x2="612" y1="196.0" y2="196.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="201.0" font-size="16" fill="#6f6d85" text-anchor="end">$7,500</text>
+  <line x1="76" x2="612" y1="126.0" y2="126.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="131.0" font-size="16" fill="#6f6d85" text-anchor="end">$10,000</text>
+  <rect x="96.1" y="375.2" width="42.9" height="30.8" rx="6" fill="#ff3d8b"/><text x="117.5" y="366.2" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$1,099</text>
+  <rect x="143.0" y="378.0" width="42.9" height="28.0" rx="6" fill="#8b6cff"/><text x="164.4" y="369.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$1,000</text>
+  <rect x="230.1" y="371.0" width="42.9" height="35.0" rx="6" fill="#ff3d8b"/><text x="251.5" y="362.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$1,249</text>
+  <rect x="277.0" y="336.0" width="42.9" height="70.0" rx="6" fill="#8b6cff"/><text x="298.4" y="327.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$2,500</text>
+  <rect x="364.1" y="364.0" width="42.9" height="42.0" rx="6" fill="#ff3d8b"/><text x="385.6" y="355.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$1,499</text>
+  <rect x="411.0" y="266.0" width="42.9" height="140.0" rx="6" fill="#8b6cff"/><text x="432.4" y="257.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$5,000</text>
+  <rect x="498.1" y="350.0" width="42.9" height="56.0" rx="6" fill="#ff3d8b"/><text x="519.6" y="341.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$1,999</text>
+  <rect x="545.0" y="126.0" width="42.9" height="280.0" rx="6" fill="#8b6cff"/><text x="566.5" y="117.0" font-size="13" font-weight="600" fill="#f4f2fb" text-anchor="middle">$10,000</text>
+  <text x="143.0" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">月销 2 万美元</text>
+  <text x="277.0" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">月销 5 万美元</text>
+  <text x="411.0" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">月销 10 万美元</text>
+  <text x="545.0" y="432" font-size="16" fill="#a3a1b8" text-anchor="middle">月销 20 万美元</text>
+  <text x="32" y="476" font-size="15" fill="#6f6d85">来源：Atronia Innovations 公开价格。计算假设 SKU ≤10 个、广告带来的销售占</text>
+  <text x="32" y="496" font-size="15" fill="#6f6d85">50%、无退货、不含启动费：999 美元 + 广告销售额 × 1%，对比净收入 × 5%。</text>
+</svg>
