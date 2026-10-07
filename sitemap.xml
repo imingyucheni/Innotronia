@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/stripe-acquires-parafin-amazon-lending-sellers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/stripe-acquires-parafin-amazon-lending-sellers.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/stripe-acquires-parafin-amazon-lending-sellers.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/stripe-acquires-parafin-amazon-lending-sellers.html" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/how-to-compare-seller-financing-offers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/how-to-compare-seller-financing-offers.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/how-to-compare-seller-financing-offers.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/how-to-compare-seller-financing-offers.html" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/ecommerce-agency-pricing-models-compared.html</loc>
