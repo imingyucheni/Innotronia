@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/size-us-market-opportunity-official-data.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/size-us-market-opportunity-official-data.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/size-us-market-opportunity-official-data.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/size-us-market-opportunity-official-data.html" />
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/ship-with-walmart-shipstation-sellers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/ship-with-walmart-shipstation-sellers.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/ship-with-walmart-shipstation-sellers.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/ship-with-walmart-shipstation-sellers.html" />
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/stripe-acquires-parafin-amazon-lending-sellers.html</loc>

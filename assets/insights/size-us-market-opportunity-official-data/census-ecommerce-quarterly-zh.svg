@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">美国零售电商季度销售额（十亿美元，季节调</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">整后）</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">$0.0</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">$100.0</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">$200.0</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">$300.0</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">$400.0</text>
+  <rect x="97.6" y="199.7" width="60.0" height="212.3" rx="6" fill="#ff3d8b"/><text x="127.6" y="190.7" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$303.3</text>
+  <rect x="204.8" y="194.4" width="60.0" height="217.6" rx="6" fill="#ff3d8b"/><text x="234.8" y="185.4" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$310.8</text>
+  <rect x="312.0" y="189.4" width="60.0" height="222.6" rx="6" fill="#ff3d8b"/><text x="342.0" y="180.4" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$318.0</text>
+  <rect x="419.2" y="182.5" width="60.0" height="229.5" rx="6" fill="#ff3d8b"/><text x="449.2" y="173.5" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$327.9</text>
+  <rect x="526.4" y="173.9" width="60.0" height="238.1" rx="6" fill="#ff3d8b"/><text x="556.4" y="164.9" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">$340.2</text>
+  <text x="129.6" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2025 Q2</text>
+  <text x="236.8" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2025 Q3</text>
+  <text x="344.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2025 Q4</text>
+  <text x="451.2" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2026 Q1</text>
+  <text x="558.4" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">2026 Q2</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">来源：美国人口普查局《Quarterly Retail E-Commerce Sales, 2nd Quarter 2026》</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">（2026 年 8 月 18 日），2026 年 Q2 为初步数据。</text>
+</svg>
