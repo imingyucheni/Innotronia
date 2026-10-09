@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="392" viewBox="0 0 640 392" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="392" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="391" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Prime Big Deal Days: online sales lift vs</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">September</text>
+  <text x="156.40000000000003" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Toys</text>
+  <rect x="170.40000000000003" y="130" width="295.1" height="24" rx="6" fill="#ff3d8b"/><text x="475.5" y="148" font-size="18" font-weight="600" fill="#f4f2fb">158%</text>
+  <text x="156.40000000000003" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Video games</text>
+  <rect x="170.40000000000003" y="182" width="168.1" height="24" rx="6" fill="#ff3d8b"/><text x="348.5" y="200" font-size="18" font-weight="600" fill="#f4f2fb">90%</text>
+  <text x="156.40000000000003" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">Electronics</text>
+  <rect x="170.40000000000003" y="234" width="158.8" height="24" rx="6" fill="#ff3d8b"/><text x="339.2" y="252" font-size="18" font-weight="600" fill="#f4f2fb">85%</text>
+  <text x="156.40000000000003" y="304" font-size="18" fill="#d9d6e6" text-anchor="end">Personal care</text>
+  <rect x="170.40000000000003" y="286" width="136.4" height="24" rx="6" fill="#ff3d8b"/><text x="316.8" y="304" font-size="18" font-weight="600" fill="#f4f2fb">73%</text>
+  <text x="32" y="352" font-size="15" fill="#6f6d85">Source: Adobe Digital Insights, as reported by Digital Commerce 360 (Oct 8,</text>
+  <text x="32" y="372" font-size="15" fill="#6f6d85">2026). Oct 6–7, 2026, US online sales.</text>
+</svg>

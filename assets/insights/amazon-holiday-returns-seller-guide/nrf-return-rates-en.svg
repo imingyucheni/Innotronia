@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Share of US retail sales returned</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">(retailer estimates)</text>
+  <line x1="76" x2="612" y1="412.0" y2="412.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="417.0" font-size="16" fill="#6f6d85" text-anchor="end">0.0%</text>
+  <line x1="76" x2="612" y1="342.0" y2="342.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="347.0" font-size="16" fill="#6f6d85" text-anchor="end">5.0%</text>
+  <line x1="76" x2="612" y1="272.0" y2="272.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="277.0" font-size="16" fill="#6f6d85" text-anchor="end">10.0%</text>
+  <line x1="76" x2="612" y1="202.0" y2="202.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="207.0" font-size="16" fill="#6f6d85" text-anchor="end">15.0%</text>
+  <line x1="76" x2="612" y1="132.0" y2="132.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="137.0" font-size="16" fill="#6f6d85" text-anchor="end">20.0%</text>
+  <rect x="111.0" y="175.4" width="60.0" height="236.6" rx="6" fill="#ff3d8b"/><text x="141.0" y="166.4" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">16.9%</text>
+  <rect x="245.0" y="190.8" width="60.0" height="221.2" rx="6" fill="#ff3d8b"/><text x="275.0" y="181.8" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">15.8%</text>
+  <rect x="379.0" y="174.0" width="60.0" height="238.0" rx="6" fill="#ff3d8b"/><text x="409.0" y="165.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">17.0%</text>
+  <rect x="513.0" y="141.8" width="60.0" height="270.2" rx="6" fill="#ff3d8b"/><text x="543.0" y="132.8" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">19.3%</text>
+  <text x="143.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">All sales 2024</text>
+  <text x="277.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">All sales 2025</text>
+  <text x="411.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">Holiday 2025</text>
+  <text x="545.0" y="438" font-size="16" fill="#a3a1b8" text-anchor="middle">Online 2025</text>
+  <text x="32" y="482" font-size="15" fill="#6f6d85">Source: NRF &amp; Happy Returns, 2025 Retail Returns Landscape (Oct 15, 2025).</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">2025 figures are retailer estimates.</text>
+</svg>
