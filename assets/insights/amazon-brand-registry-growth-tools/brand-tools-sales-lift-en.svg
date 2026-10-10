@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="340" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="339" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Amazon-reported sales lift from Brand</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">Registry tools</text>
+  <text x="202.48000000000008" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Basic A+ Content</text>
+  <rect x="216.48000000000008" y="130" width="104.8" height="24" rx="6" fill="#ff3d8b"/><text x="331.3" y="148" font-size="18" font-weight="600" fill="#f4f2fb">8%</text>
+  <text x="202.48000000000008" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Premium A+ Content</text>
+  <rect x="216.48000000000008" y="182" width="262.0" height="24" rx="6" fill="#ff3d8b"/><text x="488.5" y="200" font-size="18" font-weight="600" fill="#f4f2fb">20%</text>
+  <text x="202.48000000000008" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">Experiments (MYE)</text>
+  <rect x="216.48000000000008" y="234" width="327.5" height="24" rx="6" fill="#ff3d8b"/><text x="554.0" y="252" font-size="18" font-weight="600" fill="#f4f2fb">25%</text>
+  <text x="32" y="300" font-size="15" fill="#6f6d85">Source: Amazon, sell.amazon.com Brand Registry page (accessed Oct 10, 2026),</text>
+  <text x="32" y="320" font-size="15" fill="#6f6d85">citing Amazon internal data.</text>
+</svg>

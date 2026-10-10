@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="340" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="339" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">What US online shoppers expect from</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">returns</text>
+  <text x="232.7200000000001" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Free returns matter</text>
+  <rect x="246.7200000000001" y="130" width="243.8" height="24" rx="6" fill="#ff3d8b"/><text x="500.5" y="148" font-size="18" font-weight="600" fill="#f4f2fb">82%</text>
+  <text x="232.7200000000001" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Prefer instant refund</text>
+  <rect x="246.7200000000001" y="182" width="225.9" height="24" rx="6" fill="#ff3d8b"/><text x="482.7" y="200" font-size="18" font-weight="600" fill="#f4f2fb">76%</text>
+  <text x="232.7200000000001" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">Less likely to rebuy</text>
+  <rect x="246.7200000000001" y="234" width="211.1" height="24" rx="6" fill="#ff3d8b"/><text x="467.8" y="252" font-size="18" font-weight="600" fill="#f4f2fb">71%</text>
+  <text x="32" y="300" font-size="15" fill="#6f6d85">Source: NRF &amp; Happy Returns, 2025 Retail Returns Landscape (Oct 15, 2025);</text>
+  <text x="32" y="320" font-size="15" fill="#6f6d85">survey of 2,006 US online shoppers.</text>
+</svg>
