@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="324" viewBox="0 0 640 324" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="324" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="323" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">IEEPA refunds in CAPE, $ billions</text>
+  <text x="202.48000000000008" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">Accepted into CAPE</text>
+  <rect x="216.48000000000008" y="94" width="294.1" height="24" rx="6" fill="#ff3d8b"/><text x="520.6" y="112" font-size="18" font-weight="600" fill="#f4f2fb">$134.7</text>
+  <text x="202.48000000000008" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">Sent to Treasury</text>
+  <rect x="216.48000000000008" y="146" width="266.4" height="24" rx="6" fill="#ff3d8b"/><text x="492.9" y="164" font-size="18" font-weight="600" fill="#f4f2fb">$122.0</text>
+  <text x="202.48000000000008" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">On hold (no ACH)</text>
+  <rect x="216.48000000000008" y="198" width="2.8" height="24" rx="6" fill="#ff3d8b"/><text x="229.3" y="216" font-size="18" font-weight="600" fill="#f4f2fb">$1.3</text>
+  <text x="32" y="264" font-size="15" fill="#6f6d85">Source: CBP declaration to the Court of International Trade (Sept 15, 2026;</text>
+  <text x="32" y="284" font-size="15" fill="#6f6d85">data as of Sept 11), as reported by C.H. Robinson and Mohawk Global (Sept 17,</text>
+  <text x="32" y="304" font-size="15" fill="#6f6d85">2026).</text>
+</svg>

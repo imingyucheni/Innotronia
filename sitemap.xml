@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/ftc-fake-reviews-rule-sellers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/ftc-fake-reviews-rule-sellers.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/ftc-fake-reviews-rule-sellers.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/ftc-fake-reviews-rule-sellers.html" />
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/ieepa-tariff-refunds-cape-phase-3.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/ieepa-tariff-refunds-cape-phase-3.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/ieepa-tariff-refunds-cape-phase-3.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/ieepa-tariff-refunds-cape-phase-3.html" />
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/usps-ground-advantage-guide-sellers.html</loc>
