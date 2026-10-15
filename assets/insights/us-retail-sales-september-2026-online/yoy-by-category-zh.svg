@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="512" viewBox="0 0 640 512" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="512" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="511" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">2026 年 9 月销售额同比变化</text>
+  <text x="214.0" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">体育用品与爱好</text>
+  <rect x="228.0" y="94" width="303.4" height="24" rx="6" fill="#ff3d8b"/><text x="541.4" y="112" font-size="18" font-weight="600" fill="#f4f2fb">9.6%</text>
+  <text x="214.0" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">电子与家电</text>
+  <rect x="228.0" y="146" width="297.0" height="24" rx="6" fill="#ff3d8b"/><text x="535.0" y="164" font-size="18" font-weight="600" fill="#f4f2fb">9.4%</text>
+  <text x="214.0" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">无店铺零售（含网购）</text>
+  <rect x="228.0" y="198" width="259.1" height="24" rx="6" fill="#ff3d8b"/><text x="497.1" y="216" font-size="18" font-weight="600" fill="#f4f2fb">8.2%</text>
+  <text x="214.0" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">零售与餐饮合计</text>
+  <rect x="228.0" y="250" width="199.1" height="24" rx="6" fill="#ff3d8b"/><text x="437.1" y="268" font-size="18" font-weight="600" fill="#f4f2fb">6.3%</text>
+  <text x="214.0" y="320" font-size="18" fill="#d9d6e6" text-anchor="end">服装与配饰</text>
+  <rect x="228.0" y="302" width="158.0" height="24" rx="6" fill="#ff3d8b"/><text x="396.0" y="320" font-size="18" font-weight="600" fill="#f4f2fb">5.0%</text>
+  <text x="214.0" y="372" font-size="18" fill="#d9d6e6" text-anchor="end">家具与家居</text>
+  <rect x="228.0" y="354" width="154.8" height="24" rx="6" fill="#ff3d8b"/><text x="392.8" y="372" font-size="18" font-weight="600" fill="#f4f2fb">4.9%</text>
+  <text x="214.0" y="424" font-size="18" fill="#d9d6e6" text-anchor="end">综合商品</text>
+  <rect x="228.0" y="406" width="132.7" height="24" rx="6" fill="#ff3d8b"/><text x="370.7" y="424" font-size="18" font-weight="600" fill="#f4f2fb">4.2%</text>
+  <text x="32" y="472" font-size="15" fill="#6f6d85">来源：美国人口普查局《月度零售贸易预估》（2026 年 10 月 15 日）。经季节调整，</text>
+  <text x="32" y="492" font-size="15" fill="#6f6d85">未经价格调整。</text>
+</svg>
