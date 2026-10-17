@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="522" viewBox="0 0 640 522" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="522" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="521" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">USPS domestic claim windows (days after</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">mailing)</text>
+  <rect x="32" y="120" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="132" font-size="17" fill="#a3a1b8">Earliest day to file</text>
+  <rect x="239.8400000000001" y="120" width="14" height="14" rx="3" fill="#8b6cff"/><text x="261.8400000000001" y="132" font-size="17" fill="#a3a1b8">Last day to file</text>
+  <text x="258" y="193" font-size="18" fill="#d9d6e6" text-anchor="end">Lost: Priority Mail Express</text>
+  <rect x="272" y="160" width="31.7" height="24" rx="6" fill="#ff3d8b"/><text x="313.7" y="178" font-size="18" font-weight="600" fill="#f4f2fb">7</text>
+  <rect x="272" y="190" width="272.0" height="24" rx="6" fill="#8b6cff"/><text x="554.0" y="208" font-size="18" font-weight="600" fill="#f4f2fb">60</text>
+  <text x="258" y="275" font-size="18" fill="#d9d6e6" text-anchor="end">Lost: Priority Mail</text>
+  <rect x="272" y="242" width="68.0" height="24" rx="6" fill="#ff3d8b"/><text x="350.0" y="260" font-size="18" font-weight="600" fill="#f4f2fb">15</text>
+  <rect x="272" y="272" width="272.0" height="24" rx="6" fill="#8b6cff"/><text x="554.0" y="290" font-size="18" font-weight="600" fill="#f4f2fb">60</text>
+  <text x="258" y="357" font-size="18" fill="#d9d6e6" text-anchor="end">Lost: Ground Advantage</text>
+  <rect x="272" y="324" width="68.0" height="24" rx="6" fill="#ff3d8b"/><text x="350.0" y="342" font-size="18" font-weight="600" fill="#f4f2fb">15</text>
+  <rect x="272" y="354" width="272.0" height="24" rx="6" fill="#8b6cff"/><text x="554.0" y="372" font-size="18" font-weight="600" fill="#f4f2fb">60</text>
+  <text x="258" y="439" font-size="18" fill="#d9d6e6" text-anchor="end">Damaged / missing contents</text>
+  <rect x="272" y="406" width="2.0" height="24" rx="6" fill="#ff3d8b"/><text x="284.0" y="424" font-size="18" font-weight="600" fill="#f4f2fb">0</text>
+  <rect x="272" y="436" width="272.0" height="24" rx="6" fill="#8b6cff"/><text x="554.0" y="454" font-size="18" font-weight="600" fill="#f4f2fb">60</text>
+  <text x="32" y="502" font-size="15" fill="#6f6d85">Source: USPS, File a Claim (usps.com/help/claims.htm, accessed Oct 17, 2026).</text>
+</svg>
