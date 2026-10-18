@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="460" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="459" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Priority Mail Flat Rate: Post Office vs</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">commercial</text>
+  <rect x="32" y="120" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="132" font-size="17" fill="#a3a1b8">Post Office</text>
+  <rect x="174.56000000000003" y="120" width="14" height="14" rx="3" fill="#8b6cff"/><text x="196.56000000000003" y="132" font-size="17" fill="#a3a1b8">Commercial pricing</text>
+  <text x="208.2400000000001" y="193" font-size="18" fill="#d9d6e6" text-anchor="end">Flat Rate Envelope</text>
+  <rect x="222.2400000000001" y="160" width="111.8" height="24" rx="6" fill="#ff3d8b"/><text x="344.1" y="178" font-size="18" font-weight="600" fill="#f4f2fb">$13.90</text>
+  <rect x="222.2400000000001" y="190" width="96.3" height="24" rx="6" fill="#8b6cff"/><text x="328.5" y="208" font-size="18" font-weight="600" fill="#f4f2fb">$11.97</text>
+  <text x="208.2400000000001" y="275" font-size="18" fill="#d9d6e6" text-anchor="end">Small Flat Rate Box</text>
+  <rect x="222.2400000000001" y="242" width="117.8" height="24" rx="6" fill="#ff3d8b"/><text x="350.1" y="260" font-size="18" font-weight="600" fill="#f4f2fb">$14.65</text>
+  <rect x="222.2400000000001" y="272" width="104.2" height="24" rx="6" fill="#8b6cff"/><text x="336.4" y="290" font-size="18" font-weight="600" fill="#f4f2fb">$12.95</text>
+  <text x="208.2400000000001" y="357" font-size="18" fill="#d9d6e6" text-anchor="end">Large Flat Rate Box</text>
+  <rect x="222.2400000000001" y="324" width="290.4" height="24" rx="6" fill="#ff3d8b"/><text x="522.6" y="342" font-size="18" font-weight="600" fill="#f4f2fb">$36.10</text>
+  <rect x="222.2400000000001" y="354" width="263.4" height="24" rx="6" fill="#8b6cff"/><text x="495.7" y="372" font-size="18" font-weight="600" fill="#f4f2fb">$32.75</text>
+  <text x="32" y="420" font-size="15" fill="#6f6d85">Source: USPS Priority Mail page (usps.com, accessed Oct 18, 2026). Prices may</text>
+  <text x="32" y="440" font-size="15" fill="#6f6d85">include temporary 2026 price changes.</text>
+</svg>

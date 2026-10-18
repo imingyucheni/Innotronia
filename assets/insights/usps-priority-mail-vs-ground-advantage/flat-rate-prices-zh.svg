@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="424" viewBox="0 0 640 424" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="424" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="423" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Priority Mail 统一价：邮局零售 vs 商业价</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">邮局零售价</text>
+  <rect x="163.0" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="185.0" y="96" font-size="17" fill="#a3a1b8">商业价</text>
+  <text x="142.0" y="157" font-size="18" fill="#d9d6e6" text-anchor="end">统一价信封</text>
+  <rect x="156.0" y="124" width="134.8" height="24" rx="6" fill="#ff3d8b"/><text x="300.8" y="142" font-size="18" font-weight="600" fill="#f4f2fb">$13.90</text>
+  <rect x="156.0" y="154" width="116.1" height="24" rx="6" fill="#8b6cff"/><text x="282.1" y="172" font-size="18" font-weight="600" fill="#f4f2fb">$11.97</text>
+  <text x="142.0" y="239" font-size="18" fill="#d9d6e6" text-anchor="end">小号统一价箱</text>
+  <rect x="156.0" y="206" width="142.1" height="24" rx="6" fill="#ff3d8b"/><text x="308.1" y="224" font-size="18" font-weight="600" fill="#f4f2fb">$14.65</text>
+  <rect x="156.0" y="236" width="125.6" height="24" rx="6" fill="#8b6cff"/><text x="291.6" y="254" font-size="18" font-weight="600" fill="#f4f2fb">$12.95</text>
+  <text x="142.0" y="321" font-size="18" fill="#d9d6e6" text-anchor="end">大号统一价箱</text>
+  <rect x="156.0" y="288" width="350.2" height="24" rx="6" fill="#ff3d8b"/><text x="516.2" y="306" font-size="18" font-weight="600" fill="#f4f2fb">$36.10</text>
+  <rect x="156.0" y="318" width="317.7" height="24" rx="6" fill="#8b6cff"/><text x="483.7" y="336" font-size="18" font-weight="600" fill="#f4f2fb">$32.75</text>
+  <text x="32" y="384" font-size="15" fill="#6f6d85">来源：USPS Priority Mail 页面（usps.com，2026 年 10 月 18 日访问）。价格可能包</text>
+  <text x="32" y="404" font-size="15" fill="#6f6d85">含 2026 年临时调价。</text>
+</svg>
