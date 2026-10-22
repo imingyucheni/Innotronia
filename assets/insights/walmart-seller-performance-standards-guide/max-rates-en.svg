@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="408" viewBox="0 0 640 408" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="408" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="407" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Walmart limits: maximum allowed rates</text>
+  <text x="242.80000000000013" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">Return rate</text>
+  <rect x="256.8000000000001" y="94" width="287.2" height="24" rx="6" fill="#ff3d8b"/><text x="554.0" y="112" font-size="18" font-weight="600" fill="#f4f2fb">6%</text>
+  <text x="242.80000000000013" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">Late shipment rate</text>
+  <rect x="256.8000000000001" y="146" width="239.3" height="24" rx="6" fill="#ff3d8b"/><text x="506.1" y="164" font-size="18" font-weight="600" fill="#f4f2fb">5%</text>
+  <text x="242.80000000000013" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">Cancellation rate</text>
+  <rect x="256.8000000000001" y="198" width="95.7" height="24" rx="6" fill="#ff3d8b"/><text x="362.5" y="216" font-size="18" font-weight="600" fill="#f4f2fb">2%</text>
+  <text x="242.80000000000013" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">Negative feedback rate</text>
+  <rect x="256.8000000000001" y="250" width="95.7" height="24" rx="6" fill="#ff3d8b"/><text x="362.5" y="268" font-size="18" font-weight="600" fill="#f4f2fb">2%</text>
+  <text x="242.80000000000013" y="320" font-size="18" fill="#d9d6e6" text-anchor="end">Item not received rate</text>
+  <rect x="256.8000000000001" y="302" width="95.7" height="24" rx="6" fill="#ff3d8b"/><text x="362.5" y="320" font-size="18" font-weight="600" fill="#f4f2fb">2%</text>
+  <text x="32" y="368" font-size="15" fill="#6f6d85">Source: Walmart Marketplace Learn, Seller performance standards (updated</text>
+  <text x="32" y="388" font-size="15" fill="#6f6d85">Jul 28, 2026).</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="388" viewBox="0 0 640 388" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="388" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="387" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">沃尔玛卖家指标：允许的最高比率</text>
+  <text x="124.0" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">退货率</text>
+  <rect x="138.0" y="94" width="406.0" height="24" rx="6" fill="#ff3d8b"/><text x="554.0" y="112" font-size="18" font-weight="600" fill="#f4f2fb">6%</text>
+  <text x="124.0" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">延迟发货率</text>
+  <rect x="138.0" y="146" width="338.3" height="24" rx="6" fill="#ff3d8b"/><text x="486.3" y="164" font-size="18" font-weight="600" fill="#f4f2fb">5%</text>
+  <text x="124.0" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">取消率</text>
+  <rect x="138.0" y="198" width="135.3" height="24" rx="6" fill="#ff3d8b"/><text x="283.3" y="216" font-size="18" font-weight="600" fill="#f4f2fb">2%</text>
+  <text x="124.0" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">差评率</text>
+  <rect x="138.0" y="250" width="135.3" height="24" rx="6" fill="#ff3d8b"/><text x="283.3" y="268" font-size="18" font-weight="600" fill="#f4f2fb">2%</text>
+  <text x="124.0" y="320" font-size="18" fill="#d9d6e6" text-anchor="end">未收到货率</text>
+  <rect x="138.0" y="302" width="135.3" height="24" rx="6" fill="#ff3d8b"/><text x="283.3" y="320" font-size="18" font-weight="600" fill="#f4f2fb">2%</text>
+  <text x="32" y="368" font-size="15" fill="#6f6d85">来源：沃尔玛 Marketplace Learn《卖家绩效标准》（2026 年 7 月 28 日更新）。</text>
+</svg>

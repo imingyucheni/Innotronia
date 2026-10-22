@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/walmart-approves-8-parcel-carriers-uniuni-gofo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/walmart-approves-8-parcel-carriers-uniuni-gofo.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/walmart-approves-8-parcel-carriers-uniuni-gofo.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/walmart-approves-8-parcel-carriers-uniuni-gofo.html" />
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/walmart-seller-performance-standards-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/walmart-seller-performance-standards-guide.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/walmart-seller-performance-standards-guide.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/walmart-seller-performance-standards-guide.html" />
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/amazon-sponsored-brands-guide.html</loc>
