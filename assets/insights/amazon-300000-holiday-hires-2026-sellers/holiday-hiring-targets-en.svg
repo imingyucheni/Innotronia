@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="486" viewBox="0 0 640 486" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="486" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="485" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Amazon US holiday hiring targets</text>
+  <line x1="76" x2="612" y1="376.0" y2="376.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="381.0" font-size="16" fill="#6f6d85" text-anchor="end">0K</text>
+  <line x1="76" x2="612" y1="306.0" y2="306.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="311.0" font-size="16" fill="#6f6d85" text-anchor="end">75K</text>
+  <line x1="76" x2="612" y1="236.0" y2="236.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="241.0" font-size="16" fill="#6f6d85" text-anchor="end">150K</text>
+  <line x1="76" x2="612" y1="166.0" y2="166.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="171.0" font-size="16" fill="#6f6d85" text-anchor="end">225K</text>
+  <line x1="76" x2="612" y1="96.0" y2="96.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="101.0" font-size="16" fill="#6f6d85" text-anchor="end">300K</text>
+  <rect x="111.0" y="142.7" width="60.0" height="233.3" rx="6" fill="#ff3d8b"/><text x="141.0" y="133.7" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">250K</text>
+  <rect x="245.0" y="142.7" width="60.0" height="233.3" rx="6" fill="#ff3d8b"/><text x="275.0" y="133.7" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">250K</text>
+  <rect x="379.0" y="142.7" width="60.0" height="233.3" rx="6" fill="#ff3d8b"/><text x="409.0" y="133.7" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">250K</text>
+  <rect x="513.0" y="96.0" width="60.0" height="280.0" rx="6" fill="#ff3d8b"/><text x="543.0" y="87.0" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">300K</text>
+  <text x="143.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2023</text>
+  <text x="277.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2024</text>
+  <text x="411.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2025</text>
+  <text x="545.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2026</text>
+  <text x="32" y="446" font-size="15" fill="#6f6d85">Source: Amazon (Oct 20, 2026) and prior-year targets as reported by PPC</text>
+  <text x="32" y="466" font-size="15" fill="#6f6d85">Land (Oct 21, 2026).</text>
+</svg>
