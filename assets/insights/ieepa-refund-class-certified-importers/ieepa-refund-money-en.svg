@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="360" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="359" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">IEEPA tariffs: collected, refunded, still</text>
+  <text x="32" y="94" font-size="28" font-weight="700" fill="#f4f2fb">at stake</text>
+  <text x="258" y="148" font-size="18" fill="#d9d6e6" text-anchor="end">Collected under IEEPA</text>
+  <rect x="272" y="130" width="225.8" height="24" rx="6" fill="#ff3d8b"/><text x="507.8" y="148" font-size="18" font-weight="600" fill="#f4f2fb">$166</text>
+  <text x="258" y="200" font-size="18" fill="#d9d6e6" text-anchor="end">Refunded via CAPE (early Oct)</text>
+  <rect x="272" y="182" width="171.4" height="24" rx="6" fill="#ff3d8b"/><text x="453.4" y="200" font-size="18" font-weight="600" fill="#f4f2fb">$126</text>
+  <text x="258" y="252" font-size="18" fill="#d9d6e6" text-anchor="end">At stake without a class</text>
+  <rect x="272" y="234" width="40.8" height="24" rx="6" fill="#ff3d8b"/><text x="322.8" y="252" font-size="18" font-weight="600" fill="#f4f2fb">$30</text>
+  <text x="32" y="300" font-size="15" fill="#6f6d85">Sources: Supply Chain Dive (Oct 9, 2026), citing the court order, for</text>
+  <text x="32" y="320" font-size="15" fill="#6f6d85">collected and at-stake amounts; Thompson Hine and Mohawk Global (Oct 2026),</text>
+  <text x="32" y="340" font-size="15" fill="#6f6d85">citing CBP, for refunds.</text>
+</svg>
