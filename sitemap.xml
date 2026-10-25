@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/give-agency-access-amazon-walmart-tiktok-shop.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/give-agency-access-amazon-walmart-tiktok-shop.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/give-agency-access-amazon-walmart-tiktok-shop.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/give-agency-access-amazon-walmart-tiktok-shop.html" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/walmart-ai-agent-gateway-profiles-sellers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/walmart-ai-agent-gateway-profiles-sellers.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/walmart-ai-agent-gateway-profiles-sellers.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/walmart-ai-agent-gateway-profiles-sellers.html" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/ieepa-refund-class-certified-importers.html</loc>

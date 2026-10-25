@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="304" viewBox="0 0 640 304" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="304" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="303" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">美国成年人如何看待 AI 代购</text>
+  <text x="232.0" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">希望结账前能审核或否决</text>
+  <rect x="246.0" y="94" width="260.8" height="24" rx="6" fill="#ff3d8b"/><text x="516.8" y="112" font-size="18" font-weight="600" fill="#f4f2fb">70%</text>
+  <text x="232.0" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">曾用 AI 完成交易</text>
+  <rect x="246.0" y="146" width="41.0" height="24" rx="6" fill="#ff3d8b"/><text x="297.0" y="164" font-size="18" font-weight="600" fill="#f4f2fb">11%</text>
+  <text x="232.0" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">愿让 AI 全权决定购买</text>
+  <rect x="246.0" y="198" width="37.2" height="24" rx="6" fill="#ff3d8b"/><text x="293.2" y="216" font-size="18" font-weight="600" fill="#f4f2fb">10%</text>
+  <text x="32" y="264" font-size="15" fill="#6f6d85">来源：NMI 对 1,000 名美国成年人的调查（2026 年 8 月），据 Digital Commerce 360</text>
+  <text x="32" y="284" font-size="15" fill="#6f6d85">（2026 年 10 月 23 日）报道。</text>
+</svg>
