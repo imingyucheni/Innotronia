@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="376" viewBox="0 0 640 376" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="376" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="375" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">已公布的 2027 年包裹运费涨幅</text>
+  <text x="228.40000000000003" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">UPS 日常费率（12/21）</text>
+  <rect x="242.40000000000003" y="94" width="222.4" height="24" rx="6" fill="#ff3d8b"/><text x="474.8" y="112" font-size="18" font-weight="600" fill="#f4f2fb">5.9%</text>
+  <text x="228.40000000000003" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">UPS 小企业费率</text>
+  <rect x="242.40000000000003" y="146" width="169.6" height="24" rx="6" fill="#ff3d8b"/><text x="422.1" y="164" font-size="18" font-weight="600" fill="#f4f2fb">4.5%</text>
+  <text x="228.40000000000003" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">FedEx 标准费率（1/4）</text>
+  <rect x="242.40000000000003" y="198" width="222.4" height="24" rx="6" fill="#ff3d8b"/><text x="474.8" y="216" font-size="18" font-weight="600" fill="#f4f2fb">5.9%</text>
+  <text x="228.40000000000003" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">FedEx Ground 1–5 磅</text>
+  <rect x="242.40000000000003" y="250" width="245.0" height="24" rx="6" fill="#ff3d8b"/><text x="497.5" y="268" font-size="18" font-weight="600" fill="#f4f2fb">6.5%</text>
+  <text x="32" y="316" font-size="15" fill="#6f6d85">来源：Supply Chain Dive（2026 年 10 月 26 日）引用 UPS、FedEx；FedEx Ground</text>
+  <text x="32" y="336" font-size="15" fill="#6f6d85">1–5 磅平均涨幅据 Gooding Supply Chain Advisors（2026 年 10 月 23 日）引用</text>
+  <text x="32" y="356" font-size="15" fill="#6f6d85">FedEx 费率表。</text>
+</svg>
