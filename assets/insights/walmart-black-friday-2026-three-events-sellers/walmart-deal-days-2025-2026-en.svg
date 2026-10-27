@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="506" viewBox="0 0 640 506" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="506" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="505" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Walmart holiday deal days: 2025 vs 2026</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">2025</text>
+  <rect x="116.08000000000001" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="138.08" y="96" font-size="17" fill="#a3a1b8">2026</text>
+  <text x="250.0000000000001" y="157" font-size="18" fill="#d9d6e6" text-anchor="end">Early Black Friday event</text>
+  <rect x="264.0000000000001" y="124" width="56.0" height="24" rx="6" fill="#ff3d8b"/><text x="330.0" y="142" font-size="18" font-weight="600" fill="#f4f2fb">3</text>
+  <rect x="264.0000000000001" y="154" width="74.7" height="24" rx="6" fill="#8b6cff"/><text x="348.7" y="172" font-size="18" font-weight="600" fill="#f4f2fb">4</text>
+  <text x="250.0000000000001" y="239" font-size="18" fill="#d9d6e6" text-anchor="end">Black Friday event</text>
+  <rect x="264.0000000000001" y="206" width="112.0" height="24" rx="6" fill="#ff3d8b"/><text x="386.0" y="224" font-size="18" font-weight="600" fill="#f4f2fb">6</text>
+  <rect x="264.0000000000001" y="236" width="130.7" height="24" rx="6" fill="#8b6cff"/><text x="404.7" y="254" font-size="18" font-weight="600" fill="#f4f2fb">7</text>
+  <text x="250.0000000000001" y="321" font-size="18" fill="#d9d6e6" text-anchor="end">Cyber Monday event</text>
+  <rect x="264.0000000000001" y="288" width="18.7" height="24" rx="6" fill="#ff3d8b"/><text x="292.7" y="306" font-size="18" font-weight="600" fill="#f4f2fb">1</text>
+  <rect x="264.0000000000001" y="318" width="56.0" height="24" rx="6" fill="#8b6cff"/><text x="330.0" y="336" font-size="18" font-weight="600" fill="#f4f2fb">3</text>
+  <text x="250.0000000000001" y="403" font-size="18" fill="#d9d6e6" text-anchor="end">Total deal days</text>
+  <rect x="264.0000000000001" y="370" width="186.7" height="24" rx="6" fill="#ff3d8b"/><text x="460.7" y="388" font-size="18" font-weight="600" fill="#f4f2fb">10</text>
+  <rect x="264.0000000000001" y="400" width="261.3" height="24" rx="6" fill="#8b6cff"/><text x="535.3" y="418" font-size="18" font-weight="600" fill="#f4f2fb">14</text>
+  <text x="32" y="466" font-size="15" fill="#6f6d85">Sources: Walmart press releases (Oct 27, 2025; Oct 26, 2026); Retail Dive</text>
+  <text x="32" y="486" font-size="15" fill="#6f6d85">(Oct 26, 2026). Calculation: days counted from published event dates.</text>
+</svg>
