@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 640 440" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="440" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="439" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">UPS 2026 年第三季度同比增长</text>
+  <text x="196.0" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">合并营收</text>
+  <rect x="210.0" y="94" width="111.9" height="24" rx="6" fill="#ff3d8b"/><text x="331.9" y="112" font-size="18" font-weight="600" fill="#f4f2fb">6.7%</text>
+  <text x="196.0" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">美国国内营收</text>
+  <rect x="210.0" y="146" width="75.2" height="24" rx="6" fill="#ff3d8b"/><text x="295.1" y="164" font-size="18" font-weight="600" fill="#f4f2fb">4.5%</text>
+  <text x="196.0" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">美国单件收入</text>
+  <rect x="210.0" y="198" width="101.9" height="24" rx="6" fill="#ff3d8b"/><text x="321.9" y="216" font-size="18" font-weight="600" fill="#f4f2fb">6.1%</text>
+  <text x="196.0" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">国际营收</text>
+  <rect x="210.0" y="250" width="118.6" height="24" rx="6" fill="#ff3d8b"/><text x="338.6" y="268" font-size="18" font-weight="600" fill="#f4f2fb">7.1%</text>
+  <text x="196.0" y="320" font-size="18" fill="#d9d6e6" text-anchor="end">国际单件收入</text>
+  <rect x="210.0" y="302" width="250.5" height="24" rx="6" fill="#ff3d8b"/><text x="470.5" y="320" font-size="18" font-weight="600" fill="#f4f2fb">15.0%</text>
+  <text x="196.0" y="372" font-size="18" fill="#d9d6e6" text-anchor="end">供应链解决方案营收</text>
+  <rect x="210.0" y="354" width="303.9" height="24" rx="6" fill="#ff3d8b"/><text x="523.9" y="372" font-size="18" font-weight="600" fill="#f4f2fb">18.2%</text>
+  <text x="32" y="420" font-size="15" fill="#6f6d85">来源：UPS 2026 年第三季度财报新闻稿（2026 年 10 月 27 日）。</text>
+</svg>

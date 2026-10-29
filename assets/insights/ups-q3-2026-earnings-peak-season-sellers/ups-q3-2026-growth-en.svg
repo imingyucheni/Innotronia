@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 640 440" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="440" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="439" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">UPS Q3 2026: year-over-year growth</text>
+  <text x="234.1600000000001" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">Consolidated revenue</text>
+  <rect x="248.1600000000001" y="94" width="99.1" height="24" rx="6" fill="#ff3d8b"/><text x="357.3" y="112" font-size="18" font-weight="600" fill="#f4f2fb">6.7%</text>
+  <text x="234.1600000000001" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">US Domestic revenue</text>
+  <rect x="248.1600000000001" y="146" width="66.6" height="24" rx="6" fill="#ff3d8b"/><text x="324.7" y="164" font-size="18" font-weight="600" fill="#f4f2fb">4.5%</text>
+  <text x="234.1600000000001" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">US revenue per piece</text>
+  <rect x="248.1600000000001" y="198" width="90.2" height="24" rx="6" fill="#ff3d8b"/><text x="348.4" y="216" font-size="18" font-weight="600" fill="#f4f2fb">6.1%</text>
+  <text x="234.1600000000001" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">International revenue</text>
+  <rect x="248.1600000000001" y="250" width="105.0" height="24" rx="6" fill="#ff3d8b"/><text x="363.2" y="268" font-size="18" font-weight="600" fill="#f4f2fb">7.1%</text>
+  <text x="234.1600000000001" y="320" font-size="18" fill="#d9d6e6" text-anchor="end">Intl revenue per piece</text>
+  <rect x="248.1600000000001" y="302" width="221.9" height="24" rx="6" fill="#ff3d8b"/><text x="480.0" y="320" font-size="18" font-weight="600" fill="#f4f2fb">15.0%</text>
+  <text x="234.1600000000001" y="372" font-size="18" fill="#d9d6e6" text-anchor="end">Supply Chain Solutions</text>
+  <rect x="248.1600000000001" y="354" width="269.2" height="24" rx="6" fill="#ff3d8b"/><text x="527.4" y="372" font-size="18" font-weight="600" fill="#f4f2fb">18.2%</text>
+  <text x="32" y="420" font-size="15" fill="#6f6d85">Source: UPS third-quarter 2026 earnings release (Oct 27, 2026).</text>
+</svg>
