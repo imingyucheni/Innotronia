@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="506" viewBox="0 0 640 506" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="506" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="505" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">美国消费者调查：2026 年 9 月 vs 10 月</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">9 月</text>
+  <rect x="109.96000000000001" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="131.96" y="96" font-size="17" fill="#a3a1b8">10 月</text>
+  <text x="258" y="157" font-size="18" fill="#d9d6e6" text-anchor="end">世界大型企业联合会信心指数</text>
+  <rect x="272" y="124" width="152.7" height="24" rx="6" fill="#ff3d8b"/><text x="434.7" y="142" font-size="18" font-weight="600" fill="#f4f2fb">84.2</text>
+  <rect x="272" y="154" width="166.3" height="24" rx="6" fill="#8b6cff"/><text x="448.3" y="172" font-size="18" font-weight="600" fill="#f4f2fb">91.7</text>
+  <text x="258" y="239" font-size="18" fill="#d9d6e6" text-anchor="end">现状指数</text>
+  <rect x="272" y="206" width="202.7" height="24" rx="6" fill="#ff3d8b"/><text x="484.7" y="224" font-size="18" font-weight="600" fill="#f4f2fb">111.8</text>
+  <rect x="272" y="236" width="218.3" height="24" rx="6" fill="#8b6cff"/><text x="500.3" y="254" font-size="18" font-weight="600" fill="#f4f2fb">120.4</text>
+  <text x="258" y="321" font-size="18" fill="#d9d6e6" text-anchor="end">预期指数</text>
+  <rect x="272" y="288" width="119.1" height="24" rx="6" fill="#ff3d8b"/><text x="401.1" y="306" font-size="18" font-weight="600" fill="#f4f2fb">65.7</text>
+  <rect x="272" y="318" width="131.6" height="24" rx="6" fill="#8b6cff"/><text x="413.6" y="336" font-size="18" font-weight="600" fill="#f4f2fb">72.6</text>
+  <text x="258" y="403" font-size="18" fill="#d9d6e6" text-anchor="end">密歇根大学信心指数</text>
+  <rect x="272" y="370" width="87.2" height="24" rx="6" fill="#ff3d8b"/><text x="369.2" y="388" font-size="18" font-weight="600" fill="#f4f2fb">48.1</text>
+  <rect x="272" y="400" width="87.0" height="24" rx="6" fill="#8b6cff"/><text x="369.0" y="418" font-size="18" font-weight="600" fill="#f4f2fb">48.0</text>
+  <text x="32" y="466" font-size="15" fill="#6f6d85">来源：世界大型企业联合会（2026 年 10 月 27 日）；密歇根大学消费者调查 10 月终</text>
+  <text x="32" y="486" font-size="15" fill="#6f6d85">值（2026 年 10 月 23 日）。</text>
+</svg>
