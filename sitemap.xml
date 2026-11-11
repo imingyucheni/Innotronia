@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/nrf-port-tracker-november-2026-imports-slow.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/nrf-port-tracker-november-2026-imports-slow.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/nrf-port-tracker-november-2026-imports-slow.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/nrf-port-tracker-november-2026-imports-slow.html" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/isf-10-2-importer-security-filing-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/isf-10-2-importer-security-filing-guide.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/isf-10-2-importer-security-filing-guide.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/isf-10-2-importer-security-filing-guide.html" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/amazon-black-friday-week-2026-nov-19-30-sellers.html</loc>
