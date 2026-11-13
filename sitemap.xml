@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/amazon-negative-keywords-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/amazon-negative-keywords-guide.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/amazon-negative-keywords-guide.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/amazon-negative-keywords-guide.html" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/walmart-item-level-return-rate-enforcement-january-2027.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/walmart-item-level-return-rate-enforcement-january-2027.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/walmart-item-level-return-rate-enforcement-january-2027.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/walmart-item-level-return-rate-enforcement-january-2027.html" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/nrf-port-tracker-november-2026-imports-slow.html</loc>
