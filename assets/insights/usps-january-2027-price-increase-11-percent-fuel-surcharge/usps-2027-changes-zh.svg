@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="336" viewBox="0 0 640 336" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="336" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="335" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">USPS 2027 年 1 月 17 日起调整幅度（%）</text>
+  <text x="245.68000000000006" y="112" font-size="18" fill="#d9d6e6" text-anchor="end">国内基础运价（平均）</text>
+  <rect x="259.68000000000006" y="94" width="139.8" height="24" rx="6" fill="#ff3d8b"/><text x="409.5" y="112" font-size="18" font-weight="600" fill="#f4f2fb">5.9%</text>
+  <text x="245.68000000000006" y="164" font-size="18" fill="#d9d6e6" text-anchor="end">国际运价（平均）</text>
+  <rect x="259.68000000000006" y="146" width="187.2" height="24" rx="6" fill="#ff3d8b"/><text x="456.9" y="164" font-size="18" font-weight="600" fill="#f4f2fb">7.9%</text>
+  <text x="245.68000000000006" y="216" font-size="18" fill="#d9d6e6" text-anchor="end">临时涨价（2026 年 4 月）</text>
+  <rect x="259.68000000000006" y="198" width="189.5" height="24" rx="6" fill="#ff3d8b"/><text x="459.2" y="216" font-size="18" font-weight="600" fill="#f4f2fb">8.0%</text>
+  <text x="245.68000000000006" y="268" font-size="18" fill="#d9d6e6" text-anchor="end">1 月 17 日起燃油附加费</text>
+  <rect x="259.68000000000006" y="250" width="260.6" height="24" rx="6" fill="#ff3d8b"/><text x="530.3" y="268" font-size="18" font-weight="600" fill="#f4f2fb">11.0%</text>
+  <text x="32" y="316" font-size="15" fill="#6f6d85">来源：USPS 官方新闻稿（2026 年 11 月 12 日），尚待美国邮政监管委员会审查。</text>
+</svg>
