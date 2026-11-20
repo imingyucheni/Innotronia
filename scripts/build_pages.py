@@ -266,7 +266,7 @@ def build_tools():
           <label class="in"><span>{bi('DIM divisor', '体积重系数')}</span>
             <select id="dDiv">
               <option value="139">139 — {bi('common for UPS / FedEx', 'UPS / FedEx 常用')}</option>
-              <option value="166">166 — {bi('USPS (packages over 1 cu ft)', 'USPS（超过 1 立方英尺的包裹）')}</option>
+              <option value="usps">139 — {bi('USPS (packages over 1 cu ft)', 'USPS（超过 1 立方英尺的包裹）')}</option>
               <option value="custom">{bi('Custom…', '自定义…')}</option>
             </select>
           </label>

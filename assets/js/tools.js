@@ -18,10 +18,10 @@
     // carriers typically round each dimension to the nearest inch
     const l = Math.round(toIn(num(L))), w = Math.round(toIn(num(W))), h = Math.round(toIn(num(H)));
     const actualLb = m ? num(WT) * LB_PER_KG : num(WT);
-    const divisor = DIV.value === "custom" ? Math.max(1, num(DIVC)) : +DIV.value;
+    const divisor = DIV.value === "custom" ? Math.max(1, num(DIVC)) : DIV.value === "usps" ? 139 : +DIV.value;
     const cuIn = l * w * h;
     // USPS commonly applies DIM pricing only above 1 cubic foot (1,728 cu in)
-    const dimApplies = !(DIV.value === "166" && cuIn <= 1728);
+    const dimApplies = !(DIV.value === "usps" && cuIn <= 1728);
     const dimLb = dimApplies ? Math.ceil(cuIn / divisor) : 0;
     const actualBill = Math.ceil(actualLb);
     const billLb = Math.max(actualBill, dimLb);
