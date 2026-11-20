@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="738" viewBox="0 0 640 738" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="738" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="737" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">沃尔玛 Pro Seller 各等级门槛（最低 %）</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">Rising Seller</text>
+  <rect x="181.36" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="203.36" y="96" font-size="17" fill="#a3a1b8">Advanced Seller</text>
+  <rect x="357.9200000000001" y="84" width="14" height="14" rx="3" fill="#2ee6d6"/><text x="379.9200000000001" y="96" font-size="17" fill="#a3a1b8">Pro Seller</text>
+  <text x="124.0" y="172" font-size="18" fill="#d9d6e6" text-anchor="end">准时送达率</text>
+  <rect x="138.0" y="124" width="365.4" height="24" rx="6" fill="#ff3d8b"/><text x="513.4" y="142" font-size="18" font-weight="600" fill="#f4f2fb">90.0%</text>
+  <rect x="138.0" y="154" width="375.6" height="24" rx="6" fill="#8b6cff"/><text x="523.5" y="172" font-size="18" font-weight="600" fill="#f4f2fb">92.5%</text>
+  <rect x="138.0" y="184" width="385.7" height="24" rx="6" fill="#2ee6d6"/><text x="533.7" y="202" font-size="18" font-weight="600" fill="#f4f2fb">95.0%</text>
+  <text x="124.0" y="284" font-size="18" fill="#d9d6e6" text-anchor="end">卖家回复率</text>
+  <rect x="138.0" y="236" width="365.4" height="24" rx="6" fill="#ff3d8b"/><text x="513.4" y="254" font-size="18" font-weight="600" fill="#f4f2fb">90.0%</text>
+  <rect x="138.0" y="266" width="375.6" height="24" rx="6" fill="#8b6cff"/><text x="523.5" y="284" font-size="18" font-weight="600" fill="#f4f2fb">92.5%</text>
+  <rect x="138.0" y="296" width="385.7" height="24" rx="6" fill="#2ee6d6"/><text x="533.7" y="314" font-size="18" font-weight="600" fill="#f4f2fb">95.0%</text>
+  <text x="124.0" y="396" font-size="18" fill="#d9d6e6" text-anchor="end">内容质量分</text>
+  <rect x="138.0" y="348" width="263.9" height="24" rx="6" fill="#ff3d8b"/><text x="411.9" y="366" font-size="18" font-weight="600" fill="#f4f2fb">65.0%</text>
+  <rect x="138.0" y="378" width="284.2" height="24" rx="6" fill="#8b6cff"/><text x="432.2" y="396" font-size="18" font-weight="600" fill="#f4f2fb">70.0%</text>
+  <rect x="138.0" y="408" width="304.5" height="24" rx="6" fill="#2ee6d6"/><text x="452.5" y="426" font-size="18" font-weight="600" fill="#f4f2fb">75.0%</text>
+  <text x="124.0" y="508" font-size="18" fill="#d9d6e6" text-anchor="end">价格竞争力</text>
+  <rect x="138.0" y="460" width="263.9" height="24" rx="6" fill="#ff3d8b"/><text x="411.9" y="478" font-size="18" font-weight="600" fill="#f4f2fb">65.0%</text>
+  <rect x="138.0" y="490" width="284.2" height="24" rx="6" fill="#8b6cff"/><text x="432.2" y="508" font-size="18" font-weight="600" fill="#f4f2fb">70.0%</text>
+  <rect x="138.0" y="520" width="304.5" height="24" rx="6" fill="#2ee6d6"/><text x="452.5" y="538" font-size="18" font-weight="600" fill="#f4f2fb">75.0%</text>
+  <text x="124.0" y="620" font-size="18" fill="#d9d6e6" text-anchor="end">配送速度分</text>
+  <rect x="138.0" y="572" width="20.3" height="24" rx="6" fill="#ff3d8b"/><text x="168.3" y="590" font-size="18" font-weight="600" fill="#f4f2fb">5.0%</text>
+  <rect x="138.0" y="602" width="101.5" height="24" rx="6" fill="#8b6cff"/><text x="249.5" y="620" font-size="18" font-weight="600" fill="#f4f2fb">25.0%</text>
+  <rect x="138.0" y="632" width="203.0" height="24" rx="6" fill="#2ee6d6"/><text x="351.0" y="650" font-size="18" font-weight="600" fill="#f4f2fb">50.0%</text>
+  <text x="32" y="698" font-size="15" fill="#6f6d85">来源：Walmart Marketplace Learn《Pro Seller 概览》（2026 年 10 月 16 日更</text>
+  <text x="32" y="718" font-size="15" fill="#6f6d85">新）。</text>
+</svg>

@@ -14,7 +14,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/" />
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,6 +26,24 @@
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/walmart-pro-seller-program-tiers-benefits-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/walmart-pro-seller-program-tiers-benefits-guide.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/walmart-pro-seller-program-tiers-benefits-guide.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/walmart-pro-seller-program-tiers-benefits-guide.html" />
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://innotronia.com/insights/census-q3-2026-ecommerce-sales-17-9-percent.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://innotronia.com/insights/census-q3-2026-ecommerce-sales-17-9-percent.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://innotronia.com/insights/census-q3-2026-ecommerce-sales-17-9-percent.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://innotronia.com/insights/census-q3-2026-ecommerce-sales-17-9-percent.html" />
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://innotronia.com/insights/amazon-transparency-project-zero-counterfeit-guide.html</loc>

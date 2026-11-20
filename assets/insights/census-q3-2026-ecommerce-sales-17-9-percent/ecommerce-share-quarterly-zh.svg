@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="486" viewBox="0 0 640 486" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="486" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="485" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">电商占美国零售总额比例（%）</text>
+  <line x1="76" x2="612" y1="376.0" y2="376.0" stroke="#ffffff" stroke-opacity="0.16"/><text x="64" y="381.0" font-size="16" fill="#6f6d85" text-anchor="end">0.0%</text>
+  <line x1="76" x2="612" y1="306.0" y2="306.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="311.0" font-size="16" fill="#6f6d85" text-anchor="end">5.0%</text>
+  <line x1="76" x2="612" y1="236.0" y2="236.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="241.0" font-size="16" fill="#6f6d85" text-anchor="end">10.0%</text>
+  <line x1="76" x2="612" y1="166.0" y2="166.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="171.0" font-size="16" fill="#6f6d85" text-anchor="end">15.0%</text>
+  <line x1="76" x2="612" y1="96.0" y2="96.0" stroke="#ffffff" stroke-opacity="0.07"/><text x="64" y="101.0" font-size="16" fill="#6f6d85" text-anchor="end">20.0%</text>
+  <polyline points="129.6,136.6 236.8,133.8 344.0,128.2 451.2,126.8 558.4,125.4" fill="none" stroke="#ff3d8b" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="129.6" cy="136.6" r="5.5" fill="#0e0e1a" stroke="#ff3d8b" stroke-width="3"/><text x="129.6" y="122.6" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">17.1%</text>
+  <circle cx="236.8" cy="133.8" r="5.5" fill="#0e0e1a" stroke="#ff3d8b" stroke-width="3"/><text x="236.8" y="119.8" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">17.3%</text>
+  <circle cx="344.0" cy="128.2" r="5.5" fill="#0e0e1a" stroke="#ff3d8b" stroke-width="3"/><text x="344.0" y="114.2" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">17.7%</text>
+  <circle cx="451.2" cy="126.8" r="5.5" fill="#0e0e1a" stroke="#ff3d8b" stroke-width="3"/><text x="451.2" y="112.8" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">17.8%</text>
+  <circle cx="558.4" cy="125.4" r="5.5" fill="#0e0e1a" stroke="#ff3d8b" stroke-width="3"/><text x="558.4" y="111.4" font-size="16" font-weight="600" fill="#f4f2fb" text-anchor="middle">17.9%</text>
+  <text x="129.6" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2025 Q3</text>
+  <text x="236.8" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2025 Q4</text>
+  <text x="344.0" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2026 Q1</text>
+  <text x="451.2" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2026 Q2</text>
+  <text x="558.4" y="402" font-size="16" fill="#a3a1b8" text-anchor="middle">2026 Q3</text>
+  <text x="32" y="446" font-size="15" fill="#6f6d85">来源：美国人口普查局《2026 年第三季度零售电商销售》（2026 年 11 月 19 日）表</text>
+  <text x="32" y="466" font-size="15" fill="#6f6d85">1，2026 Q3 为初值。</text>
+</svg>

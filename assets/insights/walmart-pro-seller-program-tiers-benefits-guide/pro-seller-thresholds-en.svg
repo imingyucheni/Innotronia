@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="738" viewBox="0 0 640 738" font-family="Inter, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="640" height="738" rx="22" fill="#0e0e1a"/>
+  <rect x="0.5" y="0.5" width="639" height="737" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="58" font-size="28" font-weight="700" fill="#f4f2fb">Pro Seller tier thresholds (minimum %)</text>
+  <rect x="32" y="84" width="14" height="14" rx="3" fill="#ff3d8b"/><text x="54" y="96" font-size="17" fill="#a3a1b8">Rising Seller</text>
+  <rect x="181.36" y="84" width="14" height="14" rx="3" fill="#8b6cff"/><text x="203.36" y="96" font-size="17" fill="#a3a1b8">Advanced Seller</text>
+  <rect x="357.9200000000001" y="84" width="14" height="14" rx="3" fill="#2ee6d6"/><text x="379.9200000000001" y="96" font-size="17" fill="#a3a1b8">Pro Seller</text>
+  <text x="228.40000000000012" y="172" font-size="18" fill="#d9d6e6" text-anchor="end">On-time delivery</text>
+  <rect x="242.40000000000012" y="124" width="271.4" height="24" rx="6" fill="#ff3d8b"/><text x="523.8" y="142" font-size="18" font-weight="600" fill="#f4f2fb">90.0%</text>
+  <rect x="242.40000000000012" y="154" width="279.0" height="24" rx="6" fill="#8b6cff"/><text x="531.4" y="172" font-size="18" font-weight="600" fill="#f4f2fb">92.5%</text>
+  <rect x="242.40000000000012" y="184" width="286.5" height="24" rx="6" fill="#2ee6d6"/><text x="538.9" y="202" font-size="18" font-weight="600" fill="#f4f2fb">95.0%</text>
+  <text x="228.40000000000012" y="284" font-size="18" fill="#d9d6e6" text-anchor="end">Seller response</text>
+  <rect x="242.40000000000012" y="236" width="271.4" height="24" rx="6" fill="#ff3d8b"/><text x="523.8" y="254" font-size="18" font-weight="600" fill="#f4f2fb">90.0%</text>
+  <rect x="242.40000000000012" y="266" width="279.0" height="24" rx="6" fill="#8b6cff"/><text x="531.4" y="284" font-size="18" font-weight="600" fill="#f4f2fb">92.5%</text>
+  <rect x="242.40000000000012" y="296" width="286.5" height="24" rx="6" fill="#2ee6d6"/><text x="538.9" y="314" font-size="18" font-weight="600" fill="#f4f2fb">95.0%</text>
+  <text x="228.40000000000012" y="396" font-size="18" fill="#d9d6e6" text-anchor="end">Content quality</text>
+  <rect x="242.40000000000012" y="348" width="196.0" height="24" rx="6" fill="#ff3d8b"/><text x="448.4" y="366" font-size="18" font-weight="600" fill="#f4f2fb">65.0%</text>
+  <rect x="242.40000000000012" y="378" width="211.1" height="24" rx="6" fill="#8b6cff"/><text x="463.5" y="396" font-size="18" font-weight="600" fill="#f4f2fb">70.0%</text>
+  <rect x="242.40000000000012" y="408" width="226.2" height="24" rx="6" fill="#2ee6d6"/><text x="478.6" y="426" font-size="18" font-weight="600" fill="#f4f2fb">75.0%</text>
+  <text x="228.40000000000012" y="508" font-size="18" fill="#d9d6e6" text-anchor="end">Price competitiveness</text>
+  <rect x="242.40000000000012" y="460" width="196.0" height="24" rx="6" fill="#ff3d8b"/><text x="448.4" y="478" font-size="18" font-weight="600" fill="#f4f2fb">65.0%</text>
+  <rect x="242.40000000000012" y="490" width="211.1" height="24" rx="6" fill="#8b6cff"/><text x="463.5" y="508" font-size="18" font-weight="600" fill="#f4f2fb">70.0%</text>
+  <rect x="242.40000000000012" y="520" width="226.2" height="24" rx="6" fill="#2ee6d6"/><text x="478.6" y="538" font-size="18" font-weight="600" fill="#f4f2fb">75.0%</text>
+  <text x="228.40000000000012" y="620" font-size="18" fill="#d9d6e6" text-anchor="end">Shipping speed score</text>
+  <rect x="242.40000000000012" y="572" width="15.1" height="24" rx="6" fill="#ff3d8b"/><text x="267.5" y="590" font-size="18" font-weight="600" fill="#f4f2fb">5.0%</text>
+  <rect x="242.40000000000012" y="602" width="75.4" height="24" rx="6" fill="#8b6cff"/><text x="327.8" y="620" font-size="18" font-weight="600" fill="#f4f2fb">25.0%</text>
+  <rect x="242.40000000000012" y="632" width="150.8" height="24" rx="6" fill="#2ee6d6"/><text x="403.2" y="650" font-size="18" font-weight="600" fill="#f4f2fb">50.0%</text>
+  <text x="32" y="698" font-size="15" fill="#6f6d85">Source: Walmart Marketplace Learn, Pro Seller overview (updated Oct 16,</text>
+  <text x="32" y="718" font-size="15" fill="#6f6d85">2026).</text>
+</svg>
